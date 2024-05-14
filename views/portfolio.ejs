@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Vodas Rental - Rentals</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="/img/dove.png" rel="icon" />
+    <link href="/img/dove-touch.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="/vendor/remixicon/remixicon.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="page-portfolio">
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="/" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img
+            src="/img/logo.png"
+            style="background-color: white; height: auto; width: 150px"
+            alt=""
+          />
+          <!-- <h1 class="d-flex align-items-center">Nova</h1> -->
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/portfolio" class="active">Rentals</a></li>
+            <li><a href="/team">Team</a></li>
+            <!-- <li><a href="/blog">Blog</a></li> -->
+            <li class="dropdown">
+              <!-- <a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul> -->
+            </li>
+            <li><a href="/contact">Request</a></li>
+          </ul>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- ======= Breadcrumbs ======= -->
+      <div
+        class="breadcrumbs d-flex align-items-center"
+        style="background-image: url('/img/cta-bg.jpg')"
+      >
+        <div
+          class="container position-relative d-flex flex-column align-items-center"
+        >
+          <h2>Rentals</h2>
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li style="color: azure">Rentals</li>
+          </ol>
+        </div>
+      </div>
+      <!-- End Breadcrumbs -->
+
+      <!-- modal -->
+      <!-- Button trigger modal -->
+      <!-- <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        modal
+      </button> -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Product > Nav</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- modal body start  -->
+            <div class="modal-body modal-custom">
+              <div>
+                <img src="/img/portfolio/product-1.jpg" alt="some img here" height="100px" width="100px">
+              </div>
+              <form action="addToWishList">
+              <div class="modal-sub-head">
+                <h3>Bar - Garbage</h3>
+                <h3>Cans - Large With Bag</h3>
+                <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+              </div>
+              
+                <div class="modal-detail-inner">
+                  <span>Quantity</span>
+                  <span>
+                    <button class="btn btn-primary">-</button> 1 <button class="btn btn-primary">+</button>
+                  </span>
+                </div>
+
+                <div class="modal-detail-inner">
+                  <span>Rate</span>
+                  <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                </div>
+
+                <div class="modal-detail-inner">
+                  <span>Select Dates</span>
+                  <span><input type="date" name="" id=""></span>
+                </div>
+
+                <div class="modal-detail-inner">
+                  <span>Start Time</span>
+                  <span>12:00 PM</span>
+                </div>
+              
+              <div>
+                <button class="btn btn-dark">Add to wishlist</button>
+              </div>
+            </form>
+              <div class="modal-detail-inner">
+                <span>Description</span>
+                <span>
+                  <i class="bi bi-arrow-down-circle" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"></i>
+                </span>
+              </div>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  No Discription
+                </div>
+              </div>
+              <div class="modal-detail-inner">
+                <span>Pricing</span>
+                <span>
+                  <i class="bi bi-arrow-down-circle" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"></i>
+                </span>
+              </div>
+              <div class="collapse" id="collapseExample2">
+                <div class="card card-body">
+                  <div class="modal-detail-inner">
+                    <span>1 Day Price</span>
+                    <span> - <i class="bi bi-currency-dollar"></i>4.00</span>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <!-- modal body end -->
+            <div class="modal-footer">
+              <!-- <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button> -->
+              <!-- <button type="button" class="btn btn-primary">
+                Save changes
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal End -->
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+          <div
+            class="portfolio-isotope"
+            data-portfolio-filter="*"
+            data-portfolio-layout="masonry"
+            data-portfolio-sort="original-order"
+          >
+            <ul
+              class="portfolio-flters"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Folding Chairs</li>
+              <li data-filter=".filter-product">Tables</li>
+              <li data-filter=".filter-branding">Table Cloth</li>
+              <li data-filter=".filter-chairs">Chair Covers</li>
+              <li data-filter=".filter-books">Chafing Dishes</li>
+              <li data-filter=".filter-books">Cutlery</li>
+            </ul>
+            <!-- End Portfolio Filters -->
+
+            <div
+              class="row gy-4 portfolio-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <img
+                  src="/img/foldingChair/image19.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Folding Chair</h4>
+                  <p>Garden Folding Chair - Black</p>
+                  <a
+                    href="/img/foldingChair/image19.jpeg"
+                    title="Folding Chair"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                  <!-- <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Launch demo modal
+                  </button> -->
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+                <img
+                  src="/img/Rectangle Table/folding-table.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Folding Table</h4>
+                  <p>Economy Folding Table</p>
+                  <a
+                    href="/img/Rectangle Table/folding-table.png"
+                    title="Product 1"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/Covers & Cloth/image17.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Table Cloth</h4>
+                  <p>Rectangle Table CLoth</p>
+                  <a
+                    href="/img/Covers & Cloth/image17.jpeg"
+                    title="Branding 1"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+                <img
+                  src="/img/cutlery/image13.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Cutlery</h4>
+                  <p>Gold Cutlery</p>
+                  <a
+                    href="/img/cutlery/image13.jpeg"
+                    title="Branding 1"
+                    data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <img
+                  src="/img/foldingChair/folding-chair-white2.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Folding Chair</h4>
+                  <p>Garden Folding Chair - White</p>
+                  <a
+                    href="/img/foldingChair/folding-chair-white2.png"
+                    title="Folding Chair"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+                <img
+                  src="/img/Rectangle table/image12.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Folding Table</h4>
+                  <p>Economy Folding - 60 Diameter Round Table</p>
+                  <a
+                    href="/img/Rectangle table/image12.jpeg"
+                    title="Product 2"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/Covers & Cloth/image16.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Chair Cover</h4>
+                  <p>Folding Chair Cover</p>
+                  <a
+                    href="/img/Covers & Cloth/image16.jpeg"
+                    title="Chair Cover"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+                <img
+                  src="/img/cutlery/image14.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Cutlery</h4>
+                  <p>Silver Cutlery</p>
+                  <a
+                    href="/img/cutlery/image14.jpeg"
+                    title="Silver Cutlery"
+                    data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <img
+                  src="/img/foldingChair/children-folding-chair.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Folding Chair</h4>
+                  <p>Child Folding Chair</p>
+                  <a
+                    href="/img/foldingChair/children-folding-chair.jpeg"
+                    title="Folding Chair"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <img
+                  src="/img/foldingChair/folding-chair-group.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Folding Chair</h4>
+                  <p>Folding Chair</p>
+                  <a
+                    href="/img/foldingChair/folding-chair-group.jpg"
+                    title="Folding Chair"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+                <img
+                  src="/img/Rectangle Table/image13.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Table</h4>
+                  <p>60 X 30 Rectangle Table</p>
+                  <a
+                    href="/img/Rectangle Table/image13.jpeg"
+                    title="60 x 30 Rectangle Table"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/cutlery/SaladDessert Plates 7 White Snowdrop Dinnerware.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Salad/Dessert Plates 7 White</h4>
+                  <p>Salad/Dessert Plates 7 White Snowdrop Dinnerware</p>
+                  <a
+                    href="/img/cutlery/SaladDessert Plates 7 White Snowdrop Dinnerware.jpg"
+                    title="Salad/Dessert Plates 7 White Snowdrop Dinnerware"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+               <!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/cutlery/10 Dinner Plates White wGold Rim Dynasty Dinnerware.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>10 Dinner Plates White wGold Rim Dynasty</h4>
+                  <p>10 Dinner Plates White wGold Rim Dynasty Dinnerware</p>
+                  <a
+                    href="/img/cutlery/10 Dinner Plates White wGold Rim Dynasty Dinnerware.jpg"
+                    title="10 Dinner Plates White wGold Rim Dynasty"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+               <!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/cutlery/10 Dinner Plates White wGold Rim Dynasty Dinnerware2.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>10 Dinner Plates White w/Gold</h4>
+                  <p>10 Dinner Plates White wGold Rim Dynasty</p>
+                  <a
+                    href="/img/cutlery/10 Dinner Plates White wGold Rim Dynasty Dinnerware2.jpg"
+                    title="10 Dinner Plates White w/Gold"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+               <!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/cutlery/10 White Dinner Plates Snowdrop Dinnerware.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>White Dinner Plates</h4>
+                  <p>10 White Dinner Plates Snowdrop Dinnerware</p>
+                  <a
+                    href="/img/cutlery/10 White Dinner Plates Snowdrop Dinnerware.jpg"
+                    title="White Dinner Plates"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+               <!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/cutlery/Serving Forks Gold St. Urbain Flatware.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Serving Forks Gold</h4>
+                  <p>Serving Forks Gold St. Urbain Flatware</p>
+                  <a
+                    href="/img/cutlery/Serving Forks Gold St. Urbain Flatware.jpg"
+                    title="Serving Forks Gold"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+               <!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/cutlery/SoupDessert Spoons Gold St. Urbain Flatware.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>SoupDessert Spoons</h4>
+                  <p>SoupDessert Spoons Gold</p>
+                  <a
+                    href="/img/cutlery/SoupDessert Spoons Gold St. Urbain Flatware.jpg"
+                    title="SoupDessert Spoons"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+               <!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/cutlery/Dinner Forks Gold St. Urbain Flatware.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Dinner Forks Gold</h4>
+                  <p>Dinner Forks Gold St. Urbain Flatware</p>
+                  <a
+                    href="/img/cutlery/Dinner Forks Gold St. Urbain Flatware.jpg"
+                    title="Dinner Forks Gold"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+               <!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/cutlery/Teaspoons Gold St. Urbain Flatware.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Teaspoons Gold</h4>
+                  <p>Teaspoons Gold St. Urbain Flatware</p>
+                  <a
+                    href="/img/cutlery/Teaspoons Gold St. Urbain Flatware.jpg"
+                    title="Teaspoons Gold"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+               <!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/cutlery/Serving Spoons Gold St. Urbain Flatware.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Serving Spoons Gold</h4>
+                  <p>Serving Spoons Gold St. Urbain Flatware</p>
+                  <a
+                    href="/img/cutlery/Serving Spoons Gold St. Urbain Flatware.jpg"
+                    title="Serving Spoons Gold"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+               <!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/cutlery/Butter Spreaders Gold St. Urbain Flatware.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Butter Spreaders Gold</h4>
+                  <p>Butter Spreaders Gold St. Urbain Flatware</p>
+                  <a
+                    href="/img/cutlery/Butter Spreaders Gold St. Urbain Flatware.jpg"
+                    title="Butter Spreaders Gold"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+               <!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/cutlery/Dinner Knives Gold St. Urbain Flatware.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Dinner Knives Gold</h4>
+                  <p>Dinner Knives Gold St. Urbain Flatware</p>
+                  <a
+                    href="/img/cutlery/Dinner Knives Gold St. Urbain Flatware.jpg"
+                    title="Dinner Knives Gold"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+               <!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/portfolio/Charger Plate Silver Plastic Dinnerware.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Silver Charger Plate</h4>
+                  <p>Charger Plate Silver Plastic Dinnerware</p>
+                  <a
+                    href="/img/portfolio/Charger Plate Silver Plastic Dinnerware.jpg"
+                    title="Silver Charger Plate"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+               <!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/cutlery/Charger Plate Gold Plastic Dinnerware.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Charger Plate</h4>
+                  <p>Charger Plate Gold Plastic Dinnerware</p>
+                  <a
+                    href="/img/cutlery/Charger Plate Gold Plastic Dinnerware.jpg"
+                    title="Charger Plate Gold Plastic Dinnerware"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+               <!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/cutlery/Soup Bowl 8 Rim White Snowdrop.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Soup Bowl</h4>
+                  <p>Soup Bowl 8 Rim White Snowdrop</p>
+                  <a
+                    href="/img/cutlery/Soup Bowl 8 Rim White Snowdrop.jpg"
+                    title="Soup Bowl"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+               <!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/cutlery/SaladDessert Forks Gold.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Salad/Dessert Forks</h4>
+                  <p>Salad/Dessert Forks Gold</p>
+                  <a
+                    href="/img/cutlery/SaladDessert Forks Gold.jpg"
+                    title="Salad/Dessert Forks Gold"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+               <!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                <img
+                  src="/img/cutlery/2db43880918f4a3db3bf27f5116a97f1-760x428-nopad-SnowDessert.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>White Plate</h4>
+                  <p>Salad/Dessert Plates 7" White Snowdrop Dinnerware</p>
+                  <a
+                    href="/img/cutlery/2db43880918f4a3db3bf27f5116a97f1-760x428-nopad-SnowDessert.jpg"
+                    title="White Snowdrop Dinnerware"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+                <img
+                  src="/img/cutlery/image11.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Plate</h4>
+                  <p>White Ceramic Plate</p>
+                  <a
+                    href="/img/cutlery/image11.jpeg"
+                    title="Branding 3"
+                    data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+                <img
+                  src="/img/cutlery/image15.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Plate</h4>
+                  <p>Gold Plates</p>
+                  <a
+                    href="/img/cutlery/image15.jpeg"
+                    title="Branding 3"
+                    data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+                <img
+                  src="/img/portfolio/books-3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Books 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="/img/portfolio/books-3.jpg"
+                    title="Branding 3"
+                    data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+                <img
+                  src="/img/portfolio/books-3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Books 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="/img/portfolio/books-3.jpg"
+                    title="Branding 3"
+                    data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="footer-content">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info">
+              <a href="/" class="logo d-flex align-items-center">
+                <img src="/img/logo.png" alt="" />
+              </a>
+              <p>
+                RATHER HAVE US PLAN YOUR EVENT OR WEDDING?
+                <a
+                  href="https://wa.me/16475625436?text=I'm%20interested%20in%20planning%20for%20an%20event"
+                  >LET"S CHAT</a
+                >
+              </p>
+              <div class="social-links d-flex mt-3">
+                <a
+                  href="mailto:everythingvodas@gmail.com"
+                  class="envelope"
+                  target="_blank"
+                  ><i class="bi bi-envelope"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/share/bpWiujLd9uyhwC6p/?mibextid=LQQJ4d"
+                  class="facebook"
+                  target="_blank"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/vodas_rentals?igsh=N2I4ZDdndXVzcXFt&utm_source=qr"
+                  target="_blank"
+                  class="instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bi bi-dash"></i> <a href="/">Home</a></li>
+                <li>
+                  <i class="bi bi-dash"></i> <a href="/about">About us</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i> <a href="/services">Services</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i> <a href="/rentals">Rentals</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i> <a href="/gallery">Gallery</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Available For Rent</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-dash"></i>
+                  <a href="/rentals">Folding Chairs</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i>
+                  <a href="/rentals">Rectangle Tables</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i>
+                  <a href="/rentals">Table Cloth & Chair Covers</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i>
+                  <a href="/rentals">Buffet Tables & Cutlery</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i>
+                  <a href="/rentals">Chafing Dishes</a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+            >
+              <h4>Contact Us</h4>
+              <p>
+                St. Catherine, <br />
+                Welland, Niagara Falls<br />
+                Niagara Region <br /><br />
+                <strong>Phone:</strong> +1 647 562 5436<br />
+                <strong>Email:</strong> Everythingvodas@gmail.com<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>EverythingVodasRentals</span></strong
+            >. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nova-bootstrap-business-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer --><!-- End Footer -->
+
+    <a
+      href="#"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/aos/aos.js"></script>
+    <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/js/main.js"></script>
+  </body>
+</html>
