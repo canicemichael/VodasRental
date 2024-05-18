@@ -86,7 +86,7 @@ app.post("/sendMail", function (req, res) {
  var name = req.body.name;
  var subject = req.body.subject;
  var fromEmail = req.body.email;
- var toEmail = "canicecodes@gmail.com";
+ var toEmail = "everythingvodas@gmail.com";
  var message = req.body.message;
 
   const mailOptions = {
