@@ -1,8 +1,15 @@
 require("dotenv").config();
 const express = require("express");
+var parser = require("body-parser");
 const path = require("path");
 const PORT = 4014;
 const app = express();
+app.use(express.urlencoded({ extended: false }));
+app.use(parser.json());
+app.use(function (req, res, next) {
+  res.locals.userValue = null;
+  next();
+});
 
 // Set EJS as the templating engine
 app.set("view engine", "ejs");
@@ -60,6 +67,65 @@ app.get("/team", (req, res) => {
 });
 
 // add to wish list function
+
+// sending mails
+const nodemailer = require("nodemailer");
+
+const transporter = nodemailer.createTransport({
+  service: "Gmail",
+  auth: {
+    user: "canicemichael@gmail.com",
+    pass: process.env.appPass,
+  },
+});
+
+
+
+// Send the mail
+app.post("/sendMail", function (req, res) {
+ var name = req.body.name;
+ var subject = req.body.subject;
+ var fromEmail = req.body.email;
+ var toEmail = "canicecodes@gmail.com";
+ var message = req.body.message;
+
+  const mailOptions = {
+    from: fromEmail,
+    to: toEmail,
+    subject: subject,
+    text: message,
+  };
+
+  console.log(mailOptions);
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error("Error sending email: ", error);
+    } else {
+      console.log("Email sent: ", info.response);
+    }
+  });
+});
+
+app.get("/contact2", function (req, res) {
+  res.render("home", {
+    topicHead: "Student Form",
+  });
+  console.log("user accessing Home page");
+});
+
+app.post("/student/add", function (req, res) {
+  var student = {
+    first: req.body.fname,
+    last: req.body.lname,
+  };
+  console.log(student);
+  res.render("home", {
+    userValue: student,
+    topicHead: "Student Form",
+  });
+  //res.json(student);
+});
 
 app.listen(PORT, () => {
   console.log("server started in port 4014");
