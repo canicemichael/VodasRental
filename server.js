@@ -79,15 +79,13 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-
-
 // Send the mail
 app.post("/sendMail", function (req, res) {
- var name = req.body.name;
- var subject = req.body.subject;
- var fromEmail = req.body.email;
- var toEmail = "everythingvodas@gmail.com";
- var message = req.body.message;
+  var name = req.body.name;
+  var subject = req.body.subject;
+  var fromEmail = req.body.email;
+  var toEmail = "everythingvodas@gmail.com";
+  var message = req.body.message;
 
   const mailOptions = {
     from: fromEmail,
