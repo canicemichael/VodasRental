@@ -225,8 +225,37 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.getElementById("item_count").addEventListener("click", myFunction);
-
 function myFunction() {
   // Your code here
   alert("what ever");
 }
+
+document.querySelector(".btn-add").addEventListener("click", (event) => {
+  event.preventDefault();
+  let currentNumber = parseInt(numberDisplay.innerText, 10);
+  currentNumber += 1;
+  numberDisplay.innerText = currentNumber;
+});
+
+document.querySelector(".btn-minus").addEventListener("click", (event) => {
+  event.preventDefault();
+  let currentNumber = parseInt(numberDisplay.innerText, 10);
+  currentNumber -= 1;
+  numberDisplay.innerText = currentNumber;
+});
+
+const numberDisplay = document.getElementById("number");
+const incrementButton = document.getElementById("incrementButton");
+const decrementButton = document.getElementById("decrementButton");
+
+incrementButton.addEventListener("click", () => {
+  let currentNumber = parseInt(numberDisplay.innerText, 10);
+  currentNumber += 1;
+  numberDisplay.innerText = currentNumber;
+});
+
+decrementButton.addEventListener("click", () => {
+  let currentNumber = parseInt(numberDisplay.innerText, 10);
+  currentNumber -= 1;
+  numberDisplay.innerText = currentNumber;
+});
