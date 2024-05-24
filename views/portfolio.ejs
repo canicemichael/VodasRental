@@ -103,16 +103,7 @@
       </div>
       <!-- End Breadcrumbs -->
 
-      <!-- modal -->
-      <!-- Button trigger modal -->
-      <!-- <button
-        type="button"
-        class="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-      >
-        modal
-      </button> -->
+      <!-- modal -->      
 
       <!-- Modal -->
       <div
@@ -142,41 +133,35 @@
                   width="200px"
                 />
               </div>
-              <form action="">
+              <form id="form1" method="POST" action="/submit1">
                 <div class="modal-sub-head">
-                  <h3>Folding Chair</h3>
-                  <h3>Black Garden Folding Chair</h3>
-                  <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                    <h3 id="item1Form1">Folding Chair</h3>
+                    <h3 id="item2Form1">Garden Folding Chair - Black</h3>
+                    <p id="priceForm1"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                 </div>
-
                 <div class="modal-detail-inner">
-                  <span>Quantity</span>
-                  <span>
-                    <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                    <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                  </span>
+                    <span>Quantity</span>
+                    <span>
+                        <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                        <div id="numberForm1">0</div>
+                        <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                    </span>
                 </div>
-
                 <div class="modal-detail-inner">
-                  <span>Rate</span>
-                  <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                    <span>Rate</span>
+                    <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                 </div>
-
                 <div class="modal-detail-inner">
-                  <span>Select Dates</span>
-                  <span><input type="date" name="" id="" /></span>
+                    <span>Select Dates</span>
+                    <span><input type="date" value="2024-05-05" name="dateForm1" id="dateForm1" /></span>
                 </div>
-
                 <div class="modal-detail-inner">
-                  <span>Start Time</span>
-                  <span>12:00 PM</span>
-                  <span><input type="time" name="" id=""></span>
+                    <span>Start Time</span>
+                    <span><input type="time" name="timeForm1" id="timeForm1" value="12:00"></span>
                 </div>
-
-                <div>
-                  <button class="btn btn-dark">Add to wishlist</button>
-                </div>
-              </form>
+                <input type="hidden" id="formData1" name="formData1">
+                <button type="submit" class="btn btn-dark">Add to wishlist</button>
+            </form>
               <div class="modal-detail-inner">
                 <span>Description</span>
                 <span>
@@ -217,16 +202,7 @@
             </div>
             <!-- modal body end -->
             <div class="modal-footer">
-              <!-- <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button> -->
-              <!-- <button type="button" class="btn btn-primary">
-                Save changes
-              </button> -->
+              
             </div>
           </div>
         </div>
@@ -348,43 +324,35 @@
                           width="200px"
                         />
                       </div>
-                      <form action="">
+                      <form id="form2" method="POST" action="/submit2">
                         <div class="modal-sub-head">
-                          <h3>Bar - Garbage</h3>
-                          <h3>Cans - Large With Bag</h3>
-                          <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                            <h3 id="item1Form2">Folding Table</h3>
+                            <h3 id="item2Form2">Economic Folding Table</h3>
+                            <p id="priceForm2"><i class="bi bi-currency-dollar"></i>3.00/day</p>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Quantity</span>
-                          <span>
-                            <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                            <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                          </span>
+                            <span>Quantity</span>
+                            <span>
+                                <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                                <div id="numberForm2">0</div>
+                                <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                            </span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Rate</span>
-                          <span
-                            >Daily -
-                            <i class="bi bi-currency-dollar"></i>4.00</span
-                          >
+                            <span>Rate</span>
+                            <span>Daily - <i class="bi bi-currency-dollar"></i>3.00</span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Select Dates</span>
-                          <span><input type="date" name="" id="" /></span>
+                            <span>Select Dates</span>
+                            <span><input type="date" value="2024-06-01" name="dateForm2" id="dateForm2" /></span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Start Time</span>
-                          <span>12:00 PM</span>
+                            <span>Start Time</span>
+                            <span><input type="time" name="timeForm2" id="timeForm2" value="14:00"></span>
                         </div>
-
-                        <div>
-                          <button class="btn btn-dark">Add to wishlist</button>
-                        </div>
-                      </form>
+                        <input type="hidden" id="formData2" name="formData2">
+                        <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                    </form>
                       <div class="modal-detail-inner">
                         <span>Description</span>
                         <span>
@@ -427,16 +395,7 @@
                     </div>
                     <!-- modal body end -->
                     <div class="modal-footer">
-                      <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button> -->
-                      <!-- <button type="button" class="btn btn-primary">
-              Save changes
-            </button> -->
+                     
                     </div>
                   </div>
                 </div>
@@ -500,43 +459,35 @@
                           width="200px"
                         />
                       </div>
-                      <form action="">
+                      <form id="form3" method="POST" action="/submit3">
                         <div class="modal-sub-head">
-                          <h3>Table - Cloth</h3>
-                          <h3>Rectangle Table CLoth</h3>
-                          <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                            <h3 id="item1Form3">Table Cloth</h3>
+                            <h3 id="item2Form3">Rectangle Table Cloth</h3>
+                            <p id="priceForm3"><i class="bi bi-currency-dollar"></i>5.00/day</p>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Quantity</span>
-                          <span>
-                            <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                            <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                          </span>
+                            <span>Quantity</span>
+                            <span>
+                                <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                                <div id="numberForm3">0</div>
+                                <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                            </span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Rate</span>
-                          <span
-                            >Daily -
-                            <i class="bi bi-currency-dollar"></i>4.00</span
-                          >
+                            <span>Rate</span>
+                            <span>Daily - <i class="bi bi-currency-dollar"></i>5.00</span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Select Dates</span>
-                          <span><input type="date" name="" id="" /></span>
+                            <span>Select Dates</span>
+                            <span><input type="date" value="2024-07-15" name="dateForm3" id="dateForm3" /></span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Start Time</span>
-                          <span>12:00 PM</span>
+                            <span>Start Time</span>
+                            <span><input type="time" name="timeForm3" id="timeForm3" value="09:00"></span>
                         </div>
-
-                        <div>
-                          <button class="btn btn-dark">Add to wishlist</button>
-                        </div>
-                      </form>
+                        <input type="hidden" id="formData3" name="formData3">
+                        <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                    </form>
                       <div class="modal-detail-inner">
                         <span>Description</span>
                         <span>
@@ -579,16 +530,7 @@
                     </div>
                     <!-- modal body end -->
                     <div class="modal-footer">
-                      <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button> -->
-                      <!-- <button type="button" class="btn btn-primary">
-              Save changes
-            </button> -->
+                      
                     </div>
                   </div>
                 </div>
@@ -648,43 +590,35 @@
                           width="200px"
                         />
                       </div>
-                      <form action="">
+                      <form id="form4" method="POST" action="/submit4">
                         <div class="modal-sub-head">
-                          <h3>Cutlery</h3>
-                          <h3>Gold Cutlery</h3>
-                          <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                            <h3 id="item1Form4">Cutlery</h3>
+                            <h3 id="item2Form4">Gold Cutlery</h3>
+                            <p id="priceForm4"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Quantity</span>
-                          <span>
-                            <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                            <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                          </span>
+                            <span>Quantity</span>
+                            <span>
+                                <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                                <div id="numberForm4">0</div>
+                                <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                            </span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Rate</span>
-                          <span
-                            >Daily -
-                            <i class="bi bi-currency-dollar"></i>4.00</span
-                          >
+                            <span>Rate</span>
+                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Select Dates</span>
-                          <span><input type="date" name="" id="" /></span>
+                            <span>Select Dates</span>
+                            <span><input type="date" value="2024-05-05" name="dateForm4" id="dateForm1" /></span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Start Time</span>
-                          <span>12:00 PM</span>
+                            <span>Start Time</span>
+                            <span><input type="time" name="timeForm1" id="timeForm4" value="12:00"></span>
                         </div>
-
-                        <div>
-                          <button class="btn btn-dark">Add to wishlist</button>
-                        </div>
-                      </form>
+                        <input type="hidden" id="formData4" name="formData4">
+                        <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                    </form>
                       <div class="modal-detail-inner">
                         <span>Description</span>
                         <span>
@@ -727,16 +661,7 @@
                     </div>
                     <!-- modal body end -->
                     <div class="modal-footer">
-                      <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button> -->
-                      <!-- <button type="button" class="btn btn-primary">
-              Save changes
-            </button> -->
+                      
                     </div>
                   </div>
                 </div>
@@ -800,43 +725,35 @@
                           width="200px"
                         />
                       </div>
-                      <form action="">
+                      <form id="form5" method="POST" action="/submit5">
                         <div class="modal-sub-head">
-                          <h3>Folding Chair</h3>
-                          <h3>White Folding Chair</h3>
-                          <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                            <h3 id="item1Form5">Folding Chair</h3>
+                            <h3 id="item2Form5">Garden Folding Chair - White</h3>
+                            <p id="priceForm5"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Quantity</span>
-                          <span>
-                            <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                            <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                          </span>
+                            <span>Quantity</span>
+                            <span>
+                                <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                                <div id="numberForm5">0</div>
+                                <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                            </span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Rate</span>
-                          <span
-                            >Daily -
-                            <i class="bi bi-currency-dollar"></i>4.00</span
-                          >
+                            <span>Rate</span>
+                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Select Dates</span>
-                          <span><input type="date" name="" id="" /></span>
+                            <span>Select Dates</span>
+                            <span><input type="date" value="2024-05-05" name="dateForm5" id="dateForm5" /></span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Start Time</span>
-                          <span>12:00 PM</span>
+                            <span>Start Time</span>
+                            <span><input type="time" name="timeForm5" id="timeForm5" value="12:00"></span>
                         </div>
-
-                        <div>
-                          <button class="btn btn-dark">Add to wishlist</button>
-                        </div>
-                      </form>
+                        <input type="hidden" id="formData5" name="formData5">
+                        <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                    </form>
                       <div class="modal-detail-inner">
                         <span>Description</span>
                         <span>
@@ -878,17 +795,7 @@
                       </div>
                     </div>
                     <!-- modal body end -->
-                    <div class="modal-footer">
-                      <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button> -->
-                      <!-- <button type="button" class="btn btn-primary">
-              Save changes
-            </button> -->
+                    <div class="modal-footer">                     
                     </div>
                   </div>
                 </div>
@@ -952,43 +859,35 @@
                           width="200px"
                         />
                       </div>
-                      <form action="">
+                      <form id="form6" method="POST" action="/submit6">
                         <div class="modal-sub-head">
-                          <h3>Folding Table</h3>
-                          <h3>Economy Folding - 60 Diameter Round Table</h3>
-                          <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                            <h3 id="item1Form6">Folding Table</h3>
+                            <h3 id="item2Form6">Economy Folding - 60 Diameter Round Table</h3>
+                            <p id="priceForm6"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Quantity</span>
-                          <span>
-                            <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                            <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                          </span>
+                            <span>Quantity</span>
+                            <span>
+                                <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                                <div id="numberForm6">0</div>
+                                <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                            </span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Rate</span>
-                          <span
-                            >Daily -
-                            <i class="bi bi-currency-dollar"></i>4.00</span
-                          >
+                            <span>Rate</span>
+                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Select Dates</span>
-                          <span><input type="date" name="" id="" /></span>
+                            <span>Select Dates</span>
+                            <span><input type="date" value="2024-05-05" name="dateForm6" id="dateForm6" /></span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Start Time</span>
-                          <span>12:00 PM</span>
+                            <span>Start Time</span>
+                            <span><input type="time" name="timeForm6" id="timeForm6" value="12:00"></span>
                         </div>
-
-                        <div>
-                          <button class="btn btn-dark">Add to wishlist</button>
-                        </div>
-                      </form>
+                        <input type="hidden" id="formData6" name="formData6">
+                        <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                    </form>
                       <div class="modal-detail-inner">
                         <span>Description</span>
                         <span>
@@ -1030,17 +929,7 @@
                       </div>
                     </div>
                     <!-- modal body end -->
-                    <div class="modal-footer">
-                      <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button> -->
-                      <!-- <button type="button" class="btn btn-primary">
-              Save changes
-            </button> -->
+                    <div class="modal-footer">                      
                     </div>
                   </div>
                 </div>
@@ -1104,43 +993,35 @@
                           width="200px"
                         />
                       </div>
-                      <form action="">
+                      <form id="form7" method="POST" action="/submit7">
                         <div class="modal-sub-head">
-                          <h3>Cover/Cloth</h3>
-                          <h3>Folding Chair Cover</h3>
-                          <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                            <h3 id="item1Form7">Chair Cover</h3>
+                            <h3 id="item2Form7">Folding Chair Cover</h3>
+                            <p id="priceForm7"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Quantity</span>
-                          <span>
-                            <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                            <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                          </span>
+                            <span>Quantity</span>
+                            <span>
+                                <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                                <div id="numberForm7">0</div>
+                                <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                            </span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Rate</span>
-                          <span
-                            >Daily -
-                            <i class="bi bi-currency-dollar"></i>4.00</span
-                          >
+                            <span>Rate</span>
+                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Select Dates</span>
-                          <span><input type="date" name="" id="" /></span>
+                            <span>Select Dates</span>
+                            <span><input type="date" value="2024-05-05" name="dateForm7" id="dateForm7" /></span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Start Time</span>
-                          <span>12:00 PM</span>
+                            <span>Start Time</span>
+                            <span><input type="time" name="timeForm7" id="timeForm7" value="12:00"></span>
                         </div>
-
-                        <div>
-                          <button class="btn btn-dark">Add to wishlist</button>
-                        </div>
-                      </form>
+                        <input type="hidden" id="formData7" name="formData7">
+                        <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                    </form>
                       <div class="modal-detail-inner">
                         <span>Description</span>
                         <span>
@@ -1182,17 +1063,7 @@
                       </div>
                     </div>
                     <!-- modal body end -->
-                    <div class="modal-footer">
-                      <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button> -->
-                      <!-- <button type="button" class="btn btn-primary">
-              Save changes
-            </button> -->
+                    <div class="modal-footer">                     
                     </div>
                   </div>
                 </div>
@@ -1252,43 +1123,35 @@
                           width="200px"
                         />
                       </div>
-                      <form action="">
+                      <form id="form8" method="POST" action="/submit8">
                         <div class="modal-sub-head">
-                          <h3>Cutlery</h3>
-                          <h3>Silver Cutlery</h3>
-                          <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                            <h3 id="item1Form8">Cutlery</h3>
+                            <h3 id="item2Form8">Silver Cutlery</h3>
+                            <p id="priceForm8"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Quantity</span>
-                          <span>
-                            <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                            <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                          </span>
+                            <span>Quantity</span>
+                            <span>
+                                <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                                <div id="numberForm8">0</div>
+                                <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                            </span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Rate</span>
-                          <span
-                            >Daily -
-                            <i class="bi bi-currency-dollar"></i>4.00</span
-                          >
+                            <span>Rate</span>
+                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Select Dates</span>
-                          <span><input type="date" name="" id="" /></span>
+                            <span>Select Dates</span>
+                            <span><input type="date" value="2024-05-05" name="dateForm8" id="dateForm8" /></span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Start Time</span>
-                          <span>12:00 PM</span>
+                            <span>Start Time</span>
+                            <span><input type="time" name="timeForm8" id="timeForm8" value="12:00"></span>
                         </div>
-
-                        <div>
-                          <button class="btn btn-dark">Add to wishlist</button>
-                        </div>
-                      </form>
+                        <input type="hidden" id="formData8" name="formData8">
+                        <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                    </form>
                       <div class="modal-detail-inner">
                         <span>Description</span>
                         <span>
@@ -1331,16 +1194,7 @@
                     </div>
                     <!-- modal body end -->
                     <div class="modal-footer">
-                      <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button> -->
-                      <!-- <button type="button" class="btn btn-primary">
-              Save changes
-            </button> -->
+                      
                     </div>
                   </div>
                 </div>
@@ -1404,43 +1258,35 @@
                           width="200px"
                         />
                       </div>
-                      <form action="">
+                      <form id="form9" method="POST" action="/submit9">
                         <div class="modal-sub-head">
-                          <h3>Chair</h3>
-                          <h3>Child Folding Chair</h3>
-                          <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                            <h3 id="item1Form9">Folding Chair</h3>
+                            <h3 id="item2Form9">Child Folding Chair</h3>
+                            <p id="priceForm9"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Quantity</span>
-                          <span>
-                            <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                            <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                          </span>
+                            <span>Quantity</span>
+                            <span>
+                                <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                                <div id="numberForm9">0</div>
+                                <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                            </span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Rate</span>
-                          <span
-                            >Daily -
-                            <i class="bi bi-currency-dollar"></i>4.00</span
-                          >
+                            <span>Rate</span>
+                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Select Dates</span>
-                          <span><input type="date" name="" id="" /></span>
+                            <span>Select Dates</span>
+                            <span><input type="date" value="2024-05-05" name="dateForm9" id="dateForm9" /></span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Start Time</span>
-                          <span>12:00 PM</span>
+                            <span>Start Time</span>
+                            <span><input type="time" name="timeForm9" id="timeForm9" value="12:00"></span>
                         </div>
-
-                        <div>
-                          <button class="btn btn-dark">Add to wishlist</button>
-                        </div>
-                      </form>
+                        <input type="hidden" id="formData9" name="formData9">
+                        <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                    </form>
                       <div class="modal-detail-inner">
                         <span>Description</span>
                         <span>
@@ -1483,16 +1329,7 @@
                     </div>
                     <!-- modal body end -->
                     <div class="modal-footer">
-                      <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button> -->
-                      <!-- <button type="button" class="btn btn-primary">
-              Save changes
-            </button> -->
+                      
                     </div>
                   </div>
                 </div>
@@ -1556,43 +1393,35 @@
                           width="200px"
                         />
                       </div>
-                      <form action="">
+                      <form id="form10" method="POST" action="/submit10">
                         <div class="modal-sub-head">
-                          <h3>Folding Chair</h3>
-                          <h3>Folding Chair</h3>
-                          <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                            <h3 id="item1Form10">Chairs</h3>
+                            <h3 id="item2Form10">Folding Chair Group</h3>
+                            <p id="priceForm10"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Quantity</span>
-                          <span>
-                            <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                            <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                          </span>
+                            <span>Quantity</span>
+                            <span>
+                                <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                                <div id="numberForm10">0</div>
+                                <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                            </span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Rate</span>
-                          <span
-                            >Daily -
-                            <i class="bi bi-currency-dollar"></i>4.00</span
-                          >
+                            <span>Rate</span>
+                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Select Dates</span>
-                          <span><input type="date" name="" id="" /></span>
+                            <span>Select Dates</span>
+                            <span><input type="date" value="2024-05-05" name="dateForm10" id="dateForm10" /></span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Start Time</span>
-                          <span>12:00 PM</span>
+                            <span>Start Time</span>
+                            <span><input type="time" name="timeForm10" id="timeForm10" value="12:00"></span>
                         </div>
-
-                        <div>
-                          <button class="btn btn-dark">Add to wishlist</button>
-                        </div>
-                      </form>
+                        <input type="hidden" id="formData10" name="formData10">
+                        <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                    </form>
                       <div class="modal-detail-inner">
                         <span>Description</span>
                         <span>
@@ -1634,17 +1463,7 @@
                       </div>
                     </div>
                     <!-- modal body end -->
-                    <div class="modal-footer">
-                      <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button> -->
-                      <!-- <button type="button" class="btn btn-primary">
-              Save changes
-            </button> -->
+                    <div class="modal-footer">                      
                     </div>
                   </div>
                 </div>
@@ -1690,7 +1509,7 @@
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="exampleModalLabel">
-                        Product > Folding Chair
+                        Product > Table
                       </h5>
                       <button
                         type="button"
@@ -1708,43 +1527,35 @@
                           width="200px"
                         />
                       </div>
-                      <form action="">
+                      <form id="form11" method="POST" action="/submit11">
                         <div class="modal-sub-head">
-                          <h3>Folding Chair</h3>
-                          <h3>Folding Chair</h3>
-                          <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                            <h3 id="item1Form11">Table</h3>
+                            <h3 id="item2Form11">60 X 30 Rectangle Table</h3>
+                            <p id="priceForm11"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Quantity</span>
-                          <span>
-                            <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                            <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                          </span>
+                            <span>Quantity</span>
+                            <span>
+                                <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                                <div id="numberForm11">0</div>
+                                <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                            </span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Rate</span>
-                          <span
-                            >Daily -
-                            <i class="bi bi-currency-dollar"></i>4.00</span
-                          >
+                            <span>Rate</span>
+                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Select Dates</span>
-                          <span><input type="date" name="" id="" /></span>
+                            <span>Select Dates</span>
+                            <span><input type="date" value="2024-05-05" name="dateForm11" id="dateForm11" /></span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Start Time</span>
-                          <span>12:00 PM</span>
+                            <span>Start Time</span>
+                            <span><input type="time" name="timeForm11" id="timeForm11" value="12:00"></span>
                         </div>
-
-                        <div>
-                          <button class="btn btn-dark">Add to wishlist</button>
-                        </div>
-                      </form>
+                        <input type="hidden" id="formData11" name="formData11">
+                        <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                    </form>
                       <div class="modal-detail-inner">
                         <span>Description</span>
                         <span>
@@ -1786,17 +1597,7 @@
                       </div>
                     </div>
                     <!-- modal body end -->
-                    <div class="modal-footer">
-                      <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button> -->
-                      <!-- <button type="button" class="btn btn-primary">
-              Save changes
-            </button> -->
+                    <div class="modal-footer">                      
                     </div>
                   </div>
                 </div>
@@ -1860,45 +1661,35 @@
                           width="200px"
                         />
                       </div>
-                      <form action="">
+                      <form id="form12" method="POST" action="/submit12">
                         <div class="modal-sub-head">
-                          <h3>Salad/Dessert Plates</h3>
-                          <h3>
-                            Salad/Dessert Plates 7 White Snowdrop Dinnerware
-                          </h3>
-                          <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                            <h3 id="item1Form12">Salad/Dessert Plates</h3>
+                            <h3 id="item2Form12">Salad/Dessert Plates 7 White Snowdrop Dinnerware</h3>
+                            <p id="priceForm12"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Quantity</span>
-                          <span>
-                            <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                            <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                          </span>
+                            <span>Quantity</span>
+                            <span>
+                                <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                                <div id="numberForm12">0</div>
+                                <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                            </span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Rate</span>
-                          <span
-                            >Daily -
-                            <i class="bi bi-currency-dollar"></i>4.00</span
-                          >
+                            <span>Rate</span>
+                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Select Dates</span>
-                          <span><input type="date" name="" id="" /></span>
+                            <span>Select Dates</span>
+                            <span><input type="date" value="2024-05-05" name="dateForm12" id="dateForm12" /></span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Start Time</span>
-                          <span>12:00 PM</span>
+                            <span>Start Time</span>
+                            <span><input type="time" name="timeForm12" id="timeForm12" value="12:00"></span>
                         </div>
-
-                        <div>
-                          <button class="btn btn-dark">Add to wishlist</button>
-                        </div>
-                      </form>
+                        <input type="hidden" id="formData12" name="formData12">
+                        <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                    </form>
                       <div class="modal-detail-inner">
                         <span>Description</span>
                         <span>
@@ -1940,17 +1731,7 @@
                       </div>
                     </div>
                     <!-- modal body end -->
-                    <div class="modal-footer">
-                      <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button> -->
-                      <!-- <button type="button" class="btn btn-primary">
-              Save changes
-            </button> -->
+                    <div class="modal-footer">                      
                     </div>
                   </div>
                 </div>
@@ -1964,8 +1745,8 @@
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>10 Dinner Plates White wGold Rim Dynasty</h4>
-                  <p>10 Dinner Plates White wGold Rim Dynasty Dinnerware</p>
+                  <h4>Dinner Plates White wGold Rim Dynasty</h4>
+                  <p>Dinner Plates White wGold Rim Dynasty Dinnerware</p>
                   <a
                     href="/img/cutlery/10 Dinner Plates White wGold Rim Dynasty Dinnerware.jpg"
                     title="10 Dinner Plates White wGold Rim Dynasty"
@@ -2014,45 +1795,35 @@
                           width="200px"
                         />
                       </div>
-                      <form action="">
+                      <form id="form13" method="POST" action="/submit13">
                         <div class="modal-sub-head">
-                          <h3>Dinner Plates White</h3>
-                          <h3>
-                            10 Dinner Plates White wGold Rim Dynasty Dinnerware
-                          </h3>
-                          <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                            <h3 id="item1Form13">Dinner Plates</h3>
+                            <h3 id="item2Form13">Dinner Plates White wGold Rim Dynasty Dinnerware</h3>
+                            <p id="priceForm13"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Quantity</span>
-                          <span>
-                            <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                            <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                          </span>
+                            <span>Quantity</span>
+                            <span>
+                                <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                                <div id="numberForm13">0</div>
+                                <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                            </span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Rate</span>
-                          <span
-                            >Daily -
-                            <i class="bi bi-currency-dollar"></i>4.00</span
-                          >
+                            <span>Rate</span>
+                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Select Dates</span>
-                          <span><input type="date" name="" id="" /></span>
+                            <span>Select Dates</span>
+                            <span><input type="date" value="2024-05-05" name="dateForm13" id="dateForm13" /></span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Start Time</span>
-                          <span>12:00 PM</span>
+                            <span>Start Time</span>
+                            <span><input type="time" name="timeForm13" id="timeForm13" value="12:00"></span>
                         </div>
-
-                        <div>
-                          <button class="btn btn-dark">Add to wishlist</button>
-                        </div>
-                      </form>
+                        <input type="hidden" id="formData13" name="formData13">
+                        <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                    </form>
                       <div class="modal-detail-inner">
                         <span>Description</span>
                         <span>
@@ -2095,16 +1866,7 @@
                     </div>
                     <!-- modal body end -->
                     <div class="modal-footer">
-                      <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button> -->
-                      <!-- <button type="button" class="btn btn-primary">
-              Save changes
-            </button> -->
+                      
                     </div>
                   </div>
                 </div>
@@ -2120,8 +1882,8 @@
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>10 Dinner Plates White w/Gold</h4>
-                  <p>10 Dinner Plates White wGold Rim Dynasty</p>
+                  <h4>Dinner Plates White w/Gold</h4>
+                  <p>Dinner Plates White wGold Rim Dynasty</p>
                   <a
                     href="/img/cutlery/10 Dinner Plates White wGold Rim Dynasty Dinnerware2.jpg"
                     title="10 Dinner Plates White w/Gold"
@@ -2170,43 +1932,35 @@
                           width="200px"
                         />
                       </div>
-                      <form action="">
+                      <form id="form14" method="POST" action="/submit14">
                         <div class="modal-sub-head">
-                          <h3>Dinner Plates White</h3>
-                          <h3>10 Dinner Plates White wGold Rim Dynasty</h3>
-                          <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                            <h3 id="item1Form14">Dinner Plates White</h3>
+                            <h3 id="item2Form14">Dinner Plates White wGold Rim Dynasty</h3>
+                            <p id="priceForm14"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Quantity</span>
-                          <span>
-                            <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                            <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                          </span>
+                            <span>Quantity</span>
+                            <span>
+                                <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                                <div id="numberForm14">0</div>
+                                <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                            </span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Rate</span>
-                          <span
-                            >Daily -
-                            <i class="bi bi-currency-dollar"></i>4.00</span
-                          >
+                            <span>Rate</span>
+                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Select Dates</span>
-                          <span><input type="date" name="" id="" /></span>
+                            <span>Select Dates</span>
+                            <span><input type="date" value="2024-05-05" name="dateForm14" id="dateForm14" /></span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Start Time</span>
-                          <span>12:00 PM</span>
+                            <span>Start Time</span>
+                            <span><input type="time" name="timeForm14" id="timeForm14" value="12:00"></span>
                         </div>
-
-                        <div>
-                          <button class="btn btn-dark">Add to wishlist</button>
-                        </div>
-                      </form>
+                        <input type="hidden" id="formData14" name="formData14">
+                        <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                    </form>
                       <div class="modal-detail-inner">
                         <span>Description</span>
                         <span>
@@ -2248,17 +2002,7 @@
                       </div>
                     </div>
                     <!-- modal body end -->
-                    <div class="modal-footer">
-                      <!-- <button
-             type="button"
-             class="btn btn-secondary"
-             data-bs-dismiss="modal"
-           >
-             Close
-           </button> -->
-                      <!-- <button type="button" class="btn btn-primary">
-             Save changes
-           </button> -->
+                    <div class="modal-footer">                      
                     </div>
                   </div>
                 </div>
@@ -2273,7 +2017,7 @@
                 />
                 <div class="portfolio-info">
                   <h4>White Dinner Plates</h4>
-                  <p>10 White Dinner Plates Snowdrop Dinnerware</p>
+                  <p>White Dinner Plates Snowdrop Dinnerware</p>
                   <a
                     href="/img/cutlery/10 White Dinner Plates Snowdrop Dinnerware.jpg"
                     title="White Dinner Plates"
@@ -2322,43 +2066,35 @@
                           width="200px"
                         />
                       </div>
-                      <form action="">
+                      <form id="form15" method="POST" action="/submit15">
                         <div class="modal-sub-head">
-                          <h3>Dinner Plates White</h3>
-                          <h3>10 White Dinner Plates Snowdrop Dinnerware</h3>
-                          <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                            <h3 id="item1Form15">White Dinner Plates</h3>
+                            <h3 id="item2Form15">White Dinner Plates Snowdrop Dinnerware</h3>
+                            <p id="priceForm15"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Quantity</span>
-                          <span>
-                            <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                            <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                          </span>
+                            <span>Quantity</span>
+                            <span>
+                                <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                                <div id="numberForm15">0</div>
+                                <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                            </span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Rate</span>
-                          <span
-                            >Daily -
-                            <i class="bi bi-currency-dollar"></i>4.00</span
-                          >
+                            <span>Rate</span>
+                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Select Dates</span>
-                          <span><input type="date" name="" id="" /></span>
+                            <span>Select Dates</span>
+                            <span><input type="date" value="2024-05-05" name="dateForm15" id="dateForm15" /></span>
                         </div>
-
                         <div class="modal-detail-inner">
-                          <span>Start Time</span>
-                          <span>12:00 PM</span>
+                            <span>Start Time</span>
+                            <span><input type="time" name="timeForm15" id="timeForm15" value="12:00"></span>
                         </div>
-
-                        <div>
-                          <button class="btn btn-dark">Add to wishlist</button>
-                        </div>
-                      </form>
+                        <input type="hidden" id="formData15" name="formData15">
+                        <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                    </form>
                       <div class="modal-detail-inner">
                         <span>Description</span>
                         <span>
@@ -2400,17 +2136,7 @@
                       </div>
                     </div>
                     <!-- modal body end -->
-                    <div class="modal-footer">
-                      <!-- <button
-             type="button"
-             class="btn btn-secondary"
-             data-bs-dismiss="modal"
-           >
-             Close
-           </button> -->
-                      <!-- <button type="button" class="btn btn-primary">
-             Save changes
-           </button> -->
+                    <div class="modal-footer">                      
                     </div>
                   </div>
                 </div>
@@ -2456,7 +2182,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">
-                      Product > Plates
+                      Product > Forks
                     </h5>
                     <button
                       type="button"
@@ -2474,43 +2200,35 @@
                         width="200px"
                       />
                     </div>
-                    <form action="">
+                    <form id="form16" method="POST" action="/submit16">
                       <div class="modal-sub-head">
-                        <h3>Serving Forks Gold</h3>
-                        <h3>Serving Forks Gold St. Urbain Flatware</h3>
-                        <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                          <h3 id="item1Form16">Serving Forks</h3>
+                          <h3 id="item2Form16">Serving Forks Gold St. Urbain Flatware</h3>
+                          <p id="priceForm16"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Quantity</span>
-                        <span>
-                          <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                          <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                        </span>
+                          <span>Quantity</span>
+                          <span>
+                              <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                              <div id="numberForm16">0</div>
+                              <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                          </span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Rate</span>
-                        <span
-                          >Daily -
-                          <i class="bi bi-currency-dollar"></i>4.00</span
-                        >
+                          <span>Rate</span>
+                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Select Dates</span>
-                        <span><input type="date" name="" id="" /></span>
+                          <span>Select Dates</span>
+                          <span><input type="date" value="2024-05-05" name="dateForm16" id="dateForm16" /></span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Start Time</span>
-                        <span>12:00 PM</span>
+                          <span>Start Time</span>
+                          <span><input type="time" name="timeForm16" id="timeForm16" value="12:00"></span>
                       </div>
-
-                      <div>
-                        <button class="btn btn-dark">Add to wishlist</button>
-                      </div>
-                    </form>
+                      <input type="hidden" id="formData16" name="formData16">
+                      <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                  </form>
                     <div class="modal-detail-inner">
                       <span>Description</span>
                       <span>
@@ -2616,43 +2334,35 @@
                         width="200px"
                       />
                     </div>
-                    <form action="">
+                    <form id="form17" method="POST" action="/submit17">
                       <div class="modal-sub-head">
-                        <h3>SoupDessert Spoons</h3>
-                        <h3>SoupDessert Spoons Gold</h3>
-                        <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                          <h3 id="item1Form17">Soup Dessert Spoon</h3>
+                          <h3 id="item2Form17">SoupDessert Spoons Gold</h3>
+                          <p id="priceForm17"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Quantity</span>
-                        <span>
-                          <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                          <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                        </span>
+                          <span>Quantity</span>
+                          <span>
+                              <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                              <div id="numberForm17">0</div>
+                              <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                          </span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Rate</span>
-                        <span
-                          >Daily -
-                          <i class="bi bi-currency-dollar"></i>4.00</span
-                        >
+                          <span>Rate</span>
+                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Select Dates</span>
-                        <span><input type="date" name="" id="" /></span>
+                          <span>Select Dates</span>
+                          <span><input type="date" value="2024-05-05" name="dateForm17" id="dateForm17" /></span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Start Time</span>
-                        <span>12:00 PM</span>
+                          <span>Start Time</span>
+                          <span><input type="time" name="timeForm17" id="timeForm17" value="12:00"></span>
                       </div>
-
-                      <div>
-                        <button class="btn btn-dark">Add to wishlist</button>
-                      </div>
-                    </form>
+                      <input type="hidden" id="formData17" name="formData17">
+                      <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                  </form>
                     <div class="modal-detail-inner">
                       <span>Description</span>
                       <span>
@@ -2740,7 +2450,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">
-                      Product > Spoon
+                      Product > Forks
                     </h5>
                     <button
                       type="button"
@@ -2758,43 +2468,35 @@
                         width="200px"
                       />
                     </div>
-                    <form action="">
+                    <form id="form18" method="POST" action="/submit18">
                       <div class="modal-sub-head">
-                        <h3>Dinner Forks</h3>
-                        <h3>Dinner Forks Gold St. Urbain Flatware</h3>
-                        <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                          <h3 id="item1Form18">Dinner Fork</h3>
+                          <h3 id="item2Form18">Dinner Forks Gold St. Urbain Flatware</h3>
+                          <p id="priceForm18"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Quantity</span>
-                        <span>
-                          <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                          <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                        </span>
+                          <span>Quantity</span>
+                          <span>
+                              <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                              <div id="numberForm18">0</div>
+                              <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                          </span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Rate</span>
-                        <span
-                          >Daily -
-                          <i class="bi bi-currency-dollar"></i>4.00</span
-                        >
+                          <span>Rate</span>
+                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Select Dates</span>
-                        <span><input type="date" name="" id="" /></span>
+                          <span>Select Dates</span>
+                          <span><input type="date" value="2024-05-05" name="dateForm18" id="dateForm18" /></span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Start Time</span>
-                        <span>12:00 PM</span>
+                          <span>Start Time</span>
+                          <span><input type="time" name="timeForm18" id="timeForm18" value="12:00"></span>
                       </div>
-
-                      <div>
-                        <button class="btn btn-dark">Add to wishlist</button>
-                      </div>
-                    </form>
+                      <input type="hidden" id="formData18" name="formData18">
+                      <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                  </form>
                     <div class="modal-detail-inner">
                       <span>Description</span>
                       <span>
@@ -2884,7 +2586,7 @@
                  <div class="modal-content">
                    <div class="modal-header">
                      <h5 class="modal-title" id="exampleModalLabel">
-                       Product > Spoon
+                       Product > TeaSpoon
                      </h5>
                      <button
                        type="button"
@@ -2902,43 +2604,35 @@
                          width="200px"
                        />
                      </div>
-                     <form action="">
-                       <div class="modal-sub-head">
-                         <h3>Teaspoons Gold</h3>
-                         <h3>Teaspoons Gold St. Urbain Flatware</h3>
-                         <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
-                       </div>
- 
-                       <div class="modal-detail-inner">
-                         <span>Quantity</span>
-                         <span>
-                           <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                           <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                         </span>
-                       </div>
- 
-                       <div class="modal-detail-inner">
-                         <span>Rate</span>
-                         <span
-                           >Daily -
-                           <i class="bi bi-currency-dollar"></i>4.00</span
-                         >
-                       </div>
- 
-                       <div class="modal-detail-inner">
-                         <span>Select Dates</span>
-                         <span><input type="date" name="" id="" /></span>
-                       </div>
- 
-                       <div class="modal-detail-inner">
-                         <span>Start Time</span>
-                         <span>12:00 PM</span>
-                       </div>
- 
-                       <div>
-                         <button class="btn btn-dark">Add to wishlist</button>
-                       </div>
-                     </form>
+                     <form id="form19" method="POST" action="/submit19">
+                      <div class="modal-sub-head">
+                          <h3 id="item1Form19">Teaspoons</h3>
+                          <h3 id="item2Form19">Teaspoons Gold St. Urbain Flatware</h3>
+                          <p id="priceForm19"><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                      </div>
+                      <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                              <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                              <div id="numberForm19">0</div>
+                              <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                          </span>
+                      </div>
+                      <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                      </div>
+                      <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span><input type="date" value="2024-05-05" name="dateForm19" id="dateForm19" /></span>
+                      </div>
+                      <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span><input type="time" name="timeForm19" id="timeForm19" value="12:00"></span>
+                      </div>
+                      <input type="hidden" id="formData19" name="formData19">
+                      <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                  </form>
                      <div class="modal-detail-inner">
                        <span>Description</span>
                        <span>
@@ -3046,43 +2740,35 @@
                         width="200px"
                       />
                     </div>
-                    <form action="">
+                    <form id="form20" method="POST" action="/submit20">
                       <div class="modal-sub-head">
-                        <h3>Serving Spoons Gold</h3>
-                        <h3>Serving Spoons Gold St. Urbain Flatware</h3>
-                        <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                          <h3 id="item1Form20">Serving Spoons</h3>
+                          <h3 id="item2Form20">Serving Spoons Gold St. Urbain Flatware</h3>
+                          <p id="priceForm20"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Quantity</span>
-                        <span>
-                          <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                          <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                        </span>
+                          <span>Quantity</span>
+                          <span>
+                              <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                              <div id="numberForm20">0</div>
+                              <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                          </span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Rate</span>
-                        <span
-                          >Daily -
-                          <i class="bi bi-currency-dollar"></i>4.00</span
-                        >
+                          <span>Rate</span>
+                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Select Dates</span>
-                        <span><input type="date" name="" id="" /></span>
+                          <span>Select Dates</span>
+                          <span><input type="date" value="2024-05-05" name="dateForm20" id="dateForm20" /></span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Start Time</span>
-                        <span>12:00 PM</span>
+                          <span>Start Time</span>
+                          <span><input type="time" name="timeForm20" id="timeForm20" value="12:00"></span>
                       </div>
-
-                      <div>
-                        <button class="btn btn-dark">Add to wishlist</button>
-                      </div>
-                    </form>
+                      <input type="hidden" id="formData20" name="formData20">
+                      <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                  </form>
                     <div class="modal-detail-inner">
                       <span>Description</span>
                       <span>
@@ -3188,43 +2874,35 @@
                          width="200px"
                        />
                      </div>
-                     <form action="">
-                       <div class="modal-sub-head">
-                         <h3>Butter Spreaders Gold</h3>
-                         <h3>Butter Spreaders Gold St. Urbain Flatware</h3>
-                         <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
-                       </div>
- 
-                       <div class="modal-detail-inner">
-                         <span>Quantity</span>
-                         <span>
-                           <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                           <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                         </span>
-                       </div>
- 
-                       <div class="modal-detail-inner">
-                         <span>Rate</span>
-                         <span
-                           >Daily -
-                           <i class="bi bi-currency-dollar"></i>4.00</span
-                         >
-                       </div>
- 
-                       <div class="modal-detail-inner">
-                         <span>Select Dates</span>
-                         <span><input type="date" name="" id="" /></span>
-                       </div>
- 
-                       <div class="modal-detail-inner">
-                         <span>Start Time</span>
-                         <span>12:00 PM</span>
-                       </div>
- 
-                       <div>
-                         <button class="btn btn-dark">Add to wishlist</button>
-                       </div>
-                     </form>
+                     <form id="form21" method="POST" action="/submit21">
+                      <div class="modal-sub-head">
+                          <h3 id="item1Form21">Butter Spreaders</h3>
+                          <h3 id="item2Form21">Butter Spreaders Gold St. Urbain Flatware</h3>
+                          <p id="priceForm21"><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                      </div>
+                      <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                              <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                              <div id="numberForm21">0</div>
+                              <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                          </span>
+                      </div>
+                      <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                      </div>
+                      <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span><input type="date" value="2024-05-05" name="dateForm21" id="dateForm21" /></span>
+                      </div>
+                      <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span><input type="time" name="timeForm21" id="timeForm21" value="12:00"></span>
+                      </div>
+                      <input type="hidden" id="formData21" name="formData21">
+                      <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                  </form>
                      <div class="modal-detail-inner">
                        <span>Description</span>
                        <span>
@@ -3330,42 +3008,35 @@
                         width="200px"
                       />
                     </div>
-                    <form action="">
-                      <div class="modal-sub-head">                        
-                        <h3>Dinner Knives Gold St. Urbain Flatware</h3>
-                        <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                    <form id="form22" method="POST" action="/submit22">
+                      <div class="modal-sub-head">
+                          <h3 id="item1Form22">Dinner Knives Gold</h3>
+                          <h3 id="item2Form22">Dinner Knives Gold St. Urbain Flatware</h3>
+                          <p id="priceForm22"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Quantity</span>
-                        <span>
-                          <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                          <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                        </span>
+                          <span>Quantity</span>
+                          <span>
+                              <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                              <div id="numberForm22">0</div>
+                              <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                          </span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Rate</span>
-                        <span
-                          >Daily -
-                          <i class="bi bi-currency-dollar"></i>4.00</span
-                        >
+                          <span>Rate</span>
+                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Select Dates</span>
-                        <span><input type="date" name="" id="" /></span>
+                          <span>Select Dates</span>
+                          <span><input type="date" value="2024-05-05" name="dateForm22" id="dateForm22" /></span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Start Time</span>
-                        <span>12:00 PM</span>
+                          <span>Start Time</span>
+                          <span><input type="time" name="timeForm22" id="timeForm22" value="12:00"></span>
                       </div>
-
-                      <div>
-                        <button class="btn btn-dark">Add to wishlist</button>
-                      </div>
-                    </form>
+                      <input type="hidden" id="formData22" name="formData22">
+                      <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                  </form>
                     <div class="modal-detail-inner">
                       <span>Description</span>
                       <span>
@@ -3471,42 +3142,35 @@
                         width="200px"
                       />
                     </div>
-                    <form action="">
-                      <div class="modal-sub-head">                        
-                        <h3>Charger Plate Silver Plastic Dinnerware</h3>
-                        <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                    <form id="form23" method="POST" action="/submit23">
+                      <div class="modal-sub-head">
+                          <h3 id="item1Form23">Charger Plate</h3>
+                          <h3 id="item2Form23">Charger Plate Silver Plastic Dinnerware</h3>
+                          <p id="priceForm23"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Quantity</span>
-                        <span>
-                          <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                          <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                        </span>
+                          <span>Quantity</span>
+                          <span>
+                              <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                              <div id="numberForm23">0</div>
+                              <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                          </span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Rate</span>
-                        <span
-                          >Daily -
-                          <i class="bi bi-currency-dollar"></i>4.00</span
-                        >
+                          <span>Rate</span>
+                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Select Dates</span>
-                        <span><input type="date" name="" id="" /></span>
+                          <span>Select Dates</span>
+                          <span><input type="date" value="2024-05-05" name="dateForm23" id="dateForm23" /></span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Start Time</span>
-                        <span>12:00 PM</span>
+                          <span>Start Time</span>
+                          <span><input type="time" name="timeForm23" id="timeForm23" value="12:00"></span>
                       </div>
-
-                      <div>
-                        <button class="btn btn-dark">Add to wishlist</button>
-                      </div>
-                    </form>
+                      <input type="hidden" id="formData23" name="formData23">
+                      <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                  </form>
                     <div class="modal-detail-inner">
                       <span>Description</span>
                       <span>
@@ -3612,42 +3276,35 @@
                         width="200px"
                       />
                     </div>
-                    <form action="">
-                      <div class="modal-sub-head">                        
-                        <h3>Charger Plate Gold Plastic Dinnerware</h3>
-                        <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                    <form id="form24" method="POST" action="/submit24">
+                      <div class="modal-sub-head">
+                          <h3 id="item1Form24">Charger Plate</h3>
+                          <h3 id="item2Form24">Charger Plate Gold Plastic Dinnerware</h3>
+                          <p id="priceForm24"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Quantity</span>
-                        <span>
-                          <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                          <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                        </span>
+                          <span>Quantity</span>
+                          <span>
+                              <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                              <div id="numberForm24">0</div>
+                              <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                          </span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Rate</span>
-                        <span
-                          >Daily -
-                          <i class="bi bi-currency-dollar"></i>4.00</span
-                        >
+                          <span>Rate</span>
+                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Select Dates</span>
-                        <span><input type="date" name="" id="" /></span>
+                          <span>Select Dates</span>
+                          <span><input type="date" value="2024-05-05" name="dateForm24" id="dateForm24" /></span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Start Time</span>
-                        <span>12:00 PM</span>
+                          <span>Start Time</span>
+                          <span><input type="time" name="timeForm24" id="timeForm24" value="12:00"></span>
                       </div>
-
-                      <div>
-                        <button class="btn btn-dark">Add to wishlist</button>
-                      </div>
-                    </form>
+                      <input type="hidden" id="formData24" name="formData24">
+                      <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                  </form>
                     <div class="modal-detail-inner">
                       <span>Description</span>
                       <span>
@@ -3754,42 +3411,35 @@
                         width="200px"
                       />
                     </div>
-                    <form action="">
-                      <div class="modal-sub-head">                        
-                        <h3>Soup Bowl 8 Rim White Snowdrop</h3>
-                        <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                    <form id="form25" method="POST" action="/submit25">
+                      <div class="modal-sub-head">
+                          <h3 id="item1Form25">Soup Bowl</h3>
+                          <h3 id="item2Form25">Soup Bowl 8 Rim White Snowdrop</h3>
+                          <p id="priceForm25"><i cass="bi bi-currency-dollar"></i>4.00/day</p>
                       </div>
-
+                     <div class="modal-detail-iner">
+                          <span>Quantity</span>
+                          <span>
+                              <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                              <div id="numberForm25">0</div>
+                              <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                          </span>
+                     </div>
                       <div class="modal-detail-inner">
-                        <span>Quantity</span>
-                        <span>
-                          <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                          <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                        </span>
+                          <span>Rate</span>
+                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Rate</span>
-                        <span
-                          >Daily -
-                          <i class="bi bi-currency-dollar"></i>4.00</span
-                        >
+                          <span>Select Dates</span>
+                          <span><input type="date" value="2024-05-05" name="dateForm25" id="dateForm25" /></span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Select Dates</span>
-                        <span><input type="date" name="" id="" /></span>
+                         <span>Start Time</span>
+                          <span><input type="time" name="timeForm25" id="timeForm25" value="12:00"></span>
                       </div>
-
-                      <div class="modal-detail-inner">
-                        <span>Start Time</span>
-                        <span>12:00 PM</span>
-                      </div>
-
-                      <div>
-                        <button class="btn btn-dark">Add to wishlist</button>
-                      </div>
-                    </form>
+                      <input type="hidden" id="formData25" name="formData25">
+                      <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                  </form>
                     <div class="modal-detail-inner">
                       <span>Description</span>
                       <span>
@@ -3896,42 +3546,35 @@
                         width="200px"
                       />
                     </div>
-                    <form action="">
-                      <div class="modal-sub-head">                        
-                        <h3>Salad/Dessert Forks Gold</h3>
-                        <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                    <form id="form26" method="POST" action="/submit26">
+                      <div class="modal-sub-head">
+                          <h3 id="item1Form26">Salad/Dessert Fork</h3>
+                          <h3 id="item2Form26">Salad/Dessert Forks Gold</h3>
+                          <p id="priceForm26"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Quantity</span>
-                        <span>
-                          <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                          <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                        </span>
+                          <span>Quantity</span>
+                          <span>
+                              <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                              <div id="numberForm26">0</div>
+                              <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                          </span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Rate</span>
-                        <span
-                          >Daily -
-                          <i class="bi bi-currency-dollar"></i>4.00</span
-                        >
+                          <span>Rate</span>
+                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Select Dates</span>
-                        <span><input type="date" name="" id="" /></span>
+                          <span>Select Dates</span>
+                          <span><input type="date" value="2024-05-05" name="dateForm26" id="dateForm26" /></span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Start Time</span>
-                        <span>12:00 PM</span>
+                          <span>Start Time</span>
+                          <span><input type="time" name="timeForm26" id="timeForm26" value="12:00"></span>
                       </div>
-
-                      <div>
-                        <button class="btn btn-dark">Add to wishlist</button>
-                      </div>
-                    </form>
+                      <input type="hidden" id="formData26" name="formData26">
+                      <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                  </form>
                     <div class="modal-detail-inner">
                       <span>Description</span>
                       <span>
@@ -3980,33 +3623,7 @@
             </div>
             <!-- Modal End --> 
 
-              <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
-                <img
-                  src="/img/cutlery/2db43880918f4a3db3bf27f5116a97f1-760x428-nopad-SnowDessert.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>White Plate</h4>
-                  <p>Salad/Dessert Plates 7" White Snowdrop Dinnerware</p>
-                  <a
-                    href="/img/cutlery/2db43880918f4a3db3bf27f5116a97f1-760x428-nopad-SnowDessert.jpg"
-                    title="White Snowdrop Dinnerware"
-                    data-gallery="portfolio-gallery-branding"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                  <a
-                    href="/portfolio-details"
-                    title="More Details"
-                    class="details-link"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                </div>
-              </div> -->
-              <!-- End Portfolio Item -->              
+            <!-- End Portfolio Item -->              
 
               <div class="col-lg-4 col-md-6 portfolio-item filter-books">
                 <img src="/img/cutlery/image11.jpeg" class="img-fluid" alt="" />
@@ -4061,42 +3678,35 @@
                         width="200px"
                       />
                     </div>
-                    <form action="">
-                      <div class="modal-sub-head">                        
-                        <h3>White Ceramic Plate</h3>
-                        <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                    <form id="form27" method="POST" action="/submit27">
+                      <div class="modal-sub-head">
+                          <h3 id="item1Form27">Ceramic Plate</h3>
+                          <h3 id="item2Form27">White Ceramic Plate</h3>
+                          <p id="priceForm27"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Quantity</span>
-                        <span>
-                          <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                          <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                        </span>
+                          <span>Quantity</span>
+                          <span>
+                              <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                              <div id="numberForm27">0</div>
+                              <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                          </span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Rate</span>
-                        <span
-                          >Daily -
-                          <i class="bi bi-currency-dollar"></i>4.00</span
-                        >
+                          <span>Rate</span>
+                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Select Dates</span>
-                        <span><input type="date" name="" id="" /></span>
+                          <span>Select Dates</span>
+                          <span><input type="date" value="2024-05-05" name="dateForm27" id="dateForm27" /></span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Start Time</span>
-                        <span>12:00 PM</span>
+                          <span>Start Time</span>
+                          <span><input type="time" name="timeForm27" id="timeForm27" value="12:00"></span>
                       </div>
-
-                      <div>
-                        <button class="btn btn-dark">Add to wishlist</button>
-                      </div>
-                    </form>
+                      <input type="hidden" id="formData27" name="formData27">
+                      <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                  </form>
                     <div class="modal-detail-inner">
                       <span>Description</span>
                       <span>
@@ -4198,42 +3808,162 @@
                         width="200px"
                       />
                     </div>
-                    <form action="">
-                      <div class="modal-sub-head">                        
-                        <h3>Gold Plates</h3>
-                        <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                    <form id="form28" method="POST" action="/submit28">
+                      <div class="modal-sub-head">
+                          <h3 id="item1Form28">Plate</h3>
+                          <h3 id="item2Form28">Gold Plates</h3>
+                          <p id="priceForm28"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Quantity</span>
-                        <span>
-                          <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                          <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                        </span>
+                          <span>Quantity</span>
+                          <span>
+                              <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                              <div id="numberForm28">0</div>
+                              <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                          </span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Rate</span>
-                        <span
-                          >Daily -
-                          <i class="bi bi-currency-dollar"></i>4.00</span
-                        >
+                          <span>Rate</span>
+                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Select Dates</span>
-                        <span><input type="date" name="" id="" /></span>
+                          <span>Select Dates</span>
+                          <span><input type="date" value="2024-05-05" name="dateForm28" id="dateForm28" /></span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Start Time</span>
-                        <span>12:00 PM</span>
+                          <span>Start Time</span>
+                          <span><input type="time" name="timeForm28" id="timeForm28" value="12:00"></span>
                       </div>
+                      <input type="hidden" id="formData28" name="formData28">
+                      <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                  </form>
+                    <div class="modal-detail-inner">
+                      <span>Description</span>
+                      <span>
+                        <i
+                          class="bi bi-arrow-down-circle"
+                          data-bs-toggle="collapse"
+                          href="#collapseExample"
+                          role="button"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                        ></i>
+                      </span>
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                      <div class="card card-body">No Discription</div>
+                    </div>
+                    <div class="modal-detail-inner">
+                      <span>Pricing</span>
+                      <span>
+                        <i
+                          class="bi bi-arrow-down-circle"
+                          data-bs-toggle="collapse"
+                          href="#collapseExample2"
+                          role="button"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                        ></i>
+                      </span>
+                    </div>
+                    <div class="collapse" id="collapseExample2">
+                      <div class="card card-body">
+                        <div class="modal-detail-inner">
+                          <span>1 Day Price</span>
+                          <span>
+                            - <i class="bi bi-currency-dollar"></i>4.00</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal body end -->
+                  <div class="modal-footer">                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal End --> 
 
-                      <div>
-                        <button class="btn btn-dark">Add to wishlist</button>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+                <img
+                  src="/img/portfolio/books-3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Books 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="/img/portfolio/books-3.jpg"
+                    title="Branding 3"
+                    data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <!-- Modal -->
+              <div
+              class="modal fade"
+              id="exampleModal24"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Product > Cutlery
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <!-- modal body start  -->
+                  <div class="modal-body modal-custom">
+                    <div>
+                      <img
+                        src="/img/portfolio/Charger Plate Silver Plastic Dinnerware.jpg"
+                        alt="some img here"
+                        width="200px"
+                      />
+                    </div>
+                    <form id="form29" method="POST" action="/submit29">
+                      <div class="modal-sub-head">
+                          <h3 id="item1Form1">Bar - Garbage</h3>
+                          <h3 id="item2Form1">Cans - Large With Bag</h3>
+                          <p id="priceForm1"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                       </div>
-                    </form>
+                      <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                              <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                              <div id="numberForm1">0</div>
+                              <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                          </span>
+                      </div>
+                      <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                      </div>
+                      <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span><input type="date" value="2024-05-05" name="dateForm1" id="dateForm1" /></span>
+                      </div>
+                      <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span><input type="time" name="timeForm1" id="timeForm1" value="12:00"></span>
+                      </div>
+                      <input type="hidden" id="formData1" name="formData1">
+                      <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                  </form>
                     <div class="modal-detail-inner">
                       <span>Description</span>
                       <span>
@@ -4339,183 +4069,35 @@
                         width="200px"
                       />
                     </div>
-                    <form action="">
-                      <div class="modal-sub-head">                        
-                        <h3>Charger Plate Silver Plastic Dinnerware</h3>
-                        <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                    <form id="form30" method="POST" action="/submit30">
+                      <div class="modal-sub-head">
+                          <h3 id="item1Form1">Bar - Garbage</h3>
+                          <h3 id="item2Form1">Cans - Large With Bag</h3>
+                          <p id="priceForm1"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Quantity</span>
-                        <span>
-                          <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                          <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                        </span>
-                      </div>
-
-                      <div class="modal-detail-inner">
-                        <span>Rate</span>
-                        <span
-                          >Daily -
-                          <i class="bi bi-currency-dollar"></i>4.00</span
-                        >
-                      </div>
-
-                      <div class="modal-detail-inner">
-                        <span>Select Dates</span>
-                        <span><input type="date" name="" id="" /></span>
-                      </div>
-
-                      <div class="modal-detail-inner">
-                        <span>Start Time</span>
-                        <span>12:00 PM</span>
-                      </div>
-
-                      <div>
-                        <button class="btn btn-dark">Add to wishlist</button>
-                      </div>
-                    </form>
-                    <div class="modal-detail-inner">
-                      <span>Description</span>
-                      <span>
-                        <i
-                          class="bi bi-arrow-down-circle"
-                          data-bs-toggle="collapse"
-                          href="#collapseExample"
-                          role="button"
-                          aria-expanded="false"
-                          aria-controls="collapseExample"
-                        ></i>
-                      </span>
-                    </div>
-                    <div class="collapse" id="collapseExample">
-                      <div class="card card-body">No Discription</div>
-                    </div>
-                    <div class="modal-detail-inner">
-                      <span>Pricing</span>
-                      <span>
-                        <i
-                          class="bi bi-arrow-down-circle"
-                          data-bs-toggle="collapse"
-                          href="#collapseExample2"
-                          role="button"
-                          aria-expanded="false"
-                          aria-controls="collapseExample"
-                        ></i>
-                      </span>
-                    </div>
-                    <div class="collapse" id="collapseExample2">
-                      <div class="card card-body">
-                        <div class="modal-detail-inner">
-                          <span>1 Day Price</span>
+                          <span>Quantity</span>
                           <span>
-                            - <i class="bi bi-currency-dollar"></i>4.00</span
-                          >
-                        </div>
+                              <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
+                              <div id="numberForm1">0</div>
+                              <button class="btn btn-primary btn-add"><a href="#">+</a></button>
+                          </span>
                       </div>
-                    </div>
-                  </div>
-                  <!-- modal body end -->
-                  <div class="modal-footer">                   
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Modal End --> 
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-books">
-                <img
-                  src="/img/portfolio/books-3.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a
-                    href="/img/portfolio/books-3.jpg"
-                    title="Branding 3"
-                    data-gallery="portfolio-gallery-book"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <!-- <a
-                    href="/portfolio-details"
-                    title="More Details"
-                    class="details-link"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a> -->
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-              <!-- Modal -->
-              <div
-              class="modal fade"
-              id="exampleModal24"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      Product > Cutlery
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <!-- modal body start  -->
-                  <div class="modal-body modal-custom">
-                    <div>
-                      <img
-                        src="/img/portfolio/Charger Plate Silver Plastic Dinnerware.jpg"
-                        alt="some img here"
-                        width="200px"
-                      />
-                    </div>
-                    <form action="">
-                      <div class="modal-sub-head">                        
-                        <h3>Charger Plate Silver Plastic Dinnerware</h3>
-                        <p><i class="bi bi-currency-dollar"></i>4.00/day</p>
-                      </div>
-
                       <div class="modal-detail-inner">
-                        <span>Quantity</span>
-                        <span>
-                          <button class="btn btn-primary btn-minus"><a href="#">-</a></button> <div id="number">0</div>
-                          <button class="btn btn-primary btn-add"><a href="#">+</a></button>
-                        </span>
+                          <span>Rate</span>
+                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Rate</span>
-                        <span
-                          >Daily -
-                          <i class="bi bi-currency-dollar"></i>4.00</span
-                        >
+                          <span>Select Dates</span>
+                          <span><input type="date" value="2024-05-05" name="dateForm1" id="dateForm1" /></span>
                       </div>
-
                       <div class="modal-detail-inner">
-                        <span>Select Dates</span>
-                        <span><input type="date" name="" id="" /></span>
+                          <span>Start Time</span>
+                          <span><input type="time" name="timeForm1" id="timeForm1" value="12:00"></span>
                       </div>
-
-                      <div class="modal-detail-inner">
-                        <span>Start Time</span>
-                        <span>12:00 PM</span>
-                      </div>
-
-                      <div>
-                        <button class="btn btn-dark">Add to wishlist</button>
-                      </div>
-                    </form>
+                      <input type="hidden" id="formData1" name="formData1">
+                      <button type="submit" class="btn btn-dark">Add to wishlist</button>
+                  </form>
                     <div class="modal-detail-inner">
                       <span>Description</span>
                       <span>
