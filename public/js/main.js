@@ -242,7 +242,8 @@ async function handleFormSubmit(event, formId, endpoint) {
     pContent: form.querySelector("p").innerText,
     date: form.querySelector('input[type="date"]').value,
     time: form.querySelector('input[type="time"]').value,
-    quantity: form.querySelector(`#numberForm${formId.replace("form", "")}`).innerText,
+    quantity: form.querySelector(`#numberForm${formId.replace("form", "")}`)
+      .innerText,
   };
   console.log(formData);
 
@@ -256,7 +257,6 @@ async function handleFormSubmit(event, formId, endpoint) {
     });
     const result = await response.text();
     document.getElementById("responseMessage").innerText = result;
-    
   } catch (error) {
     console.error("Error:", error);
   }
@@ -277,144 +277,142 @@ document
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form3", "/submit3")
   );
-  document
+document
   .getElementById("form4")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form4", "/submit4")
   );
-  document
+document
   .getElementById("form5")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form5", "/submit5")
   );
-  document
+document
   .getElementById("form6")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form6", "/submit6")
   );
-  document
+document
   .getElementById("form7")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form7", "/submit7")
   );
-  document
+document
   .getElementById("form8")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form8", "/submit8")
   );
-  document
+document
   .getElementById("form9")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form9", "/submit9")
   );
-  document
+document
   .getElementById("form10")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form10", "/submit10")
   );
-  document
+document
   .getElementById("form11")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form11", "/submit11")
   );
-  document
+document
   .getElementById("form12")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form12", "/submit12")
   );
-  document
+document
   .getElementById("form13")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form13", "/submit13")
   );
-  document
+document
   .getElementById("form14")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form14", "/submit14")
   );
-  document
+document
   .getElementById("form15")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form15", "/submit15")
   );
-  document
+document
   .getElementById("form16")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form16", "/submit16")
   );
-  document
+document
   .getElementById("form17")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form17", "/submit17")
   );
-  document
+document
   .getElementById("form18")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form18", "/submit18")
   );
-  document
+document
   .getElementById("form19")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form19", "/submit19")
   );
-  document
+document
   .getElementById("form20")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form20", "/submit20")
   );
-  document
+document
   .getElementById("form21")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form21", "/submit21")
   );
-  document
+document
   .getElementById("form22")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form22", "/submit22")
   );
-  document
+document
   .getElementById("form23")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form23", "/submit23")
   );
-  document
+document
   .getElementById("form24")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form24", "/submit24")
   );
-  document
+document
   .getElementById("form25")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form25", "/submit25")
   );
-  document
+document
   .getElementById("form26")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form26", "/submit26")
   );
-  document
+document
   .getElementById("form27")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form27", "/submit27")
   );
-  document
+document
   .getElementById("form28")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form28", "/submit28")
   );
-  document
+document
   .getElementById("form29")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form29", "/submit29")
   );
-  document
+document
   .getElementById("form30")
   .addEventListener("submit", (event) =>
     handleFormSubmit(event, "form30", "/submit30")
   );
-  
 
-  
 // Example code to handle quantity increment/decrement
 document.querySelectorAll(".btn-minus").forEach((btnn, index) => {
   btnn.addEventListener("click", function (e) {
@@ -435,3 +433,189 @@ document.querySelectorAll(".btn-add").forEach((btnn, index) => {
     numberElem.innerText = number + 1;
   });
 });
+
+const incrementButton1 = document.getElementById("incrementButton1");
+const incrementButton2 = document.getElementById("incrementButton2");
+const incrementButton3 = document.getElementById("incrementButton3");
+const incrementButton4 = document.getElementById("incrementButton4");
+const incrementButton5 = document.getElementById("incrementButton5");
+const incrementButton6 = document.getElementById("incrementButton6");
+const incrementButton7 = document.getElementById("incrementButton7");
+const incrementButton8 = document.getElementById("incrementButton8");
+const incrementButton9 = document.getElementById("incrementButton9");
+const incrementButton10 = document.getElementById("incrementButton10");
+const incrementButton11 = document.getElementById("incrementButton11");
+const incrementButton12 = document.getElementById("incrementButton12");
+const incrementButton13 = document.getElementById("incrementButton13");
+const incrementButton14 = document.getElementById("incrementButton14");
+const incrementButton15 = document.getElementById("incrementButton15");
+const incrementButton16 = document.getElementById("incrementButton16");
+const incrementButton17 = document.getElementById("incrementButton17");
+const incrementButton18 = document.getElementById("incrementButton18");
+const incrementButton19 = document.getElementById("incrementButton19");
+const incrementButton20 = document.getElementById("incrementButton20");
+const incrementButton21 = document.getElementById("incrementButton21");
+const incrementButton22 = document.getElementById("incrementButton22");
+const incrementButton23 = document.getElementById("incrementButton23");
+const incrementButton24 = document.getElementById("incrementButton24");
+const incrementButton25 = document.getElementById("incrementButton25");
+const incrementButton26 = document.getElementById("incrementButton26");
+const incrementButton27 = document.getElementById("incrementButton27");
+const incrementButton28 = document.getElementById("incrementButton28");
+const incrementButton29 = document.getElementById("incrementButton29");
+const incrementButton30 = document.getElementById("incrementButton30");
+
+
+const countButton = document.getElementById("countButton");
+let count = 0;
+
+incrementButton1.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton2.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton3.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton4.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton5.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton6.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton7.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton8.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton9.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton10.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton11.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton12.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton13.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton14.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton15.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton16.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton17.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton18.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton19.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton20.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton21.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton22.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton23.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton24.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton25.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton26.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton27.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton28.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton29.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
+incrementButton30.addEventListener("click", () => {
+  count++;
+  countButton.textContent = `${count}`;
+});
+
