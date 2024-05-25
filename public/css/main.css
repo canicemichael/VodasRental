@@ -29,6 +29,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
+  position: relative;
 }
 
 a {
@@ -2099,6 +2100,15 @@ preview link
 
 div#number {
   display: inline-block;
+}
+
+.item-count {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  background-color: #191569;
+  border-radius: 10px;
+  color: white;
 }
 
 /*--------------------------------------------------------------
