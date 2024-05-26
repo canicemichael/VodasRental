@@ -465,157 +465,280 @@ const incrementButton28 = document.getElementById("incrementButton28");
 const incrementButton29 = document.getElementById("incrementButton29");
 const incrementButton30 = document.getElementById("incrementButton30");
 
-
 const countButton = document.getElementById("countButton");
 let count = 0;
 
+// ====================================================================
+
+let hasIncremented1 = false;
+let hasIncremented2 = false;
+let hasIncremented3 = false;
+let hasIncremented4 = false;
+let hasIncremented5 = false;
+let hasIncremented6 = false;
+let hasIncremented7 = false;
+let hasIncremented8 = false;
+let hasIncremented9 = false;
+let hasIncremented10 = false;
+let hasIncremented11 = false;
+let hasIncremented12 = false;
+let hasIncremented13 = false;
+let hasIncremented14 = false;
+let hasIncremented15 = false;
+let hasIncremented16 = false;
+let hasIncremented17 = false;
+let hasIncremented18 = false;
+let hasIncremented19 = false;
+let hasIncremented20 = false;
+let hasIncremented21 = false;
+let hasIncremented22 = false;
+let hasIncremented23 = false;
+let hasIncremented24 = false;
+let hasIncremented25 = false;
+let hasIncremented26 = false;
+let hasIncremented27 = false;
+let hasIncremented28 = false;
+let hasIncremented29 = false;
+let hasIncremented30 = false;
+
+// ====================================================================
+
 incrementButton1.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented1) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented1 = true;
+  }
 });
 
 incrementButton2.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented2) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented2 = true;
+  }
 });
 
 incrementButton3.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented3) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented3 = true;
+  }
 });
 
 incrementButton4.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented4) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented4 = true;
+  }
 });
 
 incrementButton5.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented5) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented5 = true;
+  }
 });
 
 incrementButton6.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented6) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented6 = true;
+  }
 });
 
 incrementButton7.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented7) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented7 = true;
+  }
 });
 
 incrementButton8.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented8) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented8 = true;
+  }
 });
 
 incrementButton9.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented9) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented9 = true;
+  }
 });
 
 incrementButton10.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented10) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented10 = true;
+  }
 });
 
 incrementButton11.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented11) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented11 = true;
+  }
 });
 
 incrementButton12.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented12) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented12 = true;
+  }
 });
 
 incrementButton13.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented13) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented13 = true;
+  }
 });
 
 incrementButton14.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented14) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented14 = true;
+  }
 });
 
 incrementButton15.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented15) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented15 = true;
+  }
 });
 
 incrementButton16.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented16) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented16 = true;
+  }
 });
 
 incrementButton17.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented17) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented17 = true;
+  }
 });
 
 incrementButton18.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented18) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented18 = true;
+  }
 });
 
 incrementButton19.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented19) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented19 = true;
+  }
 });
 
 incrementButton20.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented20) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented20 = true;
+  }
 });
 
 incrementButton21.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented21) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented21 = true;
+  }
 });
 
 incrementButton22.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented22) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented22 = true;
+  }
 });
 
 incrementButton23.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented23) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented23 = true;
+  }
 });
 
 incrementButton24.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented24) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented24 = true;
+  }
 });
 
 incrementButton25.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented25) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented25 = true;
+  }
 });
 
 incrementButton26.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented26) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented26 = true;
+  }
 });
 
 incrementButton27.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented27) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented27 = true;
+  }
 });
 
 incrementButton28.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented28) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented28 = true;
+  }
 });
 
 incrementButton29.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented29) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented29 = true;
+  }
 });
 
 incrementButton30.addEventListener("click", () => {
-  count++;
-  countButton.textContent = `${count}`;
+  if (!hasIncremented30) {
+    count++;
+    countButton.textContent = `${count}`;
+    hasIncremented30 = true;
+  }
 });
-
