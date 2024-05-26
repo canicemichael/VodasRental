@@ -145,15 +145,15 @@ app.post("/student/add", function (req, res) {
 // -------------------------------------------
 
 // Handle form submission and store properties in cookies
-app.post("/submit1", (req, res) => {
-  const formData1 = req.body;
-  res.cookie("formData1", JSON.stringify(formData1), {
-    maxAge: 900000,
-    httpOnly: true,
-  });
-  console.log(JSON.stringify(formData1));
-  res.send("Form 1 data stored in a cookie!");
-});
+// app.post("/submit1", (req, res) => {
+//   const formData1 = req.body;
+//   res.cookie("formData1", JSON.stringify(formData1), {
+//     maxAge: 900000,
+//     httpOnly: true,
+//   });
+//   console.log(JSON.stringify(formData1));
+//   res.send("Form 1 data stored in a cookie!");
+// });
 
 app.post("/submit2", (req, res) => {
   const formData2 = req.body;
@@ -172,18 +172,6 @@ app.post("/submit3", (req, res) => {
   });
   res.send("Form 3 data stored in a cookie!");
 });
-
-// app.post('/submit3', (req, res) => {
-//   const formData3 = req.body;
-//   res.cookie('formData3', JSON.stringify(formData3), { maxAge: 900000, httpOnly: true });
-//   res.send('Form 3 data stored in a cookie!');
-// });
-
-// app.post('/submit3', (req, res) => {
-//   const formData3 = req.body;
-//   res.cookie('formData3', JSON.stringify(formData3), { maxAge: 900000, httpOnly: true });
-//   res.send('Form 3 data stored in a cookie!');
-// });
 
 app.post("/submit4", (req, res) => {
   const formData4 = req.body;
@@ -543,7 +531,17 @@ app.get("/retrieve", (req, res) => {
     formData27,
     formData28,
   });
-});
+
+
+  let cart_item_count = 0;
+
+  if (formData28) {
+    console.log(`formData1-Quantity: ${formData1.quantity}`);
+  } else if (formData28 === null) {
+    console.log('null');
+  }
+
+  });
 
 app.listen(PORT, () => {
   console.log("server started in port 4014");

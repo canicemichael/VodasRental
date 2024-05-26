@@ -142,6 +142,35 @@
                 <div class="modal-detail-inner">
                     <span>Quantity</span>
                     <span>
+                        <button type="button" class="btn btn-primary btn-minus" data-form="form1">-</button>
+                        <div id="numberForm1" class="cart-count">1</div>
+                        <button type="button" class="btn btn-primary btn-add" data-form="form1">+</button>
+                    </span>
+                </div>
+                <div class="modal-detail-inner">
+                    <span>Rate</span>
+                    <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                </div>
+                <div class="modal-detail-inner">
+                    <span>Select Dates</span>
+                    <span><input type="date" value="2024-05-05" name="dateForm1" id="dateForm1" /></span>
+                </div>
+                <div class="modal-detail-inner">
+                    <span>Start Time</span>
+                    <span><input type="time" name="timeForm1" id="timeForm1" value="12:00"></span>
+                </div>
+                <input type="hidden" id="formData1" name="formData1">
+                <button type="submit" id="incrementButton1" class="btn btn-dark">Add to wishlist</button>
+            </form>
+              <!-- <form id="form1" method="POST" action="/submit1">
+                <div class="modal-sub-head">
+                    <h3 id="item1Form1">Folding Chair</h3>
+                    <h3 id="item2Form1">Garden Folding Chair - Black</h3>
+                    <p id="priceForm1"><i class="bi bi-currency-dollar"></i>4.00/day</p>
+                </div>
+                <div class="modal-detail-inner">
+                    <span>Quantity</span>
+                    <span>
                         <button class="btn btn-primary btn-minus"><a href="#">-</a></button>
                         <div id="numberForm1" class="cart-count">1</div>
                         <button class="btn btn-primary btn-add"><a href="#">+</a></button>
@@ -161,7 +190,7 @@
                 </div>
                 <input type="hidden" id="formData1" name="formData1">
                 <button type="submit" id="incrementButton1" class="btn btn-dark">Add to wishlist</button>
-            </form>
+            </form> -->
               <div class="modal-detail-inner">
                 <span>Description</span>
                 <span>
@@ -4276,11 +4305,12 @@
     </footer>
     <!-- End Footer --><!-- End Footer -->
 
+    <!-- <div id="countButton"></div> -->
     <div class="item-count">
       <button type="button" class="btn position-relative">
         <i style="color: white;" class="bi bi-cart-plus-fill"></i
           >
-        <span id="countButton" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        <span id="cookieCountDisplay" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
           0
           <span class="visually-hidden">unread messages</span>
           
@@ -4300,5 +4330,6 @@
 
     <!-- Template Main JS File -->
     <script src="/js/main.js"></script>
+    <script src="/js/item_count.js"></script>
   </body>
 </html>
