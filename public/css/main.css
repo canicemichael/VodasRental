@@ -2150,6 +2150,10 @@ button.btn-dark  {
   }
 }
 
+.offcanvas.offcanvas-bottom {
+  height: 10vh;
+}
+
 span.ripple {
   background-color: rgba(0,190,255,.7);
   border-radius: 50%;
