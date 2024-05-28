@@ -807,6 +807,9 @@ const forms = [
 ];
 
 const cookieCountDisplay = document.getElementById('cookieCountDisplay');
+const cookieTextDisplay = document.getElementById('cookieTextDisplay');
+
+// const cookieCountDisplay = document.querySelectorAll("#cookieCountDisplay");
 
 forms.forEach(formConfig => {
   const form = document.getElementById(formConfig.formId);
@@ -834,48 +837,45 @@ forms.forEach(formConfig => {
 
       const formData = {
         item1: form.querySelector("h3:nth-of-type(1)").innerText,
-            item2: form.querySelector("h3:nth-of-type(2)").innerText,
-            price: document.querySelector(`#${formConfig.formId} .modal-sub-head p`).textContent,
-            quantity: document.getElementById(formConfig.quantityField).textContent,
-            date: form.querySelector('input[type="date"]').value,
-            time: form.querySelector('input[type="time"]').value
+        item2: form.querySelector("h3:nth-of-type(2)").innerText,
+        price: document.querySelector(`#${formConfig.formId} .modal-sub-head p`).textContent,
+        quantity: document.getElementById(formConfig.quantityField).textContent,
+        date: form.querySelector('input[type="date"]').value,
+        time: form.querySelector('input[type="time"]').value
       }
     
       console.log(formData);
       
-      setCookie(formConfig.formId, JSON.stringify(formData), 7);
+      setCookie(formConfig.formId, JSON.stringify(formData), 1);
+      displayLog(`${JSON.stringify(formData)} \n`);
       updateCookieCount();
   });
 });
 
-// document.querySelectorAll('.btn-minus').forEach(button => {
-//   button.addEventListener('click', (event) => {
-//       event.preventDefault();
-//       const formId = button.getAttribute('data-form');
-//       const countElement = document.getElementById(`number${formId}`);
-//       let count = parseInt(countElement.textContent, 10);
-//       if (count > 1) {
-//           countElement.textContent = --count;
-//       }
-//   });
-// });
-
-// document.querySelectorAll('.btn-add').forEach(button => {
-//   button.addEventListener('click', (event) => {
-//       event.preventDefault();
-//       const formId = button.getAttribute('data-form');
-//       const countElement = document.getElementById(`number${formId}`);
-//       let count = parseInt(countElement.textContent, 10);
-//       countElement.textContent = ++count;
-//   });
-// });
+function displayLog(message) {
+  console.log(message); // Still logs to console for debugging
+  logOutput.textContent += message + '\n'; // Display log message in HTML element
+}
 
 function updateCookieCount() {
   const cookieArray = document.cookie.split(';');
   // const formCookieCount = cookieArray.filter(cookie => /form\d+Data/.test(cookie.trim().split('=')[0])).length;
   const formCookieCount = cookieArray.filter(cookie => cookie.trim().startsWith('form')).length;
+  const formCookieText = cookieArray.filter(cookie => cookie.trim().startsWith('form'))
   cookieCountDisplay.textContent = ` ${formCookieCount}`;
+  cookieTextDisplay.textContent = ` ${formCookieText}`;
 }
+
+function displayCookieInDiv(cookieName, divid) {
+  const cookieValue = getCookie(cookieName);
+  if (cookieValue) {
+    const div = document.getElementById(divid);
+    if (div) {
+      div.innerText = cookieValue;
+    }
+  }
+}
+displayCookieInDiv("username", "cookieTextDisplay");
 
 function setCookie(name, value, days) {
   let expires = "";
