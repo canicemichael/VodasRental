@@ -323,17 +323,20 @@
     </footer>
     <!-- End Footer --><!-- End Footer -->
 
-    <div class="item-count item-count-home">
-      <button type="button" class="btn position-relative">
-        <i style="color: white;" class="bi bi-cart-plus-fill"></i
-          >
-        <span id="cookieCountDisplay" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-          ?
-          <span class="visually-hidden">unread messages</span>
-          
-        </span>
-      </button>
-    </div>
+    <a href="/portfolio">
+      <div class="item-count item-count-home">
+        <button type="button" class="btn position-relative">
+          <i style="color: white;" class="bi bi-cart-plus-fill"></i
+            >
+          <span id="cookieCountDisplay" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            ?
+            <span class="visually-hidden">unread messages</span>
+            
+          </span>
+        </button>
+      </div>
+    </a>
+    
 
     <!-- Wishlist Mail Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -365,12 +368,6 @@
     <script src="/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="/js/main.js"></script>
-    <script>
-      const btn = document.querySelector('.item-count-home');
-      btn.addEventListener('click', (event) => {
-        window.location.href = "http://localhost:4014/portfolio";
-      })
-    </script>
+    <script src="/js/main.js"></script>    
   </body>
 </html>

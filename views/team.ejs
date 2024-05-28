@@ -296,17 +296,19 @@
     </footer>
     <!-- End Footer --><!-- End Footer -->
 
-    <div class="item-count item-count-home">
-      <button type="button" class="btn position-relative">
-        <i style="color: white;" class="bi bi-cart-plus-fill"></i
-          >
-        <span id="cookieCountDisplay" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-          ?
-          <span class="visually-hidden">unread messages</span>
-          
-        </span>
-      </button>
-    </div>
+    <a href="/portfolio">
+      <div class="item-count item-count-home">
+        <button type="button" class="btn position-relative">
+          <i style="color: white;" class="bi bi-cart-plus-fill"></i
+            >
+          <span id="cookieCountDisplay" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            ?
+            <span class="visually-hidden">unread messages</span>
+            
+          </span>
+        </button>
+      </div>
+    </a>    
 
       <!-- Vertically centered scrollable modal -->      
 
@@ -341,11 +343,6 @@
 
     <!-- Template Main JS File -->
     <script src="/js/main.js"></script>
-    <script>
-      const btn = document.querySelector('.item-count-home');
-      btn.addEventListener('click', (event) => {
-        window.location.href = "http://localhost:4014/portfolio";
-      })
-    </script>
+    
   </body>
 </html>
