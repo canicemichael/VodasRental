@@ -847,35 +847,32 @@ forms.forEach(formConfig => {
       console.log(formData);
       
       setCookie(formConfig.formId, JSON.stringify(formData), 1);
-      displayLog(`${JSON.stringify(formData)} \n`);
+      // displayLog(`${JSON.stringify(formData)}`);
       updateCookieCount();
   });
 });
 
-function displayLog(message) {
-  console.log(message); // Still logs to console for debugging
-  logOutput.textContent += message + '\n'; // Display log message in HTML element
-}
 
 function updateCookieCount() {
+  console.log('water');
   const cookieArray = document.cookie.split(';');
   // const formCookieCount = cookieArray.filter(cookie => /form\d+Data/.test(cookie.trim().split('=')[0])).length;
   const formCookieCount = cookieArray.filter(cookie => cookie.trim().startsWith('form')).length;
   const formCookieText = cookieArray.filter(cookie => cookie.trim().startsWith('form'))
-  cookieCountDisplay.textContent = ` ${formCookieCount}`;
-  cookieTextDisplay.textContent = ` ${formCookieText}`;
+  cookieCountDisplay.textContent = `${formCookieCount}`;
+  cookieTextDisplay.textContent = `${formCookieText}`;
 }
 
-function displayCookieInDiv(cookieName, divid) {
-  const cookieValue = getCookie(cookieName);
-  if (cookieValue) {
-    const div = document.getElementById(divid);
-    if (div) {
-      div.innerText = cookieValue;
-    }
-  }
-}
-displayCookieInDiv("username", "cookieTextDisplay");
+// function displayCookieInDiv(cookieName, divid) {
+//   const cookieValue = getCookie(cookieName);
+//   if (cookieValue) {
+//     const div = document.getElementById(divid);
+//     if (div) {
+//       div.innerText = cookieValue;
+//     }
+//   }
+// }
+// displayCookieInDiv("username", "cookieTextDisplay");
 
 function setCookie(name, value, days) {
   let expires = "";
@@ -911,7 +908,7 @@ function deleteAllCookies() {
       document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/`;
   }
 }
-// deleteAllCookies();
+deleteAllCookies();
 
 // var domCookies = document.cookie.split(';').map(cookie => cookie.split('=')).reduce((accumulator, [key, value]) => ({ ...accumulator, [key.trim()]: decodeURIComponent(value) }), {});
 // console.log(domCookies);
