@@ -5,7 +5,21 @@ const cookieParser = require("cookie-parser");
 const path = require("path");
 const PORT = 4014;
 const app = express();
+
+// Middleware 
 app.use(express.urlencoded({ extended: false }));
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
 app.use(cookieParser());
 app.use(parser.json());
 app.use(function (req, res, next) {
@@ -108,6 +122,32 @@ app.post("/sendMail", function (req, res) {
     } else {
       console.log("Email sent: ", info.response);
     }
+  });
+});
+
+app.post("/send-email", (req, res) => {
+  const { email, content } = req.body;
+
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.EMAIL, // your email from environment variable
+      pass: process.env.PASSWORD, // your email password from environment variable
+    },
+  });
+
+  const mailOptions = {
+    from: process.env.EMAIL, // sender address from environment variable
+    to: email, // recipient email address
+    subject: "Content from your div", // Subject line
+    html: content, // html body
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      return res.status(500).send(error.toString());
+    }
+    res.status(200).send("Email sent: " + info.response);
   });
 });
 

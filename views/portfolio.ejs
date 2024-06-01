@@ -4607,7 +4607,7 @@
       <button  onclick="displayStoredData()" type="button" class="btn position-relative">
         <i style="color: white;" class="bi bi-cart-plus-fill"></i
           >
-        <span id="cookieCountDisplay" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        <span id="itemCountDiv" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
           0
           <span class="visually-hidden">unread messages</span>
           
@@ -4628,7 +4628,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send</button>
+        <button onclick="sendEmail()" type="button" class="btn btn-primary">Send</button>
       </div>
     </div>
   </div>
@@ -4670,6 +4670,7 @@
             }
 
             localStorage.setItem(storageKey, JSON.stringify(formDataList));
+            updateItemCount();
         }
 
         function displayStoredData() {
@@ -4714,7 +4715,7 @@
 
                     const removeBtn = document.createElement('span');
                     removeBtn.textContent = 'Del';
-                    removeBtn.style.backgroundColor = 'red';
+                    removeBtn.style.backgroundColor = '#AA0000';
                     removeBtn.style.color = 'white';
                     removeBtn.style.padding = '4px';
                     removeBtn.style.borderRadius = '10px';
@@ -4723,6 +4724,8 @@
                     removeBtn.classList.add('remove-btn');
                     removeBtn.onclick = () => removeFormData(index);
                     li.appendChild(removeBtn);
+
+                    li.appendChild(document.createElement('hr')); 
 
                     ul.appendChild(li);
                 });
@@ -4746,6 +4749,45 @@
             displayDiv.innerHTML = ''; // Clear display content
             displayDiv.style.display = 'none'; // Hide the display area
         }
+        
+        const itemCountDiv = document.getElementById("itemCountDiv");
+
+        function updateItemCount() {
+            const formDataList = JSON.parse(localStorage.getItem(storageKey)) || [];
+            itemCountDiv.textContent = formDataList.length;
+        }
+
+        updateItemCount();
     </script>
+    <script>
+      function sendEmail() {
+          const contentDiv = document.getElementById('displayDiv').innerHTML;
+          const email = 'canicecodes@gmail.com'; // replace with the recipient email
+
+          fetch('http://localhost:3000/send-email', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                  email: email,
+                  content: contentDiv
+              })
+          })
+          .then(response => {
+              if (!response.ok) {
+                  throw new Error('Network response was not ok ' + response.statusText);
+              }
+              return response.text();
+          })
+          .then(data => {
+              alert('Email sent successfully: ' + data);
+          })
+          .catch((error) => {
+              console.error('Error:', error);
+              alert('Error sending email: ' + error);
+          });
+      }
+  </script>
   </body>
 </html>
