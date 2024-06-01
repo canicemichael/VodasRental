@@ -4764,7 +4764,8 @@
           const contentDiv = document.getElementById('displayDiv').innerHTML;
           const email = 'canicecodes@gmail.com'; // replace with the recipient email
 
-          fetch('http://localhost:3000/send-email', {
+          // http://localhost:3000/send-email
+          fetch('https://vodasrental.onrender.com/send-email', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json'
@@ -4781,7 +4782,7 @@
               return response.text();
           })
           .then(data => {
-              alert('Email sent successfully: ' + data);
+              alert('Your WishList has been recieved, Please wait for invoice and more info. Thank you :)');
           })
           .catch((error) => {
               console.error('Error:', error);
