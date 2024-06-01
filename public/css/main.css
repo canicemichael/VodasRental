@@ -2115,13 +2115,7 @@ div#number {
   display: inline-block;
 }
 
-#cookieCountDisplay {
-  
-}
 
-.btn-dark {
-
-}
 
 button.btn-dark  {
   cursor: pointer;
@@ -2160,6 +2154,16 @@ span.ripple {
   position: absolute;
   transform: scale(0);
   animation: ripple .5s linear forwards;
+}
+
+.cookieTextDisplay {
+  font-weight: 700;
+}
+
+#displayDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*--------------------------------------------------------------

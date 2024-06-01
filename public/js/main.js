@@ -749,7 +749,7 @@ document.querySelectorAll(".btn-add").forEach((btnn, index) => {
 //         if (!cookies) {
 //             console.log('no cookie');
 //         }
-        
+
 //         const cookieArray = cookies.split(';').map(cookie => cookie.trim());
 //         const cookieCount = cookieArray.length;
 //         const formattedCookies = cookieArray.map(cookie => {
@@ -758,8 +758,6 @@ document.querySelectorAll(".btn-add").forEach((btnn, index) => {
 //         }).join('\n');
 
 //         console.log(cookieCount);
-
-
 
 //   const form = document.getElementById(formId);
 //   const formData = {
@@ -774,124 +772,400 @@ document.querySelectorAll(".btn-add").forEach((btnn, index) => {
 //   console.log(formData);
 
 const forms = [
-  { formId: 'form1', nameField: 'nameForm1', emailField: 'emailForm1', dateField: 'dateForm1', timeField: 'timeForm1', quantityField: 'numberForm1', nameCookie: 'form_name1', emailCookie: 'form_email1' },
-  { formId: 'form2', nameField: 'nameForm2', emailField: 'emailForm2', dateField: 'dateForm2', timeField: 'timeForm2', quantityField: 'numberForm2', nameCookie: 'form_name2', emailCookie: 'form_email2' },
-  { formId: 'form3', nameField: 'nameForm3', emailField: 'emailForm3', dateField: 'dateForm3', timeField: 'timeForm3', quantityField: 'numberForm3', nameCookie: 'form_name3', emailCookie: 'form_email3' },
-  { formId: 'form4', nameField: 'nameForm4', emailField: 'emailForm4', dateField: 'dateForm4', timeField: 'timeForm4', quantityField: 'numberForm4', nameCookie: 'form_name4', emailCookie: 'form_email4' },
-  { formId: 'form5', nameField: 'nameForm5', emailField: 'emailForm5', dateField: 'dateForm5', timeField: 'timeForm5', quantityField: 'numberForm5', nameCookie: 'form_name5', emailCookie: 'form_email5' },
-  { formId: 'form6', nameField: 'nameForm6', emailField: 'emailForm6', dateField: 'dateForm6', timeField: 'timeForm6', quantityField: 'numberForm6', nameCookie: 'form_name6', emailCookie: 'form_email6' },
-  { formId: 'form7', nameField: 'nameForm7', emailField: 'emailForm7', dateField: 'dateForm7', timeField: 'timeForm7', quantityField: 'numberForm7', nameCookie: 'form_name7', emailCookie: 'form_email7' },
-  { formId: 'form8', nameField: 'nameForm8', emailField: 'emailForm8', dateField: 'dateForm8', timeField: 'timeForm8', quantityField: 'numberForm8', nameCookie: 'form_name8', emailCookie: 'form_email8' },
-  { formId: 'form9', nameField: 'nameForm9', emailField: 'emailForm9', dateField: 'dateForm9', timeField: 'timeForm9', quantityField: 'numberForm9', nameCookie: 'form_name9', emailCookie: 'form_email9' },
-  { formId: 'form10', nameField: 'nameForm10', emailField: 'emailForm10', dateField: 'dateForm10', timeField: 'timeForm10', quantityField: 'numberForm10', nameCookie: 'form_name10', emailCookie: 'form_email10' },
-  { formId: 'form11', nameField: 'nameForm11', emailField: 'emailForm11', dateField: 'dateForm11', timeField: 'timeForm11', quantityField: 'numberForm11', nameCookie: 'form_name11', emailCookie: 'form_email11' },
-  { formId: 'form12', nameField: 'nameForm12', emailField: 'emailForm12', dateField: 'dateForm12', timeField: 'timeForm12', quantityField: 'numberForm12', nameCookie: 'form_name12', emailCookie: 'form_email12' },
-  { formId: 'form13', nameField: 'nameForm13', emailField: 'emailForm13', dateField: 'dateForm13', timeField: 'timeForm13', quantityField: 'numberForm13', nameCookie: 'form_name13', emailCookie: 'form_email13' },
-  { formId: 'form14', nameField: 'nameForm14', emailField: 'emailForm14', dateField: 'dateForm14', timeField: 'timeForm14', quantityField: 'numberForm14', nameCookie: 'form_name14', emailCookie: 'form_email14' },
-  { formId: 'form15', nameField: 'nameForm15', emailField: 'emailForm15', dateField: 'dateForm15', timeField: 'timeForm15', quantityField: 'numberForm15', nameCookie: 'form_name15', emailCookie: 'form_email15' },
-  { formId: 'form16', nameField: 'nameForm16', emailField: 'emailForm16', dateField: 'dateForm16', timeField: 'timeForm16', quantityField: 'numberForm16', nameCookie: 'form_name16', emailCookie: 'form_email16' },
-  { formId: 'form17', nameField: 'nameForm17', emailField: 'emailForm17', dateField: 'dateForm17', timeField: 'timeForm17', quantityField: 'numberForm17', nameCookie: 'form_name17', emailCookie: 'form_email17' },
-  { formId: 'form18', nameField: 'nameForm18', emailField: 'emailForm18', dateField: 'dateForm18', timeField: 'timeForm18', quantityField: 'numberForm18', nameCookie: 'form_name18', emailCookie: 'form_email18' },
-  { formId: 'form19', nameField: 'nameForm19', emailField: 'emailForm19', dateField: 'dateForm19', timeField: 'timeForm19', quantityField: 'numberForm19', nameCookie: 'form_name19', emailCookie: 'form_email19' },
-  { formId: 'form20', nameField: 'nameForm20', emailField: 'emailForm20', dateField: 'dateForm20', timeField: 'timeForm20', quantityField: 'numberForm20', nameCookie: 'form_name20', emailCookie: 'form_email20' },
-  { formId: 'form21', nameField: 'nameForm21', emailField: 'emailForm21', dateField: 'dateForm21', timeField: 'timeForm21', quantityField: 'numberForm21', nameCookie: 'form_name21', emailCookie: 'form_email21' },
-  { formId: 'form22', nameField: 'nameForm22', emailField: 'emailForm22', dateField: 'dateForm22', timeField: 'timeForm22', quantityField: 'numberForm22', nameCookie: 'form_name22', emailCookie: 'form_email22' },
-  { formId: 'form23', nameField: 'nameForm23', emailField: 'emailForm23', dateField: 'dateForm23', timeField: 'timeForm23', quantityField: 'numberForm23', nameCookie: 'form_name23', emailCookie: 'form_email23' },
-  { formId: 'form24', nameField: 'nameForm24', emailField: 'emailForm24', dateField: 'dateForm24', timeField: 'timeForm24', quantityField: 'numberForm24', nameCookie: 'form_name24', emailCookie: 'form_email24' },
-  { formId: 'form25', nameField: 'nameForm25', emailField: 'emailForm25', dateField: 'dateForm25', timeField: 'timeForm25', quantityField: 'numberForm25', nameCookie: 'form_name25', emailCookie: 'form_email25' },
-  { formId: 'form26', nameField: 'nameForm26', emailField: 'emailForm26', dateField: 'dateForm26', timeField: 'timeForm26', quantityField: 'numberForm26', nameCookie: 'form_name26', emailCookie: 'form_email26' },
-  { formId: 'form27', nameField: 'nameForm27', emailField: 'emailForm27', dateField: 'dateForm27', timeField: 'timeForm27', quantityField: 'numberForm27', nameCookie: 'form_name27', emailCookie: 'form_email27' },
-  { formId: 'form28', nameField: 'nameForm28', emailField: 'emailForm28', dateField: 'dateForm28', timeField: 'timeForm28', quantityField: 'numberForm28', nameCookie: 'form_name28', emailCookie: 'form_email28' },
-  { formId: 'form29', nameField: 'nameForm29', emailField: 'emailForm29', dateField: 'dateForm29', timeField: 'timeForm29', quantityField: 'numberForm29', nameCookie: 'form_name29', emailCookie: 'form_email29' },
-  { formId: 'form30', nameField: 'nameForm30', emailField: 'emailForm30', dateField: 'dateForm30', timeField: 'timeForm30', quantityField: 'numberForm30', nameCookie: 'form_name30', emailCookie: 'form_email30' },
+  {
+    formId: "form1",
+    nameField: "nameForm1",
+    emailField: "emailForm1",
+    dateField: "dateForm1",
+    timeField: "timeForm1",
+    quantityField: "numberForm1",
+    nameCookie: "form_name1",
+    emailCookie: "form_email1",
+  },
+  {
+    formId: "form2",
+    nameField: "nameForm2",
+    emailField: "emailForm2",
+    dateField: "dateForm2",
+    timeField: "timeForm2",
+    quantityField: "numberForm2",
+    nameCookie: "form_name2",
+    emailCookie: "form_email2",
+  },
+  {
+    formId: "form3",
+    nameField: "nameForm3",
+    emailField: "emailForm3",
+    dateField: "dateForm3",
+    timeField: "timeForm3",
+    quantityField: "numberForm3",
+    nameCookie: "form_name3",
+    emailCookie: "form_email3",
+  },
+  {
+    formId: "form4",
+    nameField: "nameForm4",
+    emailField: "emailForm4",
+    dateField: "dateForm4",
+    timeField: "timeForm4",
+    quantityField: "numberForm4",
+    nameCookie: "form_name4",
+    emailCookie: "form_email4",
+  },
+  {
+    formId: "form5",
+    nameField: "nameForm5",
+    emailField: "emailForm5",
+    dateField: "dateForm5",
+    timeField: "timeForm5",
+    quantityField: "numberForm5",
+    nameCookie: "form_name5",
+    emailCookie: "form_email5",
+  },
+  {
+    formId: "form6",
+    nameField: "nameForm6",
+    emailField: "emailForm6",
+    dateField: "dateForm6",
+    timeField: "timeForm6",
+    quantityField: "numberForm6",
+    nameCookie: "form_name6",
+    emailCookie: "form_email6",
+  },
+  {
+    formId: "form7",
+    nameField: "nameForm7",
+    emailField: "emailForm7",
+    dateField: "dateForm7",
+    timeField: "timeForm7",
+    quantityField: "numberForm7",
+    nameCookie: "form_name7",
+    emailCookie: "form_email7",
+  },
+  {
+    formId: "form8",
+    nameField: "nameForm8",
+    emailField: "emailForm8",
+    dateField: "dateForm8",
+    timeField: "timeForm8",
+    quantityField: "numberForm8",
+    nameCookie: "form_name8",
+    emailCookie: "form_email8",
+  },
+  {
+    formId: "form9",
+    nameField: "nameForm9",
+    emailField: "emailForm9",
+    dateField: "dateForm9",
+    timeField: "timeForm9",
+    quantityField: "numberForm9",
+    nameCookie: "form_name9",
+    emailCookie: "form_email9",
+  },
+  {
+    formId: "form10",
+    nameField: "nameForm10",
+    emailField: "emailForm10",
+    dateField: "dateForm10",
+    timeField: "timeForm10",
+    quantityField: "numberForm10",
+    nameCookie: "form_name10",
+    emailCookie: "form_email10",
+  },
+  {
+    formId: "form11",
+    nameField: "nameForm11",
+    emailField: "emailForm11",
+    dateField: "dateForm11",
+    timeField: "timeForm11",
+    quantityField: "numberForm11",
+    nameCookie: "form_name11",
+    emailCookie: "form_email11",
+  },
+  {
+    formId: "form12",
+    nameField: "nameForm12",
+    emailField: "emailForm12",
+    dateField: "dateForm12",
+    timeField: "timeForm12",
+    quantityField: "numberForm12",
+    nameCookie: "form_name12",
+    emailCookie: "form_email12",
+  },
+  {
+    formId: "form13",
+    nameField: "nameForm13",
+    emailField: "emailForm13",
+    dateField: "dateForm13",
+    timeField: "timeForm13",
+    quantityField: "numberForm13",
+    nameCookie: "form_name13",
+    emailCookie: "form_email13",
+  },
+  {
+    formId: "form14",
+    nameField: "nameForm14",
+    emailField: "emailForm14",
+    dateField: "dateForm14",
+    timeField: "timeForm14",
+    quantityField: "numberForm14",
+    nameCookie: "form_name14",
+    emailCookie: "form_email14",
+  },
+  {
+    formId: "form15",
+    nameField: "nameForm15",
+    emailField: "emailForm15",
+    dateField: "dateForm15",
+    timeField: "timeForm15",
+    quantityField: "numberForm15",
+    nameCookie: "form_name15",
+    emailCookie: "form_email15",
+  },
+  {
+    formId: "form16",
+    nameField: "nameForm16",
+    emailField: "emailForm16",
+    dateField: "dateForm16",
+    timeField: "timeForm16",
+    quantityField: "numberForm16",
+    nameCookie: "form_name16",
+    emailCookie: "form_email16",
+  },
+  {
+    formId: "form17",
+    nameField: "nameForm17",
+    emailField: "emailForm17",
+    dateField: "dateForm17",
+    timeField: "timeForm17",
+    quantityField: "numberForm17",
+    nameCookie: "form_name17",
+    emailCookie: "form_email17",
+  },
+  {
+    formId: "form18",
+    nameField: "nameForm18",
+    emailField: "emailForm18",
+    dateField: "dateForm18",
+    timeField: "timeForm18",
+    quantityField: "numberForm18",
+    nameCookie: "form_name18",
+    emailCookie: "form_email18",
+  },
+  {
+    formId: "form19",
+    nameField: "nameForm19",
+    emailField: "emailForm19",
+    dateField: "dateForm19",
+    timeField: "timeForm19",
+    quantityField: "numberForm19",
+    nameCookie: "form_name19",
+    emailCookie: "form_email19",
+  },
+  {
+    formId: "form20",
+    nameField: "nameForm20",
+    emailField: "emailForm20",
+    dateField: "dateForm20",
+    timeField: "timeForm20",
+    quantityField: "numberForm20",
+    nameCookie: "form_name20",
+    emailCookie: "form_email20",
+  },
+  {
+    formId: "form21",
+    nameField: "nameForm21",
+    emailField: "emailForm21",
+    dateField: "dateForm21",
+    timeField: "timeForm21",
+    quantityField: "numberForm21",
+    nameCookie: "form_name21",
+    emailCookie: "form_email21",
+  },
+  {
+    formId: "form22",
+    nameField: "nameForm22",
+    emailField: "emailForm22",
+    dateField: "dateForm22",
+    timeField: "timeForm22",
+    quantityField: "numberForm22",
+    nameCookie: "form_name22",
+    emailCookie: "form_email22",
+  },
+  {
+    formId: "form23",
+    nameField: "nameForm23",
+    emailField: "emailForm23",
+    dateField: "dateForm23",
+    timeField: "timeForm23",
+    quantityField: "numberForm23",
+    nameCookie: "form_name23",
+    emailCookie: "form_email23",
+  },
+  {
+    formId: "form24",
+    nameField: "nameForm24",
+    emailField: "emailForm24",
+    dateField: "dateForm24",
+    timeField: "timeForm24",
+    quantityField: "numberForm24",
+    nameCookie: "form_name24",
+    emailCookie: "form_email24",
+  },
+  {
+    formId: "form25",
+    nameField: "nameForm25",
+    emailField: "emailForm25",
+    dateField: "dateForm25",
+    timeField: "timeForm25",
+    quantityField: "numberForm25",
+    nameCookie: "form_name25",
+    emailCookie: "form_email25",
+  },
+  {
+    formId: "form26",
+    nameField: "nameForm26",
+    emailField: "emailForm26",
+    dateField: "dateForm26",
+    timeField: "timeForm26",
+    quantityField: "numberForm26",
+    nameCookie: "form_name26",
+    emailCookie: "form_email26",
+  },
+  {
+    formId: "form27",
+    nameField: "nameForm27",
+    emailField: "emailForm27",
+    dateField: "dateForm27",
+    timeField: "timeForm27",
+    quantityField: "numberForm27",
+    nameCookie: "form_name27",
+    emailCookie: "form_email27",
+  },
+  {
+    formId: "form28",
+    nameField: "nameForm28",
+    emailField: "emailForm28",
+    dateField: "dateForm28",
+    timeField: "timeForm28",
+    quantityField: "numberForm28",
+    nameCookie: "form_name28",
+    emailCookie: "form_email28",
+  },
+  {
+    formId: "form29",
+    nameField: "nameForm29",
+    emailField: "emailForm29",
+    dateField: "dateForm29",
+    timeField: "timeForm29",
+    quantityField: "numberForm29",
+    nameCookie: "form_name29",
+    emailCookie: "form_email29",
+  },
+  {
+    formId: "form30",
+    nameField: "nameForm30",
+    emailField: "emailForm30",
+    dateField: "dateForm30",
+    timeField: "timeForm30",
+    quantityField: "numberForm30",
+    nameCookie: "form_name30",
+    emailCookie: "form_email30",
+  },
 ];
 
-const cookieCountDisplay = document.getElementById('cookieCountDisplay');
-const cookieTextDisplay = document.getElementById('cookieTextDisplay');
+const cookieCountDisplay = document.getElementById("cookieCountDisplay");
+const cookieTextDisplay = document.getElementById("cookieTextDisplay");
 
 // const cookieCountDisplay = document.querySelectorAll("#cookieCountDisplay");
 
-forms.forEach(formConfig => {
+forms.forEach((formConfig) => {
   const form = document.getElementById(formConfig.formId);
 
-//   forms.forEach(formConfig => {
-//     const form = document.getElementById(formConfig.formId);
-//     form.addEventListener('submit', (event) => {
-//         event.preventDefault();
-//         const formData = {
-//             item1: document.querySelector(`#${formConfig.formId} .modal-sub-head h3:first-of-type`).textContent,
-//             item2: document.querySelector(`#${formConfig.formId} .modal-sub-head h3:nth-of-type(2)`).textContent,
-//             price: document.querySelector(`#${formConfig.formId} .modal-sub-head p`).textContent,
-//             quantity: document.getElementById(formConfig.quantityField).textContent,
-//             date: document.getElementById(formConfig.dateField).value,
-//             time: document.getElementById(formConfig.timeField).value
-//         };
-//         setCookie(formConfig.cookieName, JSON.stringify(formData), 7);
-//         updateCookieCount();
-//         alert('Form data saved in cookies.');
-//     });
-// });
+  //   forms.forEach(formConfig => {
+  //     const form = document.getElementById(formConfig.formId);
+  //     form.addEventListener('submit', (event) => {
+  //         event.preventDefault();
+  //         const formData = {
+  //             item1: document.querySelector(`#${formConfig.formId} .modal-sub-head h3:first-of-type`).textContent,
+  //             item2: document.querySelector(`#${formConfig.formId} .modal-sub-head h3:nth-of-type(2)`).textContent,
+  //             price: document.querySelector(`#${formConfig.formId} .modal-sub-head p`).textContent,
+  //             quantity: document.getElementById(formConfig.quantityField).textContent,
+  //             date: document.getElementById(formConfig.dateField).value,
+  //             time: document.getElementById(formConfig.timeField).value
+  //         };
+  //         setCookie(formConfig.cookieName, JSON.stringify(formData), 7);
+  //         updateCookieCount();
+  //         alert('Form data saved in cookies.');
+  //     });
+  // });
 
-  form.addEventListener('submit', (event) => {
-      event.preventDefault();
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-      const formData = {
-        item1: form.querySelector("h3:nth-of-type(1)").innerText,
-        item2: form.querySelector("h3:nth-of-type(2)").innerText,
-        price: document.querySelector(`#${formConfig.formId} .modal-sub-head p`).textContent,
-        quantity: document.getElementById(formConfig.quantityField).textContent,
-        date: form.querySelector('input[type="date"]').value,
-        time: form.querySelector('input[type="time"]').value
-      }
-    
-      console.log(formData);
-      
-      setCookie(formConfig.formId, JSON.stringify(formData), 1);
-      // displayLog(`${JSON.stringify(formData)}`);
-      updateCookieCount();
+    const formData = {
+      item1: form.querySelector("h3:nth-of-type(1)").innerText,
+      item2: form.querySelector("h3:nth-of-type(2)").innerText,
+      price: document.querySelector(`#${formConfig.formId} .modal-sub-head p`)
+        .textContent,
+      quantity: document.getElementById(formConfig.quantityField).textContent,
+      date: form.querySelector('input[type="date"]').value,
+      time: form.querySelector('input[type="time"]').value,
+    };
+
+    console.log(formData);
+
+    setCookie(formConfig.formId, JSON.stringify(formData), 1);
+    // displayLog(`${JSON.stringify(formData)}`);
+    updateCookieCount();
   });
 });
 
-
 function updateCookieCount() {
-  console.log('water');
-  const cookieArray = document.cookie.split(';');
+  console.log("water");
+  const cookieArray = document.cookie.split(";");
   // const formCookieCount = cookieArray.filter(cookie => /form\d+Data/.test(cookie.trim().split('=')[0])).length;
-  const formCookieCount = cookieArray.filter(cookie => cookie.trim().startsWith('form')).length;
-  const formCookieText = cookieArray.filter(cookie => cookie.trim().startsWith('form'))
+  const formCookieCount = cookieArray.filter((cookie) =>
+    cookie.trim().startsWith("form")
+  ).length;
+  const formCookieText = cookieArray.filter((cookie) =>
+    cookie.trim().startsWith("form")
+  );
   cookieCountDisplay.textContent = `${formCookieCount}`;
-  cookieTextDisplay.textContent = `${formCookieText}`;
-}
 
-// function displayCookieInDiv(cookieName, divid) {
-//   const cookieValue = getCookie(cookieName);
-//   if (cookieValue) {
-//     const div = document.getElementById(divid);
-//     if (div) {
-//       div.innerText = cookieValue;
-//     }
-//   }
-// }
-// displayCookieInDiv("username", "cookieTextDisplay");
+  // Split the string by the word "form"
+  // let splitString = formCookieText.split(/form/).filter(Boolean);
+
+  // console.log(splitString);
+  // // Join the array with <br> tags, handling the "form" prefix correctly
+  // const formattedString = splitString
+  //   .map((substr, index) => (index % 2 !== 0 ? "form" + substr : substr))
+  //   .join("")
+  //   .replace(/form/g, "<br>form");
+  console.log(formattedString);
+
+  cookieTextDisplay.textContent = `${formCookieText}`;
+  // formCookieText is a string
+}
 
 function setCookie(name, value, days) {
   let expires = "";
   if (days) {
-      const date = new Date();
-      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-      expires = "; expires=" + date.toUTCString();
+    const date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    expires = "; expires=" + date.toUTCString();
   }
   document.cookie = name + "=" + (value || "") + expires + "; path=/";
 }
 
 function getCookie(name) {
-  const cookieArray = document.cookie.split(';');
+  const cookieArray = document.cookie.split(";");
   for (let cookie of cookieArray) {
-      let [key, value] = cookie.split('=');
-      key = key.trim();
-      if (key === name) {
-          return value ? decodeURIComponent(value.trim()) : "";
-      }
+    let [key, value] = cookie.split("=");
+    key = key.trim();
+    if (key === name) {
+      return value ? decodeURIComponent(value.trim()) : "";
+    }
   }
   return null;
 }
@@ -899,40 +1173,38 @@ function getCookie(name) {
 // Initial cookie count update on page load
 updateCookieCount();
 
-function deleteAllCookies() {
-  const cookies = document.cookie.split(";");
+// function deleteAllCookies() {
+//   const cookies = document.cookie.split(";");
 
-  for (let cookie of cookies) {
-      const eqPos = cookie.indexOf("=");
-      const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-      document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/`;
-  }
-}
+//   for (let cookie of cookies) {
+//     const eqPos = cookie.indexOf("=");
+//     const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+//     document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/`;
+//   }
+// }
 deleteAllCookies();
 
-// var domCookies = document.cookie.split(';').map(cookie => cookie.split('=')).reduce((accumulator, [key, value]) => ({ ...accumulator, [key.trim()]: decodeURIComponent(value) }), {});
-// console.log(domCookies);
-
-
 // button animation
-var buttons = document.querySelectorAll('.btn-dark');
+var buttons = document.querySelectorAll(".btn-dark");
 
 Array.prototype.forEach.call(buttons, function (b) {
-  b.addEventListener('click', createRipple)
+  b.addEventListener("click", createRipple);
 });
 
 function createRipple(event) {
-  var ripple = document.createElement('span');
-  ripple.classList.add('ripple');
-  
+  var ripple = document.createElement("span");
+  ripple.classList.add("ripple");
+
   var max = Math.max(this.offsetWidth, this.offsetHeight);
-  
-  ripple.style.width = ripple.style.height = max*2 + 'px';
-  
+
+  ripple.style.width = ripple.style.height = max * 2 + "px";
+
   var rect = this.getBoundingClientRect();
-  
-  ripple.style.left = event.clientX - rect.left - max + 'px';
-  ripple.style.top = event.clientY - rect.top - max + 'px';
-  
+
+  ripple.style.left = event.clientX - rect.left - max + "px";
+  ripple.style.top = event.clientY - rect.top - max + "px";
+
   this.appendChild(ripple);
 }
+
+// ===========================================================

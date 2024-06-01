@@ -128,6 +128,7 @@
             <div class="modal-body modal-custom">
               <div>
                 <img
+                id="form1Image"
                   src="/img/foldingChair/image19.jpeg"
                   alt="some img here"
                   width="200px"
@@ -140,7 +141,7 @@
                     <p id="priceForm1"><i class="bi bi-currency-dollar"></i>4.00/day</p>
                 </div>
                 <div class="modal-detail-inner">
-                    <span>Quantity</span>
+                    <span id="qtyId">Quantity</span>
                     <span>
                         <button type="button" class="btn btn-primary btn-minus" data-form="form1">-</button>
                         <div id="numberForm1" class="cart-count">1</div>
@@ -149,7 +150,7 @@
                 </div>
                 <div class="modal-detail-inner">
                     <span>Rate</span>
-                    <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                    <span id="itemPrice1">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                 </div>
                 <div class="modal-detail-inner">
                     <span>Select Dates</span>
@@ -160,7 +161,7 @@
                     <span><input type="time" name="timeForm1" id="timeForm1" value="12:00"></span>
                 </div>
                 <input type="hidden" id="formData1" name="formData1">
-                <button type="submit" id="incrementButton1" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Add to wishlist</button>
+                <button onclick="storeFormData('form1', 'item2Form1', 'form1Image', 'numberForm1', 'itemPrice1')" type="submit" id="incrementButton1" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Add to wishlist</button>
 
                 <!-- Live pull up Toast -->
                 <div class="offcanvas offcanvas-bottom" tabindex="-0.5" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
@@ -359,6 +360,7 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
+                        id="form2Image"
                           src="/img/Rectangle Table/folding-table.png"
                           alt="some img here"
                           width="200px"
@@ -380,7 +382,7 @@
                         </div>
                         <div class="modal-detail-inner">
                             <span>Rate</span>
-                            <span>Daily - <i class="bi bi-currency-dollar"></i>3.00</span>
+                            <span id="itemPrice2">Daily - <i class="bi bi-currency-dollar"></i>3.00</span>
                         </div>
                         <div class="modal-detail-inner">
                             <span>Select Dates</span>
@@ -391,7 +393,7 @@
                             <span><input type="time" name="timeForm2" id="timeForm2" value="14:00"></span>
                         </div>
                         <input type="hidden" id="formData2" name="formData2">
-                        <button type="submit" id="incrementButton2" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom1" aria-controls="offcanvasBottom1">Add to wishlist</button>
+                        <button onclick="storeFormData('form2', 'item2Form2', 'form2Image', 'numberForm2', 'itemPrice2')" type="submit" id="incrementButton2" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom1" aria-controls="offcanvasBottom1">Add to wishlist</button>
 
                         <!-- Live pull up Toast -->
                 <div class="offcanvas offcanvas-bottom" tabindex="-0.5" id="offcanvasBottom1" aria-labelledby="offcanvasBottomLabel">
@@ -502,6 +504,7 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
+                        id="form3Image"
                           src="/img/Covers & Cloth/image17.jpeg"
                           alt="some img here"
                           width="200px"
@@ -523,7 +526,7 @@
                         </div>
                         <div class="modal-detail-inner">
                             <span>Rate</span>
-                            <span>Daily - <i class="bi bi-currency-dollar"></i>5.00</span>
+                            <span id="itemPrice3">Daily - <i class="bi bi-currency-dollar"></i>5.00</span>
                         </div>
                         <div class="modal-detail-inner">
                             <span>Select Dates</span>
@@ -534,7 +537,7 @@
                             <span><input type="time" name="timeForm3" id="timeForm3" value="09:00"></span>
                         </div>
                         <input type="hidden" id="formData3" name="formData3">
-                        <button type="submit" id="incrementButton3" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom2">Add to wishlist</button>
+                        <button onclick="storeFormData('form3', 'item2Form3', 'form3Image', 'numberForm3', 'itemPrice3')" type="submit" id="incrementButton3" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom2">Add to wishlist</button>
 
                         <!-- Live pull up Toast -->
                 <div class="offcanvas offcanvas-bottom" tabindex="-0.5" id="offcanvasBottom2" aria-labelledby="offcanvasBottomLabel">
@@ -641,6 +644,7 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
+                        id="form4Image"
                           src="/img/cutlery/image13.jpeg"
                           alt="some img here"
                           width="200px"
@@ -662,7 +666,7 @@
                         </div>
                         <div class="modal-detail-inner">
                             <span>Rate</span>
-                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                            <span id="itemPrice4">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
                         <div class="modal-detail-inner">
                             <span>Select Dates</span>
@@ -673,7 +677,7 @@
                             <span><input type="time" name="timeForm1" id="timeForm4" value="12:00"></span>
                         </div>
                         <input type="hidden" id="formData4" name="formData4">
-                        <button type="submit" id="incrementButton4" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom3" aria-controls="offcanvasBottom3">Add to wishlist</button>
+                        <button onclick="storeFormData('form4', 'item2Form4', 'form4Image', 'numberForm4', 'itemPrice4')" type="submit" id="incrementButton4" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom3" aria-controls="offcanvasBottom3">Add to wishlist</button>
 
                         <!-- Live pull up Toast -->
                 <div class="offcanvas offcanvas-bottom" tabindex="-0.5" id="offcanvasBottom3" aria-labelledby="offcanvasBottomLabel">
@@ -785,6 +789,7 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
+                        id="form5Image"
                           src="/img/foldingChair/folding-chair-white2.png"
                           alt="some img here"
                           width="200px"
@@ -806,7 +811,7 @@
                         </div>
                         <div class="modal-detail-inner">
                             <span>Rate</span>
-                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                            <span id="itemPrice5">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
                         <div class="modal-detail-inner">
                             <span>Select Dates</span>
@@ -817,7 +822,7 @@
                             <span><input type="time" name="timeForm5" id="timeForm5" value="12:00"></span>
                         </div>
                         <input type="hidden" id="formData5" name="formData5">
-                        <button type="submit" id="incrementButton5" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom4" aria-controls="offcanvasBottom4">Add to wishlist</button>
+                        <button onclick="storeFormData('form5', 'item2Form5', 'form5Image', 'numberForm5', 'itemPrice5')" type="submit" id="incrementButton5" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom4" aria-controls="offcanvasBottom4">Add to wishlist</button>
 
                          <!-- Live pull up Toast -->
                 <div class="offcanvas offcanvas-bottom" tabindex="-0.5" id="offcanvasBottom4" aria-labelledby="offcanvasBottomLabel">
@@ -929,6 +934,7 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
+                        id="form6Image"
                           src="/img/Rectangle table/image12.jpeg"
                           alt="some img here"
                           width="200px"
@@ -950,7 +956,7 @@
                         </div>
                         <div class="modal-detail-inner">
                             <span>Rate</span>
-                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                            <span id="itemPrice6">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
                         <div class="modal-detail-inner">
                             <span>Select Dates</span>
@@ -961,7 +967,7 @@
                             <span><input type="time" name="timeForm6" id="timeForm6" value="12:00"></span>
                         </div>
                         <input type="hidden" id="formData6" name="formData6">
-                        <button type="submit" id="incrementButton6" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom5" aria-controls="offcanvasBottom5">Add to wishlist</button>
+                        <button onclick="storeFormData('form6', 'item2Form6', 'form6Image', 'numberForm6', 'itemPrice6')" type="submit" id="incrementButton6" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom5" aria-controls="offcanvasBottom5">Add to wishlist</button>
 
                         <!-- Live pull up Toast -->
                 <div class="offcanvas offcanvas-bottom" tabindex="-0.5" id="offcanvasBottom5" aria-labelledby="offcanvasBottomLabel">
@@ -1071,6 +1077,7 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
+                        id="form7Image"
                           src="/img/Covers & Cloth/image16.jpeg"
                           alt="some img here"
                           width="200px"
@@ -1092,7 +1099,7 @@
                         </div>
                         <div class="modal-detail-inner">
                             <span>Rate</span>
-                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                            <span id="itemPrice7">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
                         <div class="modal-detail-inner">
                             <span>Select Dates</span>
@@ -1103,8 +1110,7 @@
                             <span><input type="time" name="timeForm7" id="timeForm7" value="12:00"></span>
                         </div>
                         <input type="hidden" id="formData7" name="formData7">
-                        <button type="submit" id="incrementButton7" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom6" aria-controls="offcanvasBottom6">Add to wishlist</button>
-
+                        <button onclick="storeFormData('form7', 'item2Form7', 'form7Image', 'numberForm7', 'itemPrice7')" type="submit" id="incrementButton7" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom6" aria-controls="offcanvasBottom6">Add to wishlist</button>
                         <!-- Live pull up Toast -->
                 <div class="offcanvas offcanvas-bottom" tabindex="-0.5" id="offcanvasBottom6" aria-labelledby="offcanvasBottomLabel">
                   <div class="offcanvas-header">
@@ -1209,6 +1215,7 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
+                        id="form8Image"
                           src="/img/cutlery/image14.jpeg"
                           alt="some img here"
                           width="200px"
@@ -1230,7 +1237,7 @@
                         </div>
                         <div class="modal-detail-inner">
                             <span>Rate</span>
-                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                            <span id="itemPrice8">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
                         <div class="modal-detail-inner">
                             <span>Select Dates</span>
@@ -1241,7 +1248,7 @@
                             <span><input type="time" name="timeForm8" id="timeForm8" value="12:00"></span>
                         </div>
                         <input type="hidden" id="formData8" name="formData8">
-                        <button type="submit" id="incrementButton8" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom7" aria-controls="offcanvasBottom7">Add to wishlist</button>
+                        <button onclick="storeFormData('form8', 'item2Form8', 'form8Image', 'numberForm8', 'itemPrice8')" type="submit" id="incrementButton8" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom7" aria-controls="offcanvasBottom7">Add to wishlist</button>
 
                         
                         <!-- Live pull up Toast -->
@@ -1354,6 +1361,7 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
+                        id="form9Image"
                           src="/img/foldingChair/children-folding-chair.jpeg"
                           alt="some img here"
                           width="200px"
@@ -1375,7 +1383,7 @@
                         </div>
                         <div class="modal-detail-inner">
                             <span>Rate</span>
-                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                            <span id="itemPrice9">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
                         <div class="modal-detail-inner">
                             <span>Select Dates</span>
@@ -1386,7 +1394,7 @@
                             <span><input type="time" name="timeForm9" id="timeForm9" value="12:00"></span>
                         </div>
                         <input type="hidden" id="formData9" name="formData9">
-                        <button type="submit" id="incrementButton9" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom8" aria-controls="offcanvasBottom8">Add to wishlist</button>
+                        <button onclick="storeFormData('form9', 'item2Form9', 'form9Image', 'numberForm9', 'itemPrice9')" type="submit" id="incrementButton9" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom8" aria-controls="offcanvasBottom8">Add to wishlist</button>
 
                         
                         <!-- Live pull up Toast -->
@@ -1498,6 +1506,7 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
+                        id="form10Image"
                           src="/img/foldingChair/folding-chair-group.jpg"
                           alt="some img here"
                           width="200px"
@@ -1519,7 +1528,7 @@
                         </div>
                         <div class="modal-detail-inner">
                             <span>Rate</span>
-                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                            <span id="itemPrice10">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
                         <div class="modal-detail-inner">
                             <span>Select Dates</span>
@@ -1530,7 +1539,7 @@
                             <span><input type="time" name="timeForm10" id="timeForm10" value="12:00"></span>
                         </div>
                         <input type="hidden" id="formData10" name="formData10">
-                        <button type="submit" id="incrementButton10" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom9" aria-controls="offcanvasBottom9">Add to wishlist</button>
+                        <button onclick="storeFormData('form10', 'item2Form10', 'form10Image', 'numberForm10', 'itemPrice10')" type="submit" id="incrementButton10" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom9" aria-controls="offcanvasBottom9">Add to wishlist</button>
 
                         
                         <!-- Live pull up Toast -->
@@ -1643,6 +1652,7 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
+                        id="form11Image"
                           src="/img/Rectangle Table/image13.jpeg"
                           alt="some img here"
                           width="200px"
@@ -1664,7 +1674,7 @@
                         </div>
                         <div class="modal-detail-inner">
                             <span>Rate</span>
-                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                            <span id="itemPrice11">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
                         <div class="modal-detail-inner">
                             <span>Select Dates</span>
@@ -1675,7 +1685,7 @@
                             <span><input type="time" name="timeForm11" id="timeForm11" value="12:00"></span>
                         </div>
                         <input type="hidden" id="formData11" name="formData11">
-                        <button type="submit" id="incrementButton11" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom10" aria-controls="offcanvasBottom10">Add to wishlist</button>
+                        <button onclick="storeFormData('form11', 'item2Form11', 'form11Image', 'numberForm11', 'itemPrice11')" type="submit" id="incrementButton11" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom10" aria-controls="offcanvasBottom10">Add to wishlist</button>
 
                         
                         <!-- Live pull up Toast -->
@@ -1786,6 +1796,7 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
+                        id="form12Image"
                           src="/img/cutlery/SaladDessert Plates 7 White Snowdrop Dinnerware.jpg"
                           alt="some img here"
                           width="200px"
@@ -1807,7 +1818,7 @@
                         </div>
                         <div class="modal-detail-inner">
                             <span>Rate</span>
-                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                            <span id="itemPrice12">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
                         <div class="modal-detail-inner">
                             <span>Select Dates</span>
@@ -1818,7 +1829,7 @@
                             <span><input type="time" name="timeForm12" id="timeForm12" value="12:00"></span>
                         </div>
                         <input type="hidden" id="formData12" name="formData12">
-                        <button type="submit" id="incrementButton12" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom11" aria-controls="offcanvasBottom11">Add to wishlist</button>
+                        <button onclick="storeFormData('form12', 'item2Form12', 'form12Image', 'numberForm12', 'itemPrice12')" type="submit" id="incrementButton12" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom11" aria-controls="offcanvasBottom11">Add to wishlist</button>
 
                         
                         <!-- Live pull up Toast -->
@@ -1929,6 +1940,7 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
+                        id="form13Image"
                           src="/img/cutlery/10 Dinner Plates White wGold Rim Dynasty Dinnerware.jpg"
                           alt="some img here"
                           width="200px"
@@ -1950,7 +1962,7 @@
                         </div>
                         <div class="modal-detail-inner">
                             <span>Rate</span>
-                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                            <span id="itemPrice13">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
                         <div class="modal-detail-inner">
                             <span>Select Dates</span>
@@ -1961,7 +1973,7 @@
                             <span><input type="time" name="timeForm13" id="timeForm13" value="12:00"></span>
                         </div>
                         <input type="hidden" id="formData13" name="formData13">
-                        <button type="submit" id="incrementButton13" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom12" aria-controls="offcanvasBottom12">Add to wishlist</button>
+                        <button onclick="storeFormData('form13', 'item2Form13', 'form13Image', 'numberForm13', 'itemPrice13')" type="submit" id="incrementButton13" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom12" aria-controls="offcanvasBottom12">Add to wishlist</button>
 
                         
                         <!-- Live pull up Toast -->
@@ -2075,6 +2087,7 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
+                        id="form14Image"
                           src="/img/cutlery/10 Dinner Plates White wGold Rim Dynasty Dinnerware2.jpg"
                           alt="some img here"
                           width="200px"
@@ -2096,7 +2109,7 @@
                         </div>
                         <div class="modal-detail-inner">
                             <span>Rate</span>
-                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                            <span id="itemPrice14">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
                         <div class="modal-detail-inner">
                             <span>Select Dates</span>
@@ -2107,7 +2120,7 @@
                             <span><input type="time" name="timeForm14" id="timeForm14" value="12:00"></span>
                         </div>
                         <input type="hidden" id="formData14" name="formData14">
-                        <button type="submit" id="incrementButton14" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom13" aria-controls="offcanvasBottom13">Add to wishlist</button>
+                        <button onclick="storeFormData('form14', 'item2Form14', 'form14Image', 'numberForm14', 'itemPrice14')" type="submit" id="incrementButton14" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom13" aria-controls="offcanvasBottom13">Add to wishlist</button>
 
                         
                         <!-- Live pull up Toast -->
@@ -2218,6 +2231,7 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
+                        id="form15Image"
                           src="/img/cutlery/10 White Dinner Plates Snowdrop Dinnerware.jpg"
                           alt="some img here"
                           width="200px"
@@ -2239,7 +2253,7 @@
                         </div>
                         <div class="modal-detail-inner">
                             <span>Rate</span>
-                            <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                            <span id="itemPrice15">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                         </div>
                         <div class="modal-detail-inner">
                             <span>Select Dates</span>
@@ -2250,7 +2264,7 @@
                             <span><input type="time" name="timeForm15" id="timeForm15" value="12:00"></span>
                         </div>
                         <input type="hidden" id="formData15" name="formData15">
-                        <button type="submit" id="incrementButton15" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom14" aria-controls="offcanvasBottom14">Add to wishlist</button>
+                        <button onclick="storeFormData('form15', 'item2Form15', 'form15Image', 'numberForm15', 'itemPrice15')" type="submit" id="incrementButton15" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom14" aria-controls="offcanvasBottom14">Add to wishlist</button>
 
                         
                         <!-- Live pull up Toast -->
@@ -2361,6 +2375,7 @@
                   <div class="modal-body modal-custom">
                     <div>
                       <img
+                      id="form16Image"
                         src="/img/cutlery/Serving Forks Gold St. Urbain Flatware.jpg"
                         alt="some img here"
                         width="200px"
@@ -2382,7 +2397,7 @@
                       </div>
                       <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                          <span id="itemPrice16">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
                       <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -2393,7 +2408,7 @@
                           <span><input type="time" name="timeForm16" id="timeForm16" value="12:00"></span>
                       </div>
                       <input type="hidden" id="formData16" name="formData16">
-                      <button type="submit" id="incrementButton16" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom15" aria-controls="offcanvasBottom15">Add to wishlist</button>
+                      <button onclick="storeFormData('form16', 'item2Form16', 'form16Image', 'numberForm16', 'itemPrice16')" type="submit" id="incrementButton16" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom15" aria-controls="offcanvasBottom15">Add to wishlist</button>
 
                       
                         <!-- Live pull up Toast -->
@@ -2504,6 +2519,7 @@
                   <div class="modal-body modal-custom">
                     <div>
                       <img
+                      id="form17Image"
                         src="/img/cutlery/SoupDessert Spoons Gold St. Urbain Flatware.jpg"
                         alt="some img here"
                         width="200px"
@@ -2525,7 +2541,7 @@
                       </div>
                       <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                          <span id="itemPrice17">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
                       <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -2536,7 +2552,7 @@
                           <span><input type="time" name="timeForm17" id="timeForm17" value="12:00"></span>
                       </div>
                       <input type="hidden" id="formData17" name="formData17">
-                      <button type="submit" id="incrementButton17" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom16" aria-controls="offcanvasBottom16">Add to wishlist</button>
+                      <button onclick="storeFormData('form17', 'item2Form17', 'form17Image', 'numberForm17', 'itemPrice17')" type="submit" id="incrementButton17" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom16" aria-controls="offcanvasBottom16">Add to wishlist</button>
 
                       
                         <!-- Live pull up Toast -->
@@ -2647,6 +2663,7 @@
                   <div class="modal-body modal-custom">
                     <div>
                       <img
+                      id="form18Image"
                         src="/img/cutlery/Dinner Forks Gold St. Urbain Flatware.jpg"
                         alt="some img here"
                         width="200px"
@@ -2668,7 +2685,7 @@
                       </div>
                       <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                          <span id="itemPrice18">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
                       <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -2679,7 +2696,7 @@
                           <span><input type="time" name="timeForm18" id="timeForm18" value="12:00"></span>
                       </div>
                       <input type="hidden" id="formData18" name="formData18">
-                      <button type="submit" id="incrementButton18" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom17" aria-controls="offcanvasBottom17">Add to wishlist</button>
+                      <button onclick="storeFormData('form18', 'item2Form18', 'form18Image', 'numberForm18', 'itemPrice18')" type="submit" id="incrementButton18" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom17" aria-controls="offcanvasBottom17">Add to wishlist</button>
 
                       
                         <!-- Live pull up Toast -->
@@ -2792,6 +2809,7 @@
                    <div class="modal-body modal-custom">
                      <div>
                        <img
+                       id="form19Image"
                          src="/img/cutlery/Teaspoons Gold St. Urbain Flatware.jpg"
                          alt="some img here"
                          width="200px"
@@ -2813,7 +2831,7 @@
                       </div>
                       <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                          <span id="itemPrice19">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
                       <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -2824,7 +2842,7 @@
                           <span><input type="time" name="timeForm19" id="timeForm19" value="12:00"></span>
                       </div>
                       <input type="hidden" id="formData19" name="formData19">
-                      <button type="submit" id="incrementButton19" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom18" aria-controls="offcanvasBottom18">Add to wishlist</button>
+                      <button onclick="storeFormData('form19', 'item2Form19', 'form19Image', 'numberForm19', 'itemPrice19')" type="submit" id="incrementButton19" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom18" aria-controls="offcanvasBottom18">Add to wishlist</button>
 
                       
                         <!-- Live pull up Toast -->
@@ -2937,6 +2955,7 @@
                   <div class="modal-body modal-custom">
                     <div>
                       <img
+                      id="form20Image"
                         src="/img/cutlery/Serving Spoons Gold St. Urbain Flatware.jpg"
                         alt="some img here"
                         width="200px"
@@ -2958,7 +2977,7 @@
                       </div>
                       <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                          <span id="itemPrice20">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
                       <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -2969,7 +2988,7 @@
                           <span><input type="time" name="timeForm20" id="timeForm20" value="12:00"></span>
                       </div>
                       <input type="hidden" id="formData20" name="formData20">
-                      <button type="submit" id="incrementButton20" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom19" aria-controls="offcanvasBottom19">Add to wishlist</button>
+                      <button onclick="storeFormData('form20', 'item2Form20', 'form20Image', 'numberForm20', 'itemPrice20')" type="submit" id="incrementButton20" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom19" aria-controls="offcanvasBottom19">Add to wishlist</button>
 
                       
                         <!-- Live pull up Toast -->
@@ -3080,6 +3099,7 @@
                    <div class="modal-body modal-custom">
                      <div>
                        <img
+                       id="form21Image"
                          src="/img/cutlery/Butter Spreaders Gold St. Urbain Flatware.jpg"
                          alt="some img here"
                          width="200px"
@@ -3101,7 +3121,7 @@
                       </div>
                       <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                          <span id="itemPrice21">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
                       <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -3112,7 +3132,7 @@
                           <span><input type="time" name="timeForm21" id="timeForm21" value="12:00"></span>
                       </div>
                       <input type="hidden" id="formData21" name="formData21">
-                      <button type="submit" id="incrementButton21" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom20" aria-controls="offcanvasBottom20">Add to wishlist</button>
+                      <button onclick="storeFormData('form21', 'item2Form21', 'form21Image', 'numberForm21', 'itemPrice21')" type="submit" id="incrementButton21" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom20" aria-controls="offcanvasBottom20">Add to wishlist</button>
 
                       
                         <!-- Live pull up Toast -->
@@ -3223,6 +3243,7 @@
                   <div class="modal-body modal-custom">
                     <div>
                       <img
+                      id="form22Image"
                         src="/img/cutlery/Dinner Knives Gold St. Urbain Flatware.jpg"
                         alt="some img here"
                         width="200px"
@@ -3244,7 +3265,7 @@
                       </div>
                       <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                          <span id="itemPrice22">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
                       <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -3255,7 +3276,7 @@
                           <span><input type="time" name="timeForm22" id="timeForm22" value="12:00"></span>
                       </div>
                       <input type="hidden" id="formData22" name="formData22">
-                      <button type="submit" id="incrementButton22" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom21" aria-controls="offcanvasBottom21">Add to wishlist</button>
+                      <button onclick="storeFormData('form22', 'item2Form22', 'form22Image', 'numberForm22', 'itemPrice22')" type="submit" id="incrementButton22" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom21" aria-controls="offcanvasBottom21">Add to wishlist</button>
 
                       
                         <!-- Live pull up Toast -->
@@ -3366,6 +3387,7 @@
                   <div class="modal-body modal-custom">
                     <div>
                       <img
+                      id="form23Image"
                         src="/img/portfolio/Charger Plate Silver Plastic Dinnerware.jpg"
                         alt="some img here"
                         width="200px"
@@ -3387,7 +3409,7 @@
                       </div>
                       <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                          <span id="itemPrice23">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
                       <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -3398,7 +3420,7 @@
                           <span><input type="time" name="timeForm23" id="timeForm23" value="12:00"></span>
                       </div>
                       <input type="hidden" id="formData23" name="formData23">
-                      <button type="submit" id="incrementButton23" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom22" aria-controls="offcanvasBottom22">Add to wishlist</button>
+                      <button onclick="storeFormData('form23', 'item2Form23', 'form23Image', 'numberForm23', 'itemPrice23')" type="submit" id="incrementButton23" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom22" aria-controls="offcanvasBottom22">Add to wishlist</button>
 
                       
                         <!-- Live pull up Toast -->
@@ -3509,6 +3531,7 @@
                   <div class="modal-body modal-custom">
                     <div>
                       <img
+                      id="form24Image"
                         src="/img/cutlery/Charger Plate Gold Plastic Dinnerware.jpg"
                         alt="some img here"
                         width="200px"
@@ -3530,7 +3553,7 @@
                       </div>
                       <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                          <span id="itemPrice24">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
                       <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -3541,7 +3564,7 @@
                           <span><input type="time" name="timeForm24" id="timeForm24" value="12:00"></span>
                       </div>
                       <input type="hidden" id="formData24" name="formData24">
-                      <button type="submit" id="incrementButton24" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom23" aria-controls="offcanvasBottom23">Add to wishlist</button>
+                      <button onclick="storeFormData('form24', 'item2Form24', 'form24Image', 'numberForm24', 'itemPrice24')" type="submit" id="incrementButton24" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom23" aria-controls="offcanvasBottom23">Add to wishlist</button>
 
                       
                         <!-- Live pull up Toast -->
@@ -3653,6 +3676,7 @@
                   <div class="modal-body modal-custom">
                     <div>
                       <img
+                      id="form25Image"
                         src="/img/cutlery/Soup Bowl 8 Rim White Snowdrop.jpg"
                         alt="some img here"
                         width="200px"
@@ -3674,7 +3698,7 @@
                      </div>
                       <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                          <span id="itemPrice25">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
                       <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -3685,7 +3709,7 @@
                           <span><input type="time" name="timeForm25" id="timeForm25" value="12:00"></span>
                       </div>
                       <input type="hidden" id="formData25" name="formData25">
-                      <button type="submit" id="incrementButton25" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom24" aria-controls="offcanvasBottom24">Add to wishlist</button>
+                      <button onclick="storeFormData('form25', 'item2Form25', 'form25Image', 'numberForm25', 'itemPrice25')" type="submit" id="incrementButton25" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom24" aria-controls="offcanvasBottom24">Add to wishlist</button>
 
                       
                         <!-- Live pull up Toast -->
@@ -3797,6 +3821,7 @@
                   <div class="modal-body modal-custom">
                     <div>
                       <img
+                      id="form26Image"
                         src="/img/cutlery/SaladDessert Forks Gold.jpg"
                         alt="some img here"
                         width="200px"
@@ -3818,7 +3843,7 @@
                       </div>
                       <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                          <span id="itemPrice26">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
                       <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -3829,7 +3854,7 @@
                           <span><input type="time" name="timeForm26" id="timeForm26" value="12:00"></span>
                       </div>
                       <input type="hidden" id="formData26" name="formData26">
-                      <button type="submit" id="incrementButton26" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom25" aria-controls="offcanvasBottom25">Add to wishlist</button>
+                      <button onclick="storeFormData('form26', 'item2Form26', 'form26Image', 'numberForm26', 'itemPrice26')" type="submit" id="incrementButton26" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom25" aria-controls="offcanvasBottom25">Add to wishlist</button>
 
                       
                         <!-- Live pull up Toast -->
@@ -3938,6 +3963,7 @@
                   <div class="modal-body modal-custom">
                     <div>
                       <img
+                      id="form27Image"
                         src="/img/cutlery/image11.jpeg"
                         alt="some img here"
                         width="200px"
@@ -3959,7 +3985,7 @@
                       </div>
                       <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                          <span id="itemPrice27">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
                       <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -3970,7 +3996,7 @@
                           <span><input type="time" name="timeForm27" id="timeForm27" value="12:00"></span>
                       </div>
                       <input type="hidden" id="formData27" name="formData27">
-                      <button type="submit" id="incrementButton27" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom27" aria-controls="offcanvasBottom26">Add to wishlist</button>
+                      <button onclick="storeFormData('form27', 'item2Form27', 'form27Image', 'numberForm27', 'itemPrice27')" type="submit" id="incrementButton27" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom27" aria-controls="offcanvasBottom26">Add to wishlist</button>
 
                       
                         <!-- Live pull up Toast -->
@@ -4077,6 +4103,7 @@
                   <div class="modal-body modal-custom">
                     <div>
                       <img
+                      id="form28Image"
                         src="/img/cutlery/image15.jpeg"
                         alt="some img here"
                         width="200px"
@@ -4098,7 +4125,7 @@
                       </div>
                       <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                          <span id="itemPrice28">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
                       <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -4109,7 +4136,7 @@
                           <span><input type="time" name="timeForm28" id="timeForm28" value="12:00"></span>
                       </div>
                       <input type="hidden" id="formData28" name="formData28">
-                      <button type="submit" id="incrementButton28" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom28" aria-controls="offcanvasBottom28">Add to wishlist</button>
+                      <button onclick="storeFormData('form28', 'item2Form28', 'form28Image', 'numberForm28', 'itemPrice28')" type="submit" id="incrementButton28" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom28" aria-controls="offcanvasBottom28">Add to wishlist</button>
 
                       
                         <!-- Live pull up Toast -->
@@ -4213,6 +4240,7 @@
                   <div class="modal-body modal-custom">
                     <div>
                       <img
+                      id="form29Image"
                         src="/img/portfolio/Charger Plate Silver Plastic Dinnerware.jpg"
                         alt="some img here"
                         width="200px"
@@ -4234,7 +4262,7 @@
                       </div>
                       <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                          <span id="itemPrice29">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
                       <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -4245,7 +4273,7 @@
                           <span><input type="time" name="timeForm29" id="timeForm29" value="12:00"></span>
                       </div>
                       <input type="hidden" id="formData29" name="formData29">
-                      <button type="submit" id="incrementButton29" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom29" aria-controls="offcanvasBottom29">Add to wishlist</button>
+                      <button onclick="storeFormData('form29', 'item2Form29', 'form29Image', 'numberForm29', 'itemPrice29')" type="submit" id="incrementButton29" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom29" aria-controls="offcanvasBottom29">Add to wishlist</button>
 
                       
                         <!-- Live pull up Toast -->
@@ -4356,6 +4384,7 @@
                   <div class="modal-body modal-custom">
                     <div>
                       <img
+                      id="form30Image"
                         src="/img/portfolio/Charger Plate Silver Plastic Dinnerware.jpg"
                         alt="some img here"
                         width="200px"
@@ -4377,7 +4406,7 @@
                       </div>
                       <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span>Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
+                          <span id="itemPrice30">Daily - <i class="bi bi-currency-dollar"></i>4.00</span>
                       </div>
                       <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -4388,7 +4417,7 @@
                           <span><input type="time" name="timeForm30" id="timeForm30" value="12:00"></span>
                       </div>
                       <input type="hidden" id="formData30" name="formData30">
-                      <button type="submit" id="incrementButton30" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom30" aria-controls="offcanvasBottom30">Add to wishlist</button>
+                      <button onclick="storeFormData('form30', 'item2Form30', 'form30Image', 'numberForm30', 'itemPrice30')" type="submit" id="incrementButton30" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom30" aria-controls="offcanvasBottom30">Add to wishlist</button>
 
                       
                         <!-- Live pull up Toast -->
@@ -4575,7 +4604,7 @@
 
     <!-- <div id="countButton"></div> -->
     <div class="item-count" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-      <button type="button" class="btn position-relative">
+      <button  onclick="displayStoredData()" type="button" class="btn position-relative">
         <i style="color: white;" class="bi bi-cart-plus-fill"></i
           >
         <span id="cookieCountDisplay" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -4591,15 +4620,15 @@
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Send your Wishlist</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <div id="cookieTextDisplay"></div>
+      <div class="modal-body" id="displayDiv">
+        <div id="cookieTextDisplay" class="cookieTextDisplay"></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
+        <button type="button" class="btn btn-primary">Send</button>
       </div>
     </div>
   </div>
@@ -4617,6 +4646,106 @@
 
     <!-- Template Main JS File -->
     <script src="/js/main.js"></script>
-    <script src="/js/item_count.js"></script>
+    <script>
+      const storageKey = 'formDataList';
+
+      function storeFormData(formId, descId, imgId, qtyId, priceId) {
+            const data = {
+                formId: formId,
+                description: document.getElementById(descId).textContent,
+                imageSrc: document.getElementById(imgId).src,
+                quantity: document.getElementById(qtyId).textContent,
+                price: document.getElementById(priceId).textContent
+            };
+
+            let formDataList = JSON.parse(localStorage.getItem(storageKey)) || [];
+            const formIndex = formDataList.findIndex(item => item.formId === formId);
+
+            if (formIndex !== -1) {
+                // Update existing form data
+                formDataList[formIndex] = data;
+            } else {
+                // Add new form data
+                formDataList.push(data);
+            }
+
+            localStorage.setItem(storageKey, JSON.stringify(formDataList));
+        }
+
+        function displayStoredData() {
+            const formDataList = JSON.parse(localStorage.getItem(storageKey)) || [];
+            const displayDiv = document.getElementById('displayDiv');
+            displayDiv.innerHTML = ''; // Clear previous content
+
+            if (formDataList.length === 0) {
+                displayDiv.textContent = 'No Item available';
+            } else {
+                const ul = document.createElement('ul');
+                ul.style.paddingLeft = '0px';
+                formDataList.forEach((data, index) => {
+                    const li = document.createElement('li');
+                    li.style.display = 'flex';
+                    const img = document.createElement('img');
+                    img.src = data.imageSrc;
+                    img.alt = 'Stored Image';
+                    img.style.width = '150px'; // Set fixed width
+                    img.style.height = '80px'; // Maintain aspect ratio
+
+                    
+
+                    // li.textContent = data.description;
+                    // li.appendChild(document.createElement('br')); 
+                    li.appendChild(img);                    
+
+                    const itemName = document.createElement('span');
+                    itemName.style.width = '150px';
+                    itemName.textContent = data.description;
+                    li.appendChild(itemName);
+
+                    const qtyInfo = document.createElement('span');
+                    qtyInfo.style.width = '150px';
+                    qtyInfo.textContent = `Qty: ${data.quantity}`;              
+                    li.appendChild(qtyInfo);
+
+                    const priceInfo = document.createElement('span');
+                    priceInfo.style.width = '150px';
+                    priceInfo.textContent = data.price;
+                    li.appendChild(priceInfo);
+
+                    const removeBtn = document.createElement('span');
+                    removeBtn.textContent = 'Del';
+                    removeBtn.style.backgroundColor = 'red';
+                    removeBtn.style.color = 'white';
+                    removeBtn.style.padding = '4px';
+                    removeBtn.style.borderRadius = '10px';
+                    removeBtn.style.height = '30px';
+                    removeBtn.style.cursor = 'pointer';
+                    removeBtn.classList.add('remove-btn');
+                    removeBtn.onclick = () => removeFormData(index);
+                    li.appendChild(removeBtn);
+
+                    ul.appendChild(li);
+                });
+                displayDiv.appendChild(ul);
+            }
+
+            displayDiv.style.display = 'block'; // Show the display area
+        }
+
+        function removeFormData(index) {
+            let formDataList = JSON.parse(localStorage.getItem(storageKey)) || [];
+            formDataList.splice(index, 1); // Remove the item at the given index
+            localStorage.setItem(storageKey, JSON.stringify(formDataList));
+            displayStoredData(); // Refresh the display
+        }
+
+        // Optionally, you can clear the stored data
+        function clearStoredData() {
+            localStorage.removeItem(storageKey);
+            const displayDiv = document.getElementById('displayDiv');
+            displayDiv.innerHTML = ''; // Clear display content
+            displayDiv.style.display = 'none'; // Hide the display area
+        }
+    </script>
   </body>
 </html>
