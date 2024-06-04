@@ -6,7 +6,7 @@ const path = require("path");
 const PORT = 4014;
 const app = express();
 
-// Middleware 
+// Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -40,6 +40,10 @@ app.get("/", (req, res) => {
 
 app.get("/contact", (req, res) => {
   res.render("contact", { name: "World" });
+});
+
+app.get("/venue", (req, res) => {
+  res.render("venue", { name: "venue" });
 });
 
 app.get("/gallery", (req, res) => {
@@ -94,7 +98,7 @@ const nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
   service: "Gmail",
   auth: {
-    user: "canicemichael@gmail.com",
+    user: "everythingvodas@gmail.com",
     pass: process.env.appPass,
   },
 });
@@ -105,7 +109,7 @@ app.post("/sendMail", function (req, res) {
   var subject = req.body.subject;
   var fromEmail = req.body.email;
   var toEmail = "everythingvodas@gmail.com";
-  var message = req.body.message;
+  var message = `Client Email Address: ${req.body.email} \n ${req.body.message}`;
 
   const mailOptions = {
     from: fromEmail,
@@ -128,26 +132,23 @@ app.post("/sendMail", function (req, res) {
 app.post("/send-email", (req, res) => {
   const { email, content } = req.body;
 
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: process.env.EMAIL, // your email from environment variable
-      pass: process.env.PASSWORD, // your email password from environment variable
-    },
-  });
-
   const mailOptions = {
     from: process.env.EMAIL, // sender address from environment variable
     to: email, // recipient email address
-    subject: "Content from your div", // Subject line
+    subject: "Renting Wishlist", // Subject line
     html: content, // html body
   };
 
+  console.log(mailOptions);
+
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
+      console.error("Error sending email: ", error);
       return res.status(500).send(error.toString());
+    } else {
+      console.log("Email sent: ", info.response);
+      res.status(200).send("Email sent: " + info.response);
     }
-    res.status(200).send("Email sent: " + info.response);
   });
 });
 
@@ -572,16 +573,14 @@ app.get("/retrieve", (req, res) => {
     formData28,
   });
 
-
   let cart_item_count = 0;
 
   if (formData28) {
     console.log(`formData1-Quantity: ${formData1.quantity}`);
   } else if (formData28 === null) {
-    console.log('null');
+    console.log("null");
   }
-
-  });
+});
 
 app.listen(PORT, () => {
   console.log("server started in port 4014");
