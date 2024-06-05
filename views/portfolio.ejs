@@ -4723,7 +4723,7 @@
 
           // http://localhost:3000/send-email
           // https://vodasrental.onrender.com/portfolio/send-email
-          fetch('http://localhost:4014/send-email', {
+          fetch('https://vodasrental.onrender.com/send-email', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json'
@@ -4740,7 +4740,7 @@
               return response.text();
           })
           .then(data => {
-            window.location.href = "http://localhost:4014/venue";
+            window.location.href = "https://vodasrental.onrender.com/venue";
           })
           .catch((error) => {
               console.error('Error:', error);
