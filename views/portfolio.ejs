@@ -20,6 +20,8 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!-- Vendor CSS Files -->
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
@@ -4642,9 +4644,9 @@
                     const img = document.createElement('img');
                     img.src = data.imageSrc;
                     img.alt = 'Stored Image';
-                    img.style.width = '150px'; // Set fixed width
+                    img.style.width = '25%'; // Set fixed width
                     img.style.height = '80px'; // Maintain aspect ratio
-
+                    img.style.marginRight = '3%';
                     
 
                     // li.textContent = data.description;
@@ -4652,16 +4654,17 @@
                     li.appendChild(img);                    
 
                     const itemName = document.createElement('span');
-                    itemName.style.width = '150px';
+                    itemName.style.width = '30%';
                     // itemName.style.height = '80px';
                     // itemName.style.marginBottom = '4px';
                     itemName.style.borderColor = "red";
                     itemName.style.borderLeftWidth = '10px';
+                    itemName.style.marginRight = '2%';
                     itemName.textContent = data.description;
                     li.appendChild(itemName);
 
                     const qtyInfo = document.createElement('span');
-                    qtyInfo.style.width = '150px';
+                    qtyInfo.style.width = '10%';
                     qtyInfo.textContent = `Qty: ${data.quantity}`;              
                     li.appendChild(qtyInfo);
 
@@ -4671,11 +4674,15 @@
                     li.appendChild(priceInfo);
 
                     const removeBtn = document.createElement('span');
-                    removeBtn.textContent = 'Del';
+                    // Create an i element for the Font Awesome icon
+                    const icon = document.createElement('i');
+                    icon.className = 'fas fa-trash-alt';
+                    removeBtn.appendChild(icon);
+                    // removeBtn.textContent = 'Del';
                     removeBtn.style.backgroundColor = '#AA0000';
                     removeBtn.style.color = 'white';
                     removeBtn.style.padding = '4px';
-                    removeBtn.style.borderRadius = '10px';
+                    removeBtn.style.borderRadius = '5px';
                     removeBtn.style.height = '30px';
                     removeBtn.style.cursor = 'pointer';
                     removeBtn.classList.add('remove-btn');
