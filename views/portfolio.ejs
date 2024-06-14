@@ -289,8 +289,9 @@
               <li data-filter=".filter-product">Tables</li>
               <li data-filter=".filter-branding">Wares</li>
               <li data-filter=".filter-chairs">Linen</li>
-              <li data-filter=".filter-books">Chafing Dishes</li>
+              <li data-filter=".filter-foodservice">Food Services</li>
               <li data-filter=".filter-books">Cutlery</li>
+              <li data-filter=".filter-glasses">Glasses</li>
             </ul>
             <!-- End Portfolio Filters -->
 
@@ -883,6 +884,746 @@
               </div>
               <!-- Modal End -->
 
+              <div class="col-lg-4 col-md-6 portfolio-item filter-glasses">
+                <img
+                  src="/img/ChafingDishes/storsint-martini-glass-clear-glass__0800268_pe767839_s5.avif"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Cocktail Glass</h4>
+                  <p></p>
+                  <a
+                    href="/img/ChafingDishes/storsint-martini-glass-clear-glass__0800268_pe767839_s5.avif"
+                    title="Product 1"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModa63"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModa63"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Glass
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- modal body start  -->
+                    <div class="modal-body modal-custom">
+                      <div>
+                        <img
+                          id="form2Image"
+                          src="/img/ChafingDishes/storsint-martini-glass-clear-glass__0800268_pe767839_s5.avif"
+                          alt="some img here"
+                          width="200px"
+                        />
+                      </div>
+                      <form id="form2" method="POST" action="/submit2">
+                        <div class="modal-sub-head">
+                          <h3 id="item1Form2">Cocktails glass</h3>
+                          <h3 id="item2Form2"></h3>
+                          <p id="priceForm2">
+                            <i class="bi bi-currency-dollar"></i>5.40/day
+                          </p>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                            <button class="btn btn-primary btn-minus">
+                              <a href="#">-</a>
+                            </button>
+                            <div id="numberForm2" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add">
+                              <a href="#">+</a>
+                            </button>
+                          </span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span id="itemPrice2">Daily - $5.40</span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span
+                            ><input
+                              type="date"
+                              value="2024-06-01"
+                              name="dateForm2"
+                              id="dateForm2"
+                          /></span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span
+                            ><input
+                              type="time"
+                              name="timeForm2"
+                              id="timeForm2"
+                              value="14:00"
+                          /></span>
+                        </div>
+                        <input type="hidden" id="formData2" name="formData2" />
+                        <button
+                          onclick="storeFormData('form2', 'item2Form2', 'form2Image', 'numberForm2', 'itemPrice2')"
+                          type="submit"
+                          id="incrementButton2"
+                          class="btn btn-dark"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom1"
+                          aria-controls="offcanvasBottom1"
+                        >
+                          Add to wishlist
+                        </button>
+
+                        <!-- Live pull up Toast -->
+                        <div
+                          class="offcanvas offcanvas-bottom"
+                          tabindex="-0.5"
+                          id="offcanvasBottom1"
+                          aria-labelledby="offcanvasBottomLabel"
+                        >
+                          <div class="offcanvas-header">
+                            <h5
+                              class="offcanvas-title"
+                              id="offcanvasBottomLabel"
+                            >
+                              Item added to WishList
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close text-reset"
+                              data-bs-dismiss="offcanvas"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-detail-inner">
+                        <span>Description</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">No Discription</div>
+                      </div>
+                      <div class="modal-detail-inner">
+                        <span>Pricing</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample2"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                          <div class="modal-detail-inner">
+                            <span>1 Day Price</span>
+                            <span>
+                              - <i class="bi bi-currency-dollar"></i>5.40</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal body end -->
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal End -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-glasses">
+                <img
+                  src="/img/ChafingDishes/Shot-Glass.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Shot-Glass</h4>
+                  <p></p>
+                  <a
+                    href="/img/ChafingDishes/Shot-Glass.png"
+                    title="Product 1"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModa64"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModa64"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Glass
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- modal body start  -->
+                    <div class="modal-body modal-custom">
+                      <div>
+                        <img
+                          id="form2Image"
+                          src="/img/ChafingDishes/Shot-Glass.png"
+                          alt="some img here"
+                          width="200px"
+                        />
+                      </div>
+                      <form id="form2" method="POST" action="/submit2">
+                        <div class="modal-sub-head">
+                          <h3 id="item1Form2">Shot-Glass</h3>
+                          <h3 id="item2Form2"></h3>
+                          <p id="priceForm2">
+                            <i class="bi bi-currency-dollar"></i>5.40/day
+                          </p>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                            <button class="btn btn-primary btn-minus">
+                              <a href="#">-</a>
+                            </button>
+                            <div id="numberForm2" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add">
+                              <a href="#">+</a>
+                            </button>
+                          </span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span id="itemPrice2">Daily - $5.40</span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span
+                            ><input
+                              type="date"
+                              value="2024-06-01"
+                              name="dateForm2"
+                              id="dateForm2"
+                          /></span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span
+                            ><input
+                              type="time"
+                              name="timeForm2"
+                              id="timeForm2"
+                              value="14:00"
+                          /></span>
+                        </div>
+                        <input type="hidden" id="formData2" name="formData2" />
+                        <button
+                          onclick="storeFormData('form2', 'item2Form2', 'form2Image', 'numberForm2', 'itemPrice2')"
+                          type="submit"
+                          id="incrementButton2"
+                          class="btn btn-dark"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom1"
+                          aria-controls="offcanvasBottom1"
+                        >
+                          Add to wishlist
+                        </button>
+
+                        <!-- Live pull up Toast -->
+                        <div
+                          class="offcanvas offcanvas-bottom"
+                          tabindex="-0.5"
+                          id="offcanvasBottom1"
+                          aria-labelledby="offcanvasBottomLabel"
+                        >
+                          <div class="offcanvas-header">
+                            <h5
+                              class="offcanvas-title"
+                              id="offcanvasBottomLabel"
+                            >
+                              Item added to WishList
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close text-reset"
+                              data-bs-dismiss="offcanvas"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-detail-inner">
+                        <span>Description</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">No Discription</div>
+                      </div>
+                      <div class="modal-detail-inner">
+                        <span>Pricing</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample2"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                          <div class="modal-detail-inner">
+                            <span>1 Day Price</span>
+                            <span>
+                              - <i class="bi bi-currency-dollar"></i>5.40</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal body end -->
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal End -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-glasses">
+                <img
+                  src="/img/ChafingDishes/mona-miller-EfUwk0C3RE8-unsplash.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Wine GLass</h4>
+                  <p></p>
+                  <a
+                    href="/img/ChafingDishes/mona-miller-EfUwk0C3RE8-unsplash.jpg"
+                    title="Product 1"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModa65"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModa65"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Glass
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- modal body start  -->
+                    <div class="modal-body modal-custom">
+                      <div>
+                        <img
+                          id="form2Image"
+                          src="/img/ChafingDishes/mona-miller-EfUwk0C3RE8-unsplash.jpg"
+                          alt="some img here"
+                          width="200px"
+                        />
+                      </div>
+                      <form id="form2" method="POST" action="/submit2">
+                        <div class="modal-sub-head">
+                          <h3 id="item1Form2">Wine Glass</h3>
+                          <h3 id="item2Form2"></h3>
+                          <p id="priceForm2">
+                            <i class="bi bi-currency-dollar"></i>5.40/day
+                          </p>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                            <button class="btn btn-primary btn-minus">
+                              <a href="#">-</a>
+                            </button>
+                            <div id="numberForm2" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add">
+                              <a href="#">+</a>
+                            </button>
+                          </span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span id="itemPrice2">Daily - $5.40</span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span
+                            ><input
+                              type="date"
+                              value="2024-06-01"
+                              name="dateForm2"
+                              id="dateForm2"
+                          /></span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span
+                            ><input
+                              type="time"
+                              name="timeForm2"
+                              id="timeForm2"
+                              value="14:00"
+                          /></span>
+                        </div>
+                        <input type="hidden" id="formData2" name="formData2" />
+                        <button
+                          onclick="storeFormData('form2', 'item2Form2', 'form2Image', 'numberForm2', 'itemPrice2')"
+                          type="submit"
+                          id="incrementButton2"
+                          class="btn btn-dark"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom1"
+                          aria-controls="offcanvasBottom1"
+                        >
+                          Add to wishlist
+                        </button>
+
+                        <!-- Live pull up Toast -->
+                        <div
+                          class="offcanvas offcanvas-bottom"
+                          tabindex="-0.5"
+                          id="offcanvasBottom1"
+                          aria-labelledby="offcanvasBottomLabel"
+                        >
+                          <div class="offcanvas-header">
+                            <h5
+                              class="offcanvas-title"
+                              id="offcanvasBottomLabel"
+                            >
+                              Item added to WishList
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close text-reset"
+                              data-bs-dismiss="offcanvas"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-detail-inner">
+                        <span>Description</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">No Discription</div>
+                      </div>
+                      <div class="modal-detail-inner">
+                        <span>Pricing</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample2"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                          <div class="modal-detail-inner">
+                            <span>1 Day Price</span>
+                            <span>
+                              - <i class="bi bi-currency-dollar"></i>5.40</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal body end -->
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal End -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-glasses">
+                <img
+                  src="/img/ChafingDishes/images.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Beer GLass</h4>
+                  <p></p>
+                  <a
+                    href="/img/ChafingDishes/images.jpeg"
+                    title="Product 1"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModa66"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModa66"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Glass
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- modal body start  -->
+                    <div class="modal-body modal-custom">
+                      <div>
+                        <img
+                          id="form2Image"
+                          src="/img/ChafingDishes/images.jpeg"
+                          alt="some img here"
+                          width="200px"
+                        />
+                      </div>
+                      <form id="form2" method="POST" action="/submit2">
+                        <div class="modal-sub-head">
+                          <h3 id="item1Form2">Beer Glass</h3>
+                          <h3 id="item2Form2"></h3>
+                          <p id="priceForm2">
+                            <i class="bi bi-currency-dollar"></i>5.40/day
+                          </p>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                            <button class="btn btn-primary btn-minus">
+                              <a href="#">-</a>
+                            </button>
+                            <div id="numberForm2" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add">
+                              <a href="#">+</a>
+                            </button>
+                          </span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span id="itemPrice2">Daily - $5.40</span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span
+                            ><input
+                              type="date"
+                              value="2024-06-01"
+                              name="dateForm2"
+                              id="dateForm2"
+                          /></span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span
+                            ><input
+                              type="time"
+                              name="timeForm2"
+                              id="timeForm2"
+                              value="14:00"
+                          /></span>
+                        </div>
+                        <input type="hidden" id="formData2" name="formData2" />
+                        <button
+                          onclick="storeFormData('form2', 'item2Form2', 'form2Image', 'numberForm2', 'itemPrice2')"
+                          type="submit"
+                          id="incrementButton2"
+                          class="btn btn-dark"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom1"
+                          aria-controls="offcanvasBottom1"
+                        >
+                          Add to wishlist
+                        </button>
+
+                        <!-- Live pull up Toast -->
+                        <div
+                          class="offcanvas offcanvas-bottom"
+                          tabindex="-0.5"
+                          id="offcanvasBottom1"
+                          aria-labelledby="offcanvasBottomLabel"
+                        >
+                          <div class="offcanvas-header">
+                            <h5
+                              class="offcanvas-title"
+                              id="offcanvasBottomLabel"
+                            >
+                              Item added to WishList
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close text-reset"
+                              data-bs-dismiss="offcanvas"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-detail-inner">
+                        <span>Description</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">No Discription</div>
+                      </div>
+                      <div class="modal-detail-inner">
+                        <span>Pricing</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample2"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                          <div class="modal-detail-inner">
+                            <span>1 Day Price</span>
+                            <span>
+                              - <i class="bi bi-currency-dollar"></i>5.40</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal body end -->
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal End -->
+
               <div class="col-lg-4 col-md-6 portfolio-item filter-chairs">
                 <img
                   src="/img/Covers & Cloth/image17.jpeg"
@@ -1068,6 +1809,560 @@
               </div>
               <!-- Modal End -->
 
+              <div class="col-lg-4 col-md-6 portfolio-item filter-foodservice">
+                <img
+                  src="/img/ChafingDishes/1_RQOzFoOaN_sbusF13Zjtiw.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Chafing Dishes</h4>
+                  <p>Chafing Dishes</p>
+                  <a
+                    href="/img/ChafingDishes/1_RQOzFoOaN_sbusF13Zjtiw.jpg"
+                    title="Branding 1"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal60"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal60"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Food Services
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- modal body start  -->
+                    <div class="modal-body modal-custom">
+                      <div>
+                        <img
+                          id="form3Image"
+                          src="/img/ChafingDishes/1_RQOzFoOaN_sbusF13Zjtiw.jpg"
+                          alt="some img here"
+                          width="200px"
+                        />
+                      </div>
+                      <form id="form3" method="POST" action="/submit3">
+                        <div class="modal-sub-head">
+                          <h3 id="item1Form3">Chafing Dishes</h3>
+                          <h3 id="item2Form3">Chafing Dishes</h3>
+                          <p id="priceForm3">
+                            <i class="bi bi-currency-dollar"></i>20.0/day
+                          </p>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                            <button class="btn btn-primary btn-minus">
+                              <a href="#">-</a>
+                            </button>
+                            <div id="numberForm3" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add">
+                              <a href="#">+</a>
+                            </button>
+                          </span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span id="itemPrice3">Daily - $20.0</span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span
+                            ><input
+                              type="date"
+                              value="2024-07-15"
+                              name="dateForm3"
+                              id="dateForm3"
+                          /></span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span
+                            ><input
+                              type="time"
+                              name="timeForm3"
+                              id="timeForm3"
+                              value="09:00"
+                          /></span>
+                        </div>
+                        <input type="hidden" id="formData3" name="formData3" />
+                        <button
+                          onclick="storeFormData('form3', 'item2Form3', 'form3Image', 'numberForm3', 'itemPrice3')"
+                          type="submit"
+                          id="incrementButton3"
+                          class="btn btn-dark"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom2"
+                          aria-controls="offcanvasBottom2"
+                        >
+                          Add to wishlist
+                        </button>
+
+                        <!-- Live pull up Toast -->
+                        <div
+                          class="offcanvas offcanvas-bottom"
+                          tabindex="-0.5"
+                          id="offcanvasBottom2"
+                          aria-labelledby="offcanvasBottomLabel"
+                        >
+                          <div class="offcanvas-header">
+                            <h5
+                              class="offcanvas-title"
+                              id="offcanvasBottomLabel"
+                            >
+                              Item added to WishList
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close text-reset"
+                              data-bs-dismiss="offcanvas"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-detail-inner">
+                        <span>Description</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">No Discription</div>
+                      </div>
+                      <div class="modal-detail-inner">
+                        <span>Pricing</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample2"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                          <div class="modal-detail-inner">
+                            <span>1 Day Price</span>
+                            <span>
+                              - <i class="bi bi-currency-dollar"></i>20.0</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal body end -->
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal End -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-foodservice">
+                <img
+                  src="/img/ChafingDishes/360_F_353815488_hQFIme8ZbVtSAUIvgKrHb9g4Zx4H9QEh.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Platters</h4>
+                  <p>Serving Trays</p>
+                  <a
+                    href="/img/ChafingDishes/360_F_353815488_hQFIme8ZbVtSAUIvgKrHb9g4Zx4H9QEh.jpg"
+                    title="Branding 1"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal66"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal66"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Food Services
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- modal body start  -->
+                    <div class="modal-body modal-custom">
+                      <div>
+                        <img
+                          id="form3Image"
+                          src="/img/ChafingDishes/360_F_353815488_hQFIme8ZbVtSAUIvgKrHb9g4Zx4H9QEh.jpg"
+                          alt="some img here"
+                          width="200px"
+                        />
+                      </div>
+                      <form id="form3" method="POST" action="/submit3">
+                        <div class="modal-sub-head">
+                          <h3 id="item1Form3">Platter</h3>
+                          <h3 id="item2Form3">Serving Tray</h3>
+                          <p id="priceForm3">
+                            <i class="bi bi-currency-dollar"></i>6.0/day
+                          </p>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                            <button class="btn btn-primary btn-minus">
+                              <a href="#">-</a>
+                            </button>
+                            <div id="numberForm3" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add">
+                              <a href="#">+</a>
+                            </button>
+                          </span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span id="itemPrice3">Daily - $6.0</span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span
+                            ><input
+                              type="date"
+                              value="2024-07-15"
+                              name="dateForm3"
+                              id="dateForm3"
+                          /></span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span
+                            ><input
+                              type="time"
+                              name="timeForm3"
+                              id="timeForm3"
+                              value="09:00"
+                          /></span>
+                        </div>
+                        <input type="hidden" id="formData3" name="formData3" />
+                        <button
+                          onclick="storeFormData('form3', 'item2Form3', 'form3Image', 'numberForm3', 'itemPrice3')"
+                          type="submit"
+                          id="incrementButton3"
+                          class="btn btn-dark"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom2"
+                          aria-controls="offcanvasBottom2"
+                        >
+                          Add to wishlist
+                        </button>
+
+                        <!-- Live pull up Toast -->
+                        <div
+                          class="offcanvas offcanvas-bottom"
+                          tabindex="-0.5"
+                          id="offcanvasBottom2"
+                          aria-labelledby="offcanvasBottomLabel"
+                        >
+                          <div class="offcanvas-header">
+                            <h5
+                              class="offcanvas-title"
+                              id="offcanvasBottomLabel"
+                            >
+                              Item added to WishList
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close text-reset"
+                              data-bs-dismiss="offcanvas"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-detail-inner">
+                        <span>Description</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">No Discription</div>
+                      </div>
+                      <div class="modal-detail-inner">
+                        <span>Pricing</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample2"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                          <div class="modal-detail-inner">
+                            <span>1 Day Price</span>
+                            <span>
+                              - <i class="bi bi-currency-dollar"></i>6.0</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal body end -->
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal End -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-foodservice">
+                <img
+                  src="/img/ChafingDishes/6481.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Cupcake Stand</h4>
+                  <p>Exotic cupcake stand</p>
+                  <a
+                    href="/img/ChafingDishes/6481.jpg"
+                    title="Branding 1"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal67"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal67"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Food Services
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- modal body start  -->
+                    <div class="modal-body modal-custom">
+                      <div>
+                        <img
+                          id="form3Image"
+                          src="/img/ChafingDishes/6481.jpg"
+                          alt="some img here"
+                          width="200px"
+                        />
+                      </div>
+                      <form id="form3" method="POST" action="/submit3">
+                        <div class="modal-sub-head">
+                          <h3 id="item1Form3">Cup-cake Stand</h3>                          
+                          <p id="priceForm3">
+                            <i class="bi bi-currency-dollar"></i>30.0/day
+                          </p>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                            <button class="btn btn-primary btn-minus">
+                              <a href="#">-</a>
+                            </button>
+                            <div id="numberForm3" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add">
+                              <a href="#">+</a>
+                            </button>
+                          </span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span id="itemPrice3">Daily - $30.0</span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span
+                            ><input
+                              type="date"
+                              value="2024-07-15"
+                              name="dateForm3"
+                              id="dateForm3"
+                          /></span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span
+                            ><input
+                              type="time"
+                              name="timeForm3"
+                              id="timeForm3"
+                              value="09:00"
+                          /></span>
+                        </div>
+                        <input type="hidden" id="formData3" name="formData3" />
+                        <button
+                          onclick="storeFormData('form3', 'item2Form3', 'form3Image', 'numberForm3', 'itemPrice3')"
+                          type="submit"
+                          id="incrementButton3"
+                          class="btn btn-dark"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom2"
+                          aria-controls="offcanvasBottom2"
+                        >
+                          Add to wishlist
+                        </button>
+
+                        <!-- Live pull up Toast -->
+                        <div
+                          class="offcanvas offcanvas-bottom"
+                          tabindex="-0.5"
+                          id="offcanvasBottom2"
+                          aria-labelledby="offcanvasBottomLabel"
+                        >
+                          <div class="offcanvas-header">
+                            <h5
+                              class="offcanvas-title"
+                              id="offcanvasBottomLabel"
+                            >
+                              Item added to WishList
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close text-reset"
+                              data-bs-dismiss="offcanvas"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-detail-inner">
+                        <span>Description</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">No Discription</div>
+                      </div>
+                      <div class="modal-detail-inner">
+                        <span>Pricing</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample2"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                          <div class="modal-detail-inner">
+                            <span>1 Day Price</span>
+                            <span>
+                              - <i class="bi bi-currency-dollar"></i>30.0</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal body end -->
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal End -->
+
               <div class="col-lg-4 col-md-6 portfolio-item filter-books">
                 <img src="/img/cutlery/image13.jpeg" class="img-fluid" alt="" />
                 <div class="portfolio-info">
@@ -1127,7 +2422,7 @@
                           <h3 id="item1Form4">Cutlery</h3>
                           <h3 id="item2Form4">Gold Cutlery</h3>
                           <p id="priceForm4">
-                            <i class="bi bi-currency-dollar"></i>4.00/day
+                            <i class="bi bi-currency-dollar"></i>3.30/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
@@ -1144,7 +2439,7 @@
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice4">Daily - $4.00</span>
+                          <span id="itemPrice4">Daily - $3.30</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -1236,7 +2531,7 @@
                           <div class="modal-detail-inner">
                             <span>1 Day Price</span>
                             <span>
-                              - <i class="bi bi-currency-dollar"></i>1.75</span
+                              - <i class="bi bi-currency-dollar"></i>3.30</span
                             >
                           </div>
                         </div>
@@ -3494,7 +4789,7 @@
                           <h3 id="item1Form8">Cutlery</h3>
                           <h3 id="item2Form8">Silver Cutlery</h3>
                           <p id="priceForm8">
-                            <i class="bi bi-currency-dollar"></i>4.00/day
+                            <i class="bi bi-currency-dollar"></i>3.30/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
@@ -3511,7 +4806,7 @@
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice8">Daily - $4.00</span>
+                          <span id="itemPrice8">Daily - $3.30</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -3603,7 +4898,7 @@
                           <div class="modal-detail-inner">
                             <span>1 Day Price</span>
                             <span>
-                              - <i class="bi bi-currency-dollar"></i>4.00</span
+                              - <i class="bi bi-currency-dollar"></i>3.30</span
                             >
                           </div>
                         </div>
@@ -7083,7 +8378,7 @@
                           <h3 id="item1Form27">Ceramic Plate</h3>
                           <h3 id="item2Form27">White Ceramic Plate</h3>
                           <p id="priceForm27">
-                            <i class="bi bi-currency-dollar"></i>3.30/day
+                            <i class="bi bi-currency-dollar"></i>5.40/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
@@ -7100,7 +8395,7 @@
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice27">Daily - $3.30</span>
+                          <span id="itemPrice27">Daily - $5.40</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -7196,7 +8491,7 @@
                           <div class="modal-detail-inner">
                             <span>1 Day Price</span>
                             <span>
-                              - <i class="bi bi-currency-dollar"></i>3.30</span
+                              - <i class="bi bi-currency-dollar"></i>5.40</span
                             >
                           </div>
                         </div>
@@ -7268,7 +8563,7 @@
                           <h3 id="item1Form28">Plate</h3>
                           <h3 id="item2Form28">Gold Plates</h3>
                           <p id="priceForm28">
-                            <i class="bi bi-currency-dollar"></i>3.30/day
+                            <i class="bi bi-currency-dollar"></i>5.40/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
@@ -7285,7 +8580,7 @@
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice28">Daily - $3.30</span>
+                          <span id="itemPrice28">Daily - $5.40</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -7381,7 +8676,7 @@
                           <div class="modal-detail-inner">
                             <span>1 Day Price</span>
                             <span>
-                              - <i class="bi bi-currency-dollar"></i>3.30</span
+                              - <i class="bi bi-currency-dollar"></i>5.40</span
                             >
                           </div>
                         </div>
