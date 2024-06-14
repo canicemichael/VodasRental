@@ -292,6 +292,7 @@
               <li data-filter=".filter-foodservice">Food Services</li>
               <li data-filter=".filter-books">Cutlery</li>
               <li data-filter=".filter-glasses">Glasses</li>
+              <li data-filter=".filter-tents">Tents</li>
             </ul>
             <!-- End Portfolio Filters -->
 
@@ -5273,6 +5274,1140 @@
                             <span>1 Day Price</span>
                             <span>
                               - <i class="bi bi-currency-dollar"></i>1.75</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal body end -->
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal End -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-tents">
+                <img
+                  src="/img/tents/10x10tent.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Tent</h4>
+                  <p>10 x 10 tent</p>
+                  <a
+                    href="/img/tents/10x10tent.jpg"
+                    title="Folding Chair"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal68"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal68"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Tent
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- modal body start  -->
+                    <div class="modal-body modal-custom">
+                      <div>
+                        <img
+                          id="form10Image"
+                          src="/img/tents/10x10tent.jpg"
+                          alt="some img here"
+                          width="200px"
+                        />
+                      </div>
+                      <form id="form10" method="POST" action="/submit10">
+                        <div class="modal-sub-head">
+                          <h3 id="item1Form10">Tent</h3>
+                          <h3 id="item2Form10">10 x 10 tent</h3>
+                          <p id="priceForm10">
+                            <i class="bi bi-currency-dollar"></i>200/day
+                          </p>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                            <button class="btn btn-primary btn-minus">
+                              <a href="#">-</a>
+                            </button>
+                            <div id="numberForm10" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add">
+                              <a href="#">+</a>
+                            </button>
+                          </span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span id="itemPrice10">Daily - $200</span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span
+                            ><input
+                              type="date"
+                              value="2024-05-05"
+                              name="dateForm10"
+                              id="dateForm10"
+                          /></span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span
+                            ><input
+                              type="time"
+                              name="timeForm10"
+                              id="timeForm10"
+                              value="12:00"
+                          /></span>
+                        </div>
+                        <input
+                          type="hidden"
+                          id="formData10"
+                          name="formData10"
+                        />
+                        <button
+                          onclick="storeFormData('form10', 'item2Form10', 'form10Image', 'numberForm10', 'itemPrice10')"
+                          type="submit"
+                          id="incrementButton10"
+                          class="btn btn-dark"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom9"
+                          aria-controls="offcanvasBottom9"
+                        >
+                          Add to wishlist
+                        </button>
+
+                        <!-- Live pull up Toast -->
+                        <div
+                          class="offcanvas offcanvas-bottom"
+                          tabindex="-0.5"
+                          id="offcanvasBottom9"
+                          aria-labelledby="offcanvasBottomLabel"
+                        >
+                          <div class="offcanvas-header">
+                            <h5
+                              class="offcanvas-title"
+                              id="offcanvasBottomLabel"
+                            >
+                              Item added to WishList
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close text-reset"
+                              data-bs-dismiss="offcanvas"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-detail-inner">
+                        <span>Description</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">No Discription</div>
+                      </div>
+                      <div class="modal-detail-inner">
+                        <span>Pricing</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample2"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                          <div class="modal-detail-inner">
+                            <span>1 Day Price</span>
+                            <span>
+                              - <i class="bi bi-currency-dollar"></i>200</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal body end -->
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal End -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-tents">
+                <img
+                  src="/img/tents/15x15-tent.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Tent</h4>
+                  <p>15 x 15 tent</p>
+                  <a
+                    href="/img/tents/15x15-tent.jpg"
+                    title="Folding Chair"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal69"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal69"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Tent
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- modal body start  -->
+                    <div class="modal-body modal-custom">
+                      <div>
+                        <img
+                          id="form10Image"
+                          src="/img/tents/15x15-tent.jpg"
+                          alt="some img here"
+                          width="200px"
+                        />
+                      </div>
+                      <form id="form10" method="POST" action="/submit10">
+                        <div class="modal-sub-head">
+                          <h3 id="item1Form10">Tent</h3>
+                          <h3 id="item2Form10">15 x 15 tent</h3>
+                          <p id="priceForm10">
+                            <i class="bi bi-currency-dollar"></i>275/day
+                          </p>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                            <button class="btn btn-primary btn-minus">
+                              <a href="#">-</a>
+                            </button>
+                            <div id="numberForm10" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add">
+                              <a href="#">+</a>
+                            </button>
+                          </span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span id="itemPrice10">Daily - $275</span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span
+                            ><input
+                              type="date"
+                              value="2024-05-05"
+                              name="dateForm10"
+                              id="dateForm10"
+                          /></span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span
+                            ><input
+                              type="time"
+                              name="timeForm10"
+                              id="timeForm10"
+                              value="12:00"
+                          /></span>
+                        </div>
+                        <input
+                          type="hidden"
+                          id="formData10"
+                          name="formData10"
+                        />
+                        <button
+                          onclick="storeFormData('form10', 'item2Form10', 'form10Image', 'numberForm10', 'itemPrice10')"
+                          type="submit"
+                          id="incrementButton10"
+                          class="btn btn-dark"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom9"
+                          aria-controls="offcanvasBottom9"
+                        >
+                          Add to wishlist
+                        </button>
+
+                        <!-- Live pull up Toast -->
+                        <div
+                          class="offcanvas offcanvas-bottom"
+                          tabindex="-0.5"
+                          id="offcanvasBottom9"
+                          aria-labelledby="offcanvasBottomLabel"
+                        >
+                          <div class="offcanvas-header">
+                            <h5
+                              class="offcanvas-title"
+                              id="offcanvasBottomLabel"
+                            >
+                              Item added to WishList
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close text-reset"
+                              data-bs-dismiss="offcanvas"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-detail-inner">
+                        <span>Description</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">No Discription</div>
+                      </div>
+                      <div class="modal-detail-inner">
+                        <span>Pricing</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample2"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                          <div class="modal-detail-inner">
+                            <span>1 Day Price</span>
+                            <span>
+                              - <i class="bi bi-currency-dollar"></i>275</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal body end -->
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal End -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-tents">
+                <img
+                  src="/img/tents/images (2).jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Tent</h4>
+                  <p>10 x 20 tent</p>
+                  <a
+                    href="/img/tents/images (2).jpeg"
+                    title="Folding Chair"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal70"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal70"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Tent
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- modal body start  -->
+                    <div class="modal-body modal-custom">
+                      <div>
+                        <img
+                          id="form10Image"
+                          src="/img/tents/images (2).jpeg"
+                          alt="some img here"
+                          width="200px"
+                        />
+                      </div>
+                      <form id="form10" method="POST" action="/submit10">
+                        <div class="modal-sub-head">
+                          <h3 id="item1Form10">Tent</h3>
+                          <h3 id="item2Form10">10 x 20 tent</h3>
+                          <p id="priceForm10">
+                            <i class="bi bi-currency-dollar"></i>275/day
+                          </p>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                            <button class="btn btn-primary btn-minus">
+                              <a href="#">-</a>
+                            </button>
+                            <div id="numberForm10" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add">
+                              <a href="#">+</a>
+                            </button>
+                          </span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span id="itemPrice10">Daily - $275</span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span
+                            ><input
+                              type="date"
+                              value="2024-05-05"
+                              name="dateForm10"
+                              id="dateForm10"
+                          /></span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span
+                            ><input
+                              type="time"
+                              name="timeForm10"
+                              id="timeForm10"
+                              value="12:00"
+                          /></span>
+                        </div>
+                        <input
+                          type="hidden"
+                          id="formData10"
+                          name="formData10"
+                        />
+                        <button
+                          onclick="storeFormData('form10', 'item2Form10', 'form10Image', 'numberForm10', 'itemPrice10')"
+                          type="submit"
+                          id="incrementButton10"
+                          class="btn btn-dark"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom9"
+                          aria-controls="offcanvasBottom9"
+                        >
+                          Add to wishlist
+                        </button>
+
+                        <!-- Live pull up Toast -->
+                        <div
+                          class="offcanvas offcanvas-bottom"
+                          tabindex="-0.5"
+                          id="offcanvasBottom9"
+                          aria-labelledby="offcanvasBottomLabel"
+                        >
+                          <div class="offcanvas-header">
+                            <h5
+                              class="offcanvas-title"
+                              id="offcanvasBottomLabel"
+                            >
+                              Item added to WishList
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close text-reset"
+                              data-bs-dismiss="offcanvas"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-detail-inner">
+                        <span>Description</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">No Discription</div>
+                      </div>
+                      <div class="modal-detail-inner">
+                        <span>Pricing</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample2"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                          <div class="modal-detail-inner">
+                            <span>1 Day Price</span>
+                            <span>
+                              - <i class="bi bi-currency-dollar"></i>275</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal body end -->
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal End -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-tents">
+                <img
+                  src="/img/tents/15x20tent.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Tent</h4>
+                  <p>15 x 20 tent</p>
+                  <a
+                    href="/img/tents/15x20tent.jpg"
+                    title="Folding Chair"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal74"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal74"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Tent
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- modal body start  -->
+                    <div class="modal-body modal-custom">
+                      <div>
+                        <img
+                          id="form10Image"
+                          src="/img/tents/15x20tent.jpg"
+                          alt="some img here"
+                          width="200px"
+                        />
+                      </div>
+                      <form id="form10" method="POST" action="/submit10">
+                        <div class="modal-sub-head">
+                          <h3 id="item1Form10">Tent</h3>
+                          <h3 id="item2Form10">15 x 20 tent</h3>
+                          <p id="priceForm10">
+                            <i class="bi bi-currency-dollar"></i>375/day
+                          </p>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                            <button class="btn btn-primary btn-minus">
+                              <a href="#">-</a>
+                            </button>
+                            <div id="numberForm10" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add">
+                              <a href="#">+</a>
+                            </button>
+                          </span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span id="itemPrice10">Daily - $375</span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span
+                            ><input
+                              type="date"
+                              value="2024-05-05"
+                              name="dateForm10"
+                              id="dateForm10"
+                          /></span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span
+                            ><input
+                              type="time"
+                              name="timeForm10"
+                              id="timeForm10"
+                              value="12:00"
+                          /></span>
+                        </div>
+                        <input
+                          type="hidden"
+                          id="formData10"
+                          name="formData10"
+                        />
+                        <button
+                          onclick="storeFormData('form10', 'item2Form10', 'form10Image', 'numberForm10', 'itemPrice10')"
+                          type="submit"
+                          id="incrementButton10"
+                          class="btn btn-dark"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom9"
+                          aria-controls="offcanvasBottom9"
+                        >
+                          Add to wishlist
+                        </button>
+
+                        <!-- Live pull up Toast -->
+                        <div
+                          class="offcanvas offcanvas-bottom"
+                          tabindex="-0.5"
+                          id="offcanvasBottom9"
+                          aria-labelledby="offcanvasBottomLabel"
+                        >
+                          <div class="offcanvas-header">
+                            <h5
+                              class="offcanvas-title"
+                              id="offcanvasBottomLabel"
+                            >
+                              Item added to WishList
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close text-reset"
+                              data-bs-dismiss="offcanvas"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-detail-inner">
+                        <span>Description</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">No Discription</div>
+                      </div>
+                      <div class="modal-detail-inner">
+                        <span>Pricing</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample2"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                          <div class="modal-detail-inner">
+                            <span>1 Day Price</span>
+                            <span>
+                              - <i class="bi bi-currency-dollar"></i>375</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal body end -->
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal End -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-tents">
+                <img
+                  src="/img/tents/20x20tent.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Tent</h4>
+                  <p>20 x 20 tent</p>
+                  <a
+                    href="/img/tents/20x20tent.jpg"
+                    title="Folding Chair"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal71"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal71"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Tent
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- modal body start  -->
+                    <div class="modal-body modal-custom">
+                      <div>
+                        <img
+                          id="form10Image"
+                          src="/img/tents/20x20tent.jpg"
+                          alt="some img here"
+                          width="200px"
+                        />
+                      </div>
+                      <form id="form10" method="POST" action="/submit10">
+                        <div class="modal-sub-head">
+                          <h3 id="item1Form10">Tent</h3>
+                          <h3 id="item2Form10">20 x 20 tent</h3>
+                          <p id="priceForm10">
+                            <i class="bi bi-currency-dollar"></i>400/day
+                          </p>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                            <button class="btn btn-primary btn-minus">
+                              <a href="#">-</a>
+                            </button>
+                            <div id="numberForm10" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add">
+                              <a href="#">+</a>
+                            </button>
+                          </span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span id="itemPrice10">Daily - $400</span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span
+                            ><input
+                              type="date"
+                              value="2024-05-05"
+                              name="dateForm10"
+                              id="dateForm10"
+                          /></span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span
+                            ><input
+                              type="time"
+                              name="timeForm10"
+                              id="timeForm10"
+                              value="12:00"
+                          /></span>
+                        </div>
+                        <input
+                          type="hidden"
+                          id="formData10"
+                          name="formData10"
+                        />
+                        <button
+                          onclick="storeFormData('form10', 'item2Form10', 'form10Image', 'numberForm10', 'itemPrice10')"
+                          type="submit"
+                          id="incrementButton10"
+                          class="btn btn-dark"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom9"
+                          aria-controls="offcanvasBottom9"
+                        >
+                          Add to wishlist
+                        </button>
+
+                        <!-- Live pull up Toast -->
+                        <div
+                          class="offcanvas offcanvas-bottom"
+                          tabindex="-0.5"
+                          id="offcanvasBottom9"
+                          aria-labelledby="offcanvasBottomLabel"
+                        >
+                          <div class="offcanvas-header">
+                            <h5
+                              class="offcanvas-title"
+                              id="offcanvasBottomLabel"
+                            >
+                              Item added to WishList
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close text-reset"
+                              data-bs-dismiss="offcanvas"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-detail-inner">
+                        <span>Description</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">No Discription</div>
+                      </div>
+                      <div class="modal-detail-inner">
+                        <span>Pricing</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample2"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                          <div class="modal-detail-inner">
+                            <span>1 Day Price</span>
+                            <span>
+                              - <i class="bi bi-currency-dollar"></i>400</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal body end -->
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal End -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-tents">
+                <img
+                  src="/img/tents/20x30tent.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Tent</h4>
+                  <p>20 x 30 tent</p>
+                  <a
+                    href="/img/tents/20x30tent.jpg"
+                    title="Folding Chair"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                  <a
+                    href="/portfolio-details"
+                    title="More Details"
+                    class="details-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal73"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal73"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Equipment > Folding Chair
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- modal body start  -->
+                    <div class="modal-body modal-custom">
+                      <div>
+                        <img
+                          id="form10Image"
+                          src="/img/tents/20x30tent.jpg"
+                          alt="some img here"
+                          width="200px"
+                        />
+                      </div>
+                      <form id="form10" method="POST" action="/submit10">
+                        <div class="modal-sub-head">
+                          <h3 id="item1Form10">Tent</h3>
+                          <h3 id="item2Form10">20 x 30 tent</h3>
+                          <p id="priceForm10">
+                            <i class="bi bi-currency-dollar"></i>500/day
+                          </p>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Quantity</span>
+                          <span>
+                            <button class="btn btn-primary btn-minus">
+                              <a href="#">-</a>
+                            </button>
+                            <div id="numberForm10" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add">
+                              <a href="#">+</a>
+                            </button>
+                          </span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Rate</span>
+                          <span id="itemPrice10">Daily - $500</span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Select Dates</span>
+                          <span
+                            ><input
+                              type="date"
+                              value="2024-05-05"
+                              name="dateForm10"
+                              id="dateForm10"
+                          /></span>
+                        </div>
+                        <div class="modal-detail-inner">
+                          <span>Start Time</span>
+                          <span
+                            ><input
+                              type="time"
+                              name="timeForm10"
+                              id="timeForm10"
+                              value="12:00"
+                          /></span>
+                        </div>
+                        <input
+                          type="hidden"
+                          id="formData10"
+                          name="formData10"
+                        />
+                        <button
+                          onclick="storeFormData('form10', 'item2Form10', 'form10Image', 'numberForm10', 'itemPrice10')"
+                          type="submit"
+                          id="incrementButton10"
+                          class="btn btn-dark"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom9"
+                          aria-controls="offcanvasBottom9"
+                        >
+                          Add to wishlist
+                        </button>
+
+                        <!-- Live pull up Toast -->
+                        <div
+                          class="offcanvas offcanvas-bottom"
+                          tabindex="-0.5"
+                          id="offcanvasBottom9"
+                          aria-labelledby="offcanvasBottomLabel"
+                        >
+                          <div class="offcanvas-header">
+                            <h5
+                              class="offcanvas-title"
+                              id="offcanvasBottomLabel"
+                            >
+                              Item added to WishList
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close text-reset"
+                              data-bs-dismiss="offcanvas"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-detail-inner">
+                        <span>Description</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">No Discription</div>
+                      </div>
+                      <div class="modal-detail-inner">
+                        <span>Pricing</span>
+                        <span>
+                          <i
+                            class="bi bi-arrow-down-circle"
+                            data-bs-toggle="collapse"
+                            href="#collapseExample2"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                          <div class="modal-detail-inner">
+                            <span>1 Day Price</span>
+                            <span>
+                              - <i class="bi bi-currency-dollar"></i>500</span
                             >
                           </div>
                         </div>
