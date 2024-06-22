@@ -137,7 +137,7 @@
                   width="200px"
                 />
               </div>
-              <form id="form1" method="POST" action="/submit1">
+              <form id="form1" >
                 <div class="modal-sub-head">
                   <h3 id="item1Form1">Folding Chair</h3>
                   <h3 id="item2Form1">Garden Folding Chair - Black</h3>
@@ -150,15 +150,16 @@
                   <span>
                     <button
                       type="button"
-                      class="btn btn-primary btn-minus"
+                      class="btn btn-primary btn-minus-1"
                       data-form="form1"
                     >
                       -
                     </button>
                     <div id="numberForm1" class="cart-count">1</div>
                     <button
+                      id="btn-add-1"
                       type="button"
-                      class="btn btn-primary btn-add"
+                      class="btn btn-primary btn-add-1"
                       data-form="form1"
                     >
                       +
@@ -192,7 +193,7 @@
                 <input type="hidden" id="formData1" name="formData1" />
                 <button
                   onclick="storeFormData('form1', 'item2Form1', 'form1Image', 'numberForm1', 'itemPrice1')"
-                  type="submit"
+                  
                   id="incrementButton1"
                   class="btn btn-dark"
                   data-bs-toggle="offcanvas"
@@ -399,11 +400,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-2">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm2" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-2">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -554,7 +555,7 @@
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="exampleModalLabel">
-                        Equipment > Table
+                        Table
                       </h5>
                       <button
                         type="button"
@@ -567,35 +568,43 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form2Image"
+                          id="form29Image"
                           src="/img/Rectangle Table/IMG_2896.JPG"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form2" method="POST" action="/submit2">
+                      <form id="form29" method="POST" action="/submit2">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form2">Table</h3>
-                          <h3 id="item2Form2">24" Round Table</h3>
-                          <p id="priceForm2">
+                          <h3 id="item1Form29">Table</h3>
+                          <h3 id="item2Form29">24" Round Table</h3>
+                          <p id="priceForm29">
                             <i class="bi bi-currency-dollar"></i>8.00/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
-                          <span>Quantity</span>
+                          <span id="qtyId">Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
-                              <a href="#">-</a>
+                            <button
+                              type="button"
+                              class="btn btn-primary btn-minus-29"
+                              data-form="form29"
+                            >
+                              -
                             </button>
-                            <div id="numberForm2" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
-                              <a href="#">+</a>
+                            <div id="numberForm29" class="cart-count">1</div>
+                            <button
+                              type="button"
+                              class="btn btn-primary btn-add-29"
+                              data-form="form29"
+                            >
+                              +
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice2">Daily - $10.00</span>
+                          <span id="itemPrice29">Daily - $10.00</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -603,8 +612,8 @@
                             ><input
                               type="date"
                               value="2024-06-01"
-                              name="dateForm2"
-                              id="dateForm2"
+                              name="dateForm29"
+                              id="dateForm29"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -612,16 +621,16 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm2"
-                              id="timeForm2"
+                              name="timeForm29"
+                              id="timeForm29"
                               value="14:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData2" name="formData2" />
+                        <input type="hidden" id="formData29" name="formData29" />
                         <button
-                          onclick="storeFormData('form2', 'item2Form2', 'form2Image', 'numberForm2', 'itemPrice2')"
+                          onclick="storeFormData('form29', 'item2Form29', 'form29Image', 'numberForm29', 'itemPrice29')"
                           type="submit"
-                          id="incrementButton2"
+                          id="incrementButton29"
                           class="btn btn-dark"
                           data-bs-toggle="offcanvas"
                           data-bs-target="#offcanvasBottom1"
@@ -752,35 +761,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form2Image"
+                          id="form30Image"
                           src="/img/Rectangle Table/IMG_2896.JPG"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form2" method="POST" action="/submit2">
+                      <form id="form30" method="POST" action="/submit2">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form2">Table</h3>
-                          <h3 id="item2Form2">36" Round Table</h3>
-                          <p id="priceForm2">
+                          <h3 id="item1Form30">Table</h3>
+                          <h3 id="item2Form30">36" Round Table</h3>
+                          <p id="priceForm30">
                             <i class="bi bi-currency-dollar"></i>10.00/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-30">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm2" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm30" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-30">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice2">Daily - $10.00</span>
+                          <span id="itemPrice30">Daily - $10.00</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -788,8 +797,8 @@
                             ><input
                               type="date"
                               value="2024-06-01"
-                              name="dateForm2"
-                              id="dateForm2"
+                              name="dateForm30"
+                              id="dateForm30"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -797,14 +806,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm2"
-                              id="timeForm2"
+                              name="timeForm30"
+                              id="timeForm30"
                               value="14:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData2" name="formData2" />
+                        <input type="hidden" id="formData30" name="formData30" />
                         <button
-                          onclick="storeFormData('form2', 'item2Form2', 'form2Image', 'numberForm2', 'itemPrice2')"
+                          onclick="storeFormData('form30', 'item2Form30', 'form30Image', 'numberForm30', 'itemPrice30')"
                           type="submit"
                           id="incrementButton2"
                           class="btn btn-dark"
@@ -937,35 +946,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form2Image"
+                          id="form31Image"
                           src="/img/ChafingDishes/storsint-martini-glass-clear-glass__0800268_pe767839_s5.avif"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form2" method="POST" action="/submit2">
+                      <form id="form31" method="POST" action="/submit2">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form2">Cocktails glass</h3>
-                          <h3 id="item2Form2"></h3>
-                          <p id="priceForm2">
+                          <h3 id="item1Form31">Cocktails glass</h3>
+                          <h3 id="item2Form31"></h3>
+                          <p id="priceForm31">
                             <i class="bi bi-currency-dollar"></i>5.40/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-31">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm2" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm31" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-31">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice2">Daily - $5.40</span>
+                          <span id="itemPrice31">Daily - $5.40</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -973,8 +982,8 @@
                             ><input
                               type="date"
                               value="2024-06-01"
-                              name="dateForm2"
-                              id="dateForm2"
+                              name="dateForm31"
+                              id="dateForm31"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -982,14 +991,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm2"
-                              id="timeForm2"
+                              name="timeForm31"
+                              id="timeForm31"
                               value="14:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData2" name="formData2" />
+                        <input type="hidden" id="formData31" name="formData31" />
                         <button
-                          onclick="storeFormData('form2', 'item2Form2', 'form2Image', 'numberForm2', 'itemPrice2')"
+                          onclick="storeFormData('form31', 'item2Form31', 'form31Image', 'numberForm31', 'itemPrice31')"
                           type="submit"
                           id="incrementButton2"
                           class="btn btn-dark"
@@ -1122,35 +1131,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form2Image"
+                          id="form32Image"
                           src="/img/ChafingDishes/Shot-Glass.png"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form2" method="POST" action="/submit2">
+                      <form id="form32" method="POST" action="/submit2">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form2">Shot-Glass</h3>
-                          <h3 id="item2Form2"></h3>
-                          <p id="priceForm2">
+                          <h3 id="item1Form32">Shot-Glass</h3>
+                          <h3 id="item2Form32"></h3>
+                          <p id="priceForm32">
                             <i class="bi bi-currency-dollar"></i>5.40/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-32">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm2" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm32" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-32">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice2">Daily - $5.40</span>
+                          <span id="itemPrice32">Daily - $5.40</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -1158,8 +1167,8 @@
                             ><input
                               type="date"
                               value="2024-06-01"
-                              name="dateForm2"
-                              id="dateForm2"
+                              name="dateForm32"
+                              id="dateForm32"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -1167,14 +1176,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm2"
-                              id="timeForm2"
+                              name="timeForm32"
+                              id="timeForm32"
                               value="14:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData2" name="formData2" />
+                        <input type="hidden" id="formData32" name="formData32" />
                         <button
-                          onclick="storeFormData('form2', 'item2Form2', 'form2Image', 'numberForm2', 'itemPrice2')"
+                          onclick="storeFormData('form32', 'item2Form32', 'form32Image', 'numberForm32', 'itemPrice32')"
                           type="submit"
                           id="incrementButton2"
                           class="btn btn-dark"
@@ -1307,35 +1316,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form2Image"
+                          id="form33Image"
                           src="/img/ChafingDishes/mona-miller-EfUwk0C3RE8-unsplash.jpg"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form2" method="POST" action="/submit2">
+                      <form id="form33" method="POST" action="/submit2">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form2">Wine Glass</h3>
-                          <h3 id="item2Form2"></h3>
-                          <p id="priceForm2">
+                          <h3 id="item1Form33">Wine Glass</h3>
+                          <h3 id="item2Form33"></h3>
+                          <p id="priceForm33">
                             <i class="bi bi-currency-dollar"></i>5.40/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-33">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm2" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm33" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-33">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice2">Daily - $5.40</span>
+                          <span id="itemPrice33">Daily - $5.40</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -1343,8 +1352,8 @@
                             ><input
                               type="date"
                               value="2024-06-01"
-                              name="dateForm2"
-                              id="dateForm2"
+                              name="dateForm33"
+                              id="dateForm33"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -1352,14 +1361,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm2"
-                              id="timeForm2"
+                              name="timeForm33"
+                              id="timeForm33"
                               value="14:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData2" name="formData2" />
+                        <input type="hidden" id="formData33" name="formData33" />
                         <button
-                          onclick="storeFormData('form2', 'item2Form2', 'form2Image', 'numberForm2', 'itemPrice2')"
+                          onclick="storeFormData('form33', 'item2Form33', 'form33Image', 'numberForm33', 'itemPrice33')"
                           type="submit"
                           id="incrementButton2"
                           class="btn btn-dark"
@@ -1440,7 +1449,7 @@
               </div>
               <!-- Modal End -->
 
-              <div class="col-lg-4 col-md-6 portfolio-item filter-glasses">
+              <div class="col-lg-4 col-md-6 portfolio-item filter-glasses" style="display: flex; justify-content: center;">
                 <img
                   src="/img/ChafingDishes/images.jpeg"
                   class="img-fluid"
@@ -1492,35 +1501,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form2Image"
+                          id="form34Image"
                           src="/img/ChafingDishes/images.jpeg"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form2" method="POST" action="/submit2">
+                      <form id="form34" method="POST" action="/submit2">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form2">Beer Glass</h3>
-                          <h3 id="item2Form2"></h3>
-                          <p id="priceForm2">
+                          <h3 id="item1Form34">Beer Glass</h3>
+                          <h3 id="item2Form34"></h3>
+                          <p id="priceForm34">
                             <i class="bi bi-currency-dollar"></i>5.40/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-34">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm2" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm34" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-34">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice2">Daily - $5.40</span>
+                          <span id="itemPrice34">Daily - $5.40</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -1528,8 +1537,8 @@
                             ><input
                               type="date"
                               value="2024-06-01"
-                              name="dateForm2"
-                              id="dateForm2"
+                              name="dateForm34"
+                              id="dateForm34"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -1537,14 +1546,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm2"
-                              id="timeForm2"
+                              name="timeForm34"
+                              id="timeForm34"
                               value="14:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData2" name="formData2" />
+                        <input type="hidden" id="formData34" name="formData34" />
                         <button
-                          onclick="storeFormData('form2', 'item2Form2', 'form2Image', 'numberForm2', 'itemPrice2')"
+                          onclick="storeFormData('form34', 'item2Form34', 'form34Image', 'numberForm34', 'itemPrice34')"
                           type="submit"
                           id="incrementButton2"
                           class="btn btn-dark"
@@ -1677,35 +1686,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form3Image"
+                          id="form41Image"
                           src="/img/Covers & Cloth/image17.jpeg"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form3" method="POST" action="/submit3">
+                      <form id="form41" method="POST" action="/submit41">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form3">Table Cloth</h3>
-                          <h3 id="item2Form3">54" x 54" Linen</h3>
-                          <p id="priceForm3">
+                          <h3 id="item1Form41">Table Cloth</h3>
+                          <h3 id="item2Form41">54" x 54" Linen</h3>
+                          <p id="priceForm41">
                             <i class="bi bi-currency-dollar"></i>3.75/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-41">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm3" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm41" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-41">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice3">Daily - $3.75</span>
+                          <span id="itemPrice41">Daily - $3.75</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -1713,8 +1722,8 @@
                             ><input
                               type="date"
                               value="2024-07-15"
-                              name="dateForm3"
-                              id="dateForm3"
+                              name="dateForm41"
+                              id="dateForm41"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -1722,14 +1731,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm3"
-                              id="timeForm3"
+                              name="timeForm41"
+                              id="timeForm41"
                               value="09:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData3" name="formData3" />
+                        <input type="hidden" id="formData41" name="formData41" />
                         <button
-                          onclick="storeFormData('form3', 'item2Form3', 'form3Image', 'numberForm3', 'itemPrice3')"
+                          onclick="storeFormData('form41', 'item2Form41', 'form41Image', 'numberForm41', 'itemPrice41')"
                           type="submit"
                           id="incrementButton3"
                           class="btn btn-dark"
@@ -1868,29 +1877,29 @@
                           width="200px"
                         />
                       </div>
-                      <form id="form3" method="POST" action="/submit3">
+                      <form id="form42" method="POST" action="/submit42">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form3">Chafing Dishes</h3>
-                          <h3 id="item2Form3">Chafing Dishes</h3>
-                          <p id="priceForm3">
+                          <h3 id="item1Form42">Chafing Dishes</h3>
+                          <h3 id="item2Form42">Chafing Dishes</h3>
+                          <p id="priceForm42">
                             <i class="bi bi-currency-dollar"></i>20.0/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-42">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm3" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm42" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-42">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice3">Daily - $20.0</span>
+                          <span id="itemPrice42">Daily - $20.0</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -1898,8 +1907,8 @@
                             ><input
                               type="date"
                               value="2024-07-15"
-                              name="dateForm3"
-                              id="dateForm3"
+                              name="dateForm42"
+                              id="dateForm42"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -1907,14 +1916,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm3"
-                              id="timeForm3"
+                              name="timeForm42"
+                              id="timeForm42"
                               value="09:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData3" name="formData3" />
+                        <input type="hidden" id="formData42" name="formData42" />
                         <button
-                          onclick="storeFormData('form3', 'item2Form3', 'form3Image', 'numberForm3', 'itemPrice3')"
+                          onclick="storeFormData('form42', 'item2Form42', 'form42Image', 'numberForm42', 'itemPrice42')"
                           type="submit"
                           id="incrementButton3"
                           class="btn btn-dark"
@@ -2053,29 +2062,29 @@
                           width="200px"
                         />
                       </div>
-                      <form id="form3" method="POST" action="/submit3">
+                      <form id="form43" method="POST" action="/submit43">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form3">Platter</h3>
-                          <h3 id="item2Form3">Serving Tray</h3>
-                          <p id="priceForm3">
+                          <h3 id="item1Form43">Platter</h3>
+                          <h3 id="item2Form43">Serving Tray</h3>
+                          <p id="priceForm43">
                             <i class="bi bi-currency-dollar"></i>6.0/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-43">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm3" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm43" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-43">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice3">Daily - $6.0</span>
+                          <span id="itemPrice43">Daily - $6.0</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -2083,8 +2092,8 @@
                             ><input
                               type="date"
                               value="2024-07-15"
-                              name="dateForm3"
-                              id="dateForm3"
+                              name="dateForm43"
+                              id="dateForm43"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -2092,14 +2101,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm3"
-                              id="timeForm3"
+                              name="timeForm43"
+                              id="timeForm43"
                               value="09:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData3" name="formData3" />
+                        <input type="hidden" id="formData43" name="formData43" />
                         <button
-                          onclick="storeFormData('form3', 'item2Form3', 'form3Image', 'numberForm3', 'itemPrice3')"
+                          onclick="storeFormData('form43', 'item2Form43', 'form43Image', 'numberForm43', 'itemPrice43')"
                           type="submit"
                           id="incrementButton3"
                           class="btn btn-dark"
@@ -2232,34 +2241,34 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form3Image"
+                          id="form40Image"
                           src="/img/ChafingDishes/6481.jpg"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form3" method="POST" action="/submit3">
+                      <form id="form40" method="POST" action="/submit40">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form3">Cup-cake Stand</h3>                          
-                          <p id="priceForm3">
+                          <h3 id="item1Form40">Cup-cake Stand</h3>                          
+                          <p id="priceForm40">
                             <i class="bi bi-currency-dollar"></i>30.0/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-40">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm3" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm40" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-40">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice3">Daily - $30.0</span>
+                          <span id="itemPrice40">Daily - $30.0</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -2267,8 +2276,8 @@
                             ><input
                               type="date"
                               value="2024-07-15"
-                              name="dateForm3"
-                              id="dateForm3"
+                              name="dateForm40"
+                              id="dateForm40"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -2276,14 +2285,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm3"
-                              id="timeForm3"
+                              name="timeForm40"
+                              id="timeForm40"
                               value="09:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData3" name="formData3" />
+                        <input type="hidden" id="formData40" name="formData40" />
                         <button
-                          onclick="storeFormData('form3', 'item2Form3', 'form3Image', 'numberForm3', 'itemPrice3')"
+                          onclick="storeFormData('form40', 'item2Form40', 'form40Image', 'numberForm40', 'itemPrice40')"
                           type="submit"
                           id="incrementButton3"
                           class="btn btn-dark"
@@ -2429,11 +2438,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-4">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm4" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-4">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -2449,7 +2458,7 @@
                               type="date"
                               value="2024-05-05"
                               name="dateForm4"
-                              id="dateForm1"
+                              id="dateForm4"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -2457,7 +2466,7 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm1"
+                              name="timeForm4"
                               id="timeForm4"
                               value="12:00"
                           /></span>
@@ -2614,11 +2623,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-5">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm5" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-5">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -2773,11 +2782,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-6">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm6" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-6">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -2958,11 +2967,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-7">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm7" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-7">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -3125,35 +3134,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form7Image"
+                          id="form44Image"
                           src="/img/Covers & Cloth/IMG_2753.JPG"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form7" method="POST" action="/submit7">
+                      <form id="form44" method="POST" action="/submit44">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form7">Linen</h3>
-                          <h3 id="item2Form7">72" x 120" Linen</h3>
-                          <p id="priceForm7">
+                          <h3 id="item1Form44">Linen</h3>
+                          <h3 id="item2Form44">72" x 120" Linen</h3>
+                          <p id="priceForm44">
                             <i class="bi bi-currency-dollar"></i>8.00/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-44">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm7" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm44" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-44">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice7">Daily - $8.00</span>
+                          <span id="itemPrice44">Daily - $8.00</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -3161,8 +3170,8 @@
                             ><input
                               type="date"
                               value="2024-05-05"
-                              name="dateForm7"
-                              id="dateForm7"
+                              name="dateForm44"
+                              id="dateForm44"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -3170,14 +3179,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm7"
-                              id="timeForm7"
+                              name="timeForm44"
+                              id="timeForm44"
                               value="12:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData7" name="formData7" />
+                        <input type="hidden" id="formData44" name="formData44" />
                         <button
-                          onclick="storeFormData('form7', 'item2Form7', 'form7Image', 'numberForm7', 'itemPrice7')"
+                          onclick="storeFormData('form44', 'item2Form44', 'form44Image', 'numberForm44', 'itemPrice44')"
                           type="submit"
                           id="incrementButton7"
                           class="btn btn-dark"
@@ -3309,35 +3318,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form7Image"
+                          id="form45Image"
                           src="/img/Covers & Cloth/IMG_2746.JPG"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form7" method="POST" action="/submit7">
+                      <form id="form45" method="POST" action="/submit45">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form7">Linen</h3>
-                          <h3 id="item2Form7">90" Round</h3>
-                          <p id="priceForm7">
+                          <h3 id="item1Form45">Linen</h3>
+                          <h3 id="item2Form45">90" Round</h3>
+                          <p id="priceForm45">
                             <i class="bi bi-currency-dollar"></i>7.75/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-45">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm7" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm45" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-45">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice7">Daily - $7.75</span>
+                          <span id="itemPrice45">Daily - $7.75</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -3345,8 +3354,8 @@
                             ><input
                               type="date"
                               value="2024-05-05"
-                              name="dateForm7"
-                              id="dateForm7"
+                              name="dateForm45"
+                              id="dateForm45"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -3354,14 +3363,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm7"
-                              id="timeForm7"
+                              name="timeForm45"
+                              id="timeForm45"
                               value="12:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData7" name="formData7" />
+                        <input type="hidden" id="formData45" name="formData45" />
                         <button
-                          onclick="storeFormData('form7', 'item2Form7', 'form7Image', 'numberForm7', 'itemPrice7')"
+                          onclick="storeFormData('form45', 'item2Form45', 'form45Image', 'numberForm45', 'itemPrice45')"
                           type="submit"
                           id="incrementButton7"
                           class="btn btn-dark"
@@ -3510,11 +3519,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-46">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm7" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm46" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-46">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -3545,7 +3554,7 @@
                         </div>
                         <input type="hidden" id="formData7" name="formData7" />
                         <button
-                          onclick="storeFormData('form7', 'item2Form7', 'form7Image', 'numberForm7', 'itemPrice7')"
+                          onclick="storeFormData('form7', 'item2Form7', 'form7Image', 'numberForm46', 'itemPrice7')"
                           type="submit"
                           id="incrementButton7"
                           class="btn btn-dark"
@@ -3677,35 +3686,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form7Image"
+                          id="form47Image"
                           src="/img/Covers & Cloth/IMG_2772.JPG"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form7" method="POST" action="/submit7">
+                      <form id="form47" method="POST" action="/submit47">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form7">Napkins</h3>
-                          <h3 id="item2Form7">Napkin - Pink</h3>
-                          <p id="priceForm7">
+                          <h3 id="item1Form47">Napkins</h3>
+                          <h3 id="item2Form47">Napkin - Pink</h3>
+                          <p id="priceForm47">
                             <i class="bi bi-currency-dollar"></i>0.50/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-47">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm7" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm47" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-47">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice7">Daily - $0.50</span>
+                          <span id="itemPrice47">Daily - $0.50</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -3713,8 +3722,8 @@
                             ><input
                               type="date"
                               value="2024-05-05"
-                              name="dateForm7"
-                              id="dateForm7"
+                              name="dateForm47"
+                              id="dateForm47"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -3722,14 +3731,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm7"
-                              id="timeForm7"
+                              name="timeForm47"
+                              id="timeForm47"
                               value="12:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData7" name="formData7" />
+                        <input type="hidden" id="formData47" name="formData47" />
                         <button
-                          onclick="storeFormData('form7', 'item2Form7', 'form7Image', 'numberForm7', 'itemPrice7')"
+                          onclick="storeFormData('form47', 'item2Form47', 'form47Image', 'numberForm47', 'itemPrice47')"
                           type="submit"
                           id="incrementButton7"
                           class="btn btn-dark"
@@ -3861,35 +3870,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form7Image"
+                          id="form48Image"
                           src="/img/Covers & Cloth/IMG_2774.JPG"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form7" method="POST" action="/submit7">
+                      <form id="form48" method="POST" action="/submit7">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form7">Napkins</h3>
-                          <h3 id="item2Form7">Napkin - Ash</h3>
-                          <p id="priceForm7">
+                          <h3 id="item1Form48">Napkins</h3>
+                          <h3 id="item2Form48">Napkin - Ash</h3>
+                          <p id="priceForm48">
                             <i class="bi bi-currency-dollar"></i>0.50/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-48">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm7" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm48" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-48">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice7">Daily - $0.50</span>
+                          <span id="itemPrice48">Daily - $0.50</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -3897,8 +3906,8 @@
                             ><input
                               type="date"
                               value="2024-05-05"
-                              name="dateForm7"
-                              id="dateForm7"
+                              name="dateForm48"
+                              id="dateForm48"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -3906,14 +3915,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm7"
-                              id="timeForm7"
+                              name="timeForm48"
+                              id="timeForm48"
                               value="12:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData7" name="formData7" />
+                        <input type="hidden" id="formData48" name="formData48" />
                         <button
-                          onclick="storeFormData('form7', 'item2Form7', 'form7Image', 'numberForm7', 'itemPrice7')"
+                          onclick="storeFormData('form48', 'item2Form48', 'form48Image', 'numberForm48', 'itemPrice48')"
                           type="submit"
                           id="incrementButton7"
                           class="btn btn-dark"
@@ -4045,35 +4054,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form7Image"
+                          id="form49Image"
                           src="/img/Covers & Cloth/IMG_2778.JPG"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form7" method="POST" action="/submit7">
+                      <form id="form49" method="POST" action="/submit49">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form7">Napkins</h3>
-                          <h3 id="item2Form7">Napkin - Black</h3>
-                          <p id="priceForm7">
+                          <h3 id="item1Form49">Napkins</h3>
+                          <h3 id="item2Form49">Napkin - Black</h3>
+                          <p id="priceForm49">
                             <i class="bi bi-currency-dollar"></i>0.50/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-49">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm7" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm49" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-49">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice7">Daily - $0.50</span>
+                          <span id="itemPrice49">Daily - $0.50</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -4081,8 +4090,8 @@
                             ><input
                               type="date"
                               value="2024-05-05"
-                              name="dateForm7"
-                              id="dateForm7"
+                              name="dateForm49"
+                              id="dateForm49"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -4090,14 +4099,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm7"
-                              id="timeForm7"
+                              name="timeForm49"
+                              id="timeForm49"
                               value="12:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData7" name="formData7" />
+                        <input type="hidden" id="formData49" name="formData49" />
                         <button
-                          onclick="storeFormData('form7', 'item2Form7', 'form7Image', 'numberForm7', 'itemPrice7')"
+                          onclick="storeFormData('form49', 'item2Form49', 'form49Image', 'numberForm49', 'itemPrice49')"
                           type="submit"
                           id="incrementButton7"
                           class="btn btn-dark"
@@ -4229,35 +4238,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form7Image"
+                          id="form50Image"
                           src="/img/Covers & Cloth/IMG_2777.JPG"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form7" method="POST" action="/submit7">
+                      <form id="form50" method="POST" action="/submit50">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form7">Napkins</h3>
-                          <h3 id="item2Form7">Napkin - Oxblood</h3>
-                          <p id="priceForm7">
+                          <h3 id="item1Form50">Napkins</h3>
+                          <h3 id="item2Form50">Napkin - Oxblood</h3>
+                          <p id="priceForm50">
                             <i class="bi bi-currency-dollar"></i>0.50/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-50">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm7" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm50" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-50">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice7">Daily - $0.50</span>
+                          <span id="itemPrice50">Daily - $0.50</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -4265,8 +4274,8 @@
                             ><input
                               type="date"
                               value="2024-05-05"
-                              name="dateForm7"
-                              id="dateForm7"
+                              name="dateForm50"
+                              id="dateForm50"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -4274,14 +4283,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm7"
-                              id="timeForm7"
+                              name="timeForm50"
+                              id="timeForm50"
                               value="12:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData7" name="formData7" />
+                        <input type="hidden" id="formData50" name="formData50" />
                         <button
-                          onclick="storeFormData('form7', 'item2Form7', 'form7Image', 'numberForm7', 'itemPrice7')"
+                          onclick="storeFormData('form50', 'item2Form50', 'form50Image', 'numberForm50', 'itemPrice50')"
                           type="submit"
                           id="incrementButton7"
                           class="btn btn-dark"
@@ -4413,35 +4422,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form7Image"
+                          id="form51Image"
                           src="/img/Covers & Cloth/IMG_2776.JPG"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form7" method="POST" action="/submit7">
+                      <form id="form51" method="POST" action="/submit51">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form7">Napkins</h3>
-                          <h3 id="item2Form7">Napkin - Milk</h3>
-                          <p id="priceForm7">
+                          <h3 id="item1Form51">Napkins</h3>
+                          <h3 id="item2Form51">Napkin - Milk</h3>
+                          <p id="priceForm51">
                             <i class="bi bi-currency-dollar"></i>0.50/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-51">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm7" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm51" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-51">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice7">Daily - $0.50</span>
+                          <span id="itemPrice51">Daily - $0.50</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -4449,8 +4458,8 @@
                             ><input
                               type="date"
                               value="2024-05-05"
-                              name="dateForm7"
-                              id="dateForm7"
+                              name="dateForm51"
+                              id="dateForm51"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -4458,14 +4467,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm7"
-                              id="timeForm7"
+                              name="timeForm51"
+                              id="timeForm51"
                               value="12:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData7" name="formData7" />
+                        <input type="hidden" id="formData51" name="formData51" />
                         <button
-                          onclick="storeFormData('form7', 'item2Form7', 'form7Image', 'numberForm7', 'itemPrice7')"
+                          onclick="storeFormData('form51', 'item2Form51', 'form51Image', 'numberForm51', 'itemPrice51')"
                           type="submit"
                           id="incrementButton7"
                           class="btn btn-dark"
@@ -4566,7 +4575,7 @@
                     title="More Details"
                     class="details-link"
                     data-bs-toggle="modal"
-                    data-bs-target="#exampleModal47"
+                    data-bs-target="#exampleModal61"
                     ><i class="bi bi-zoom-in"></i
                   ></a>
                 </div>
@@ -4575,7 +4584,7 @@
               <!-- Modal -->
               <div
                 class="modal fade"
-                id="exampleModal47"
+                id="exampleModal61"
                 tabindex="-1"
                 aria-labelledby="exampleModalLabel"
                 aria-hidden="true"
@@ -4597,35 +4606,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form7Image"
+                          id="form52Image"
                           src="/img/Covers & Cloth/IMG_2775.JPG"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form7" method="POST" action="/submit7">
+                      <form id="form52" method="POST" action="/submit52">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form7">Napkins</h3>
-                          <h3 id="item2Form7">Napkin - Orange</h3>
-                          <p id="priceForm7">
+                          <h3 id="item1Form52">Napkins</h3>
+                          <h3 id="item2Form52">Napkin - Orange</h3>
+                          <p id="priceForm52">
                             <i class="bi bi-currency-dollar"></i>0.50/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-52">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm7" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm52" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-52">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice7">Daily - $0.50</span>
+                          <span id="itemPrice52">Daily - $0.50</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -4633,8 +4642,8 @@
                             ><input
                               type="date"
                               value="2024-05-05"
-                              name="dateForm7"
-                              id="dateForm7"
+                              name="dateForm52"
+                              id="dateForm52"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -4642,14 +4651,14 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm7"
-                              id="timeForm7"
+                              name="timeForm52"
+                              id="timeForm52"
                               value="12:00"
                           /></span>
                         </div>
-                        <input type="hidden" id="formData7" name="formData7" />
+                        <input type="hidden" id="formData52" name="formData52" />
                         <button
-                          onclick="storeFormData('form7', 'item2Form7', 'form7Image', 'numberForm7', 'itemPrice7')"
+                          onclick="storeFormData('form52', 'item2Form52', 'form52Image', 'numberForm52', 'itemPrice52')"
                           type="submit"
                           id="incrementButton7"
                           class="btn btn-dark"
@@ -4796,11 +4805,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-8">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm8" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-8">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -4981,11 +4990,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-9">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm9" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-9">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -5149,35 +5158,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form10Image"
+                          id="form3Image"
                           src="/img/foldingChair/132-1329417_folding-chair-png-file-white-granite-folding-chairs.png"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form10" method="POST" action="/submit10">
+                      <form id="form3" method="POST" action="/submit3">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form10">Chairs</h3>
-                          <h3 id="item2Form10">Folding Chair Group</h3>
-                          <p id="priceForm10">
+                          <h3 id="item1Form3">Chairs</h3>
+                          <h3 id="item2Form3">Folding Chair Group</h3>
+                          <p id="priceForm3">
                             <i class="bi bi-currency-dollar"></i>1.75/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-3">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm10" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm3" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-3">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice10">Daily - $1.75</span>
+                          <span id="itemPrice3">Daily - $1.75</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -5185,8 +5194,8 @@
                             ><input
                               type="date"
                               value="2024-05-05"
-                              name="dateForm10"
-                              id="dateForm10"
+                              name="dateForm3"
+                              id="dateForm3"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -5194,18 +5203,18 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm10"
-                              id="timeForm10"
+                              name="timeForm3"
+                              id="timeForm3"
                               value="12:00"
                           /></span>
                         </div>
                         <input
                           type="hidden"
-                          id="formData10"
-                          name="formData10"
+                          id="formData3"
+                          name="formData3"
                         />
                         <button
-                          onclick="storeFormData('form10', 'item2Form10', 'form10Image', 'numberForm10', 'itemPrice10')"
+                          onclick="storeFormData('form3', 'item2Form3', 'form3Image', 'numberForm3', 'itemPrice3')"
                           type="submit"
                           id="incrementButton10"
                           class="btn btn-dark"
@@ -5355,11 +5364,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-10">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm10" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-10">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -5527,35 +5536,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form10Image"
+                          id="form35Image"
                           src="/img/tents/15x15-tent.jpg"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form10" method="POST" action="/submit10">
+                      <form id="form35" method="POST" action="/submit35">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form10">Tent</h3>
-                          <h3 id="item2Form10">15 x 15 tent</h3>
-                          <p id="priceForm10">
+                          <h3 id="item1Form35">Tent</h3>
+                          <h3 id="item2Form35">15 x 15 tent</h3>
+                          <p id="priceForm35">
                             <i class="bi bi-currency-dollar"></i>275/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-35">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm10" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm35" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-35">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice10">Daily - $275</span>
+                          <span id="itemPrice35">Daily - $275</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -5563,8 +5572,8 @@
                             ><input
                               type="date"
                               value="2024-05-05"
-                              name="dateForm10"
-                              id="dateForm10"
+                              name="dateForm35"
+                              id="dateForm35"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -5572,18 +5581,18 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm10"
-                              id="timeForm10"
+                              name="timeForm35"
+                              id="timeForm35"
                               value="12:00"
                           /></span>
                         </div>
                         <input
                           type="hidden"
-                          id="formData10"
-                          name="formData10"
+                          id="formData35"
+                          name="formData35"
                         />
                         <button
-                          onclick="storeFormData('form10', 'item2Form10', 'form10Image', 'numberForm10', 'itemPrice10')"
+                          onclick="storeFormData('form35', 'item2Form35', 'form35Image', 'numberForm35', 'itemPrice35')"
                           type="submit"
                           id="incrementButton10"
                           class="btn btn-dark"
@@ -5664,11 +5673,12 @@
               </div>
               <!-- Modal End -->
 
-              <div class="col-lg-4 col-md-6 portfolio-item filter-tents">
+              <div class="col-lg-4 col-md-6 portfolio-item filter-tents" style="display: flex; justify-content: center; align-items: center;">
                 <img
                   src="/img/tents/images (2).jpeg"
                   class="img-fluid"
                   alt=""
+                  
                 />
                 <div class="portfolio-info">
                   <h4>Tent</h4>
@@ -5716,35 +5726,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form10Image"
+                          id="form36Image"
                           src="/img/tents/images (2).jpeg"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form10" method="POST" action="/submit10">
+                      <form id="form36" method="POST" action="/submit36">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form10">Tent</h3>
-                          <h3 id="item2Form10">10 x 20 tent</h3>
-                          <p id="priceForm10">
+                          <h3 id="item1Form36">Tent</h3>
+                          <h3 id="item2Form36">10 x 20 tent</h3>
+                          <p id="priceForm36">
                             <i class="bi bi-currency-dollar"></i>275/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-36">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm10" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm36" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-36">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice10">Daily - $275</span>
+                          <span id="itemPrice36">Daily - $275</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -5752,8 +5762,8 @@
                             ><input
                               type="date"
                               value="2024-05-05"
-                              name="dateForm10"
-                              id="dateForm10"
+                              name="dateForm36"
+                              id="dateForm36"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -5761,18 +5771,18 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm10"
-                              id="timeForm10"
+                              name="timeForm36"
+                              id="timeForm36"
                               value="12:00"
                           /></span>
                         </div>
                         <input
                           type="hidden"
-                          id="formData10"
-                          name="formData10"
+                          id="formData36"
+                          name="formData36"
                         />
                         <button
-                          onclick="storeFormData('form10', 'item2Form10', 'form10Image', 'numberForm10', 'itemPrice10')"
+                          onclick="storeFormData('form36', 'item2Form36', 'form36Image', 'numberForm36', 'itemPrice36')"
                           type="submit"
                           id="incrementButton10"
                           class="btn btn-dark"
@@ -5905,35 +5915,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form10Image"
+                          id="form37Image"
                           src="/img/tents/15x20tent.jpg"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form10" method="POST" action="/submit10">
+                      <form id="form37" method="POST" action="/submit37">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form10">Tent</h3>
-                          <h3 id="item2Form10">15 x 20 tent</h3>
-                          <p id="priceForm10">
+                          <h3 id="item1Form37">Tent</h3>
+                          <h3 id="item2Form37">15 x 20 tent</h3>
+                          <p id="priceForm37">
                             <i class="bi bi-currency-dollar"></i>375/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-37">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm10" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm37" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-37">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice10">Daily - $375</span>
+                          <span id="itemPrice37">Daily - $375</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -5941,8 +5951,8 @@
                             ><input
                               type="date"
                               value="2024-05-05"
-                              name="dateForm10"
-                              id="dateForm10"
+                              name="dateForm37"
+                              id="dateForm37"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -5950,18 +5960,18 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm10"
-                              id="timeForm10"
+                              name="timeForm37"
+                              id="timeForm37"
                               value="12:00"
                           /></span>
                         </div>
                         <input
                           type="hidden"
-                          id="formData10"
-                          name="formData10"
+                          id="formData37"
+                          name="formData37"
                         />
                         <button
-                          onclick="storeFormData('form10', 'item2Form10', 'form10Image', 'numberForm10', 'itemPrice10')"
+                          onclick="storeFormData('form37', 'item2Form37', 'form37Image', 'numberForm37', 'itemPrice37')"
                           type="submit"
                           id="incrementButton10"
                           class="btn btn-dark"
@@ -6094,35 +6104,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form10Image"
+                          id="form38Image"
                           src="/img/tents/20x20tent.jpg"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form10" method="POST" action="/submit10">
+                      <form id="form38" method="POST" action="/submit38">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form10">Tent</h3>
-                          <h3 id="item2Form10">20 x 20 tent</h3>
-                          <p id="priceForm10">
+                          <h3 id="item1Form38">Tent</h3>
+                          <h3 id="item2Form38">20 x 20 tent</h3>
+                          <p id="priceForm38">
                             <i class="bi bi-currency-dollar"></i>400/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-38">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm10" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm38" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-38">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice10">Daily - $400</span>
+                          <span id="itemPrice38">Daily - $400</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -6130,8 +6140,8 @@
                             ><input
                               type="date"
                               value="2024-05-05"
-                              name="dateForm10"
-                              id="dateForm10"
+                              name="dateForm38"
+                              id="dateForm38"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -6139,18 +6149,18 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm10"
-                              id="timeForm10"
+                              name="timeForm38"
+                              id="timeForm38"
                               value="12:00"
                           /></span>
                         </div>
                         <input
                           type="hidden"
-                          id="formData10"
-                          name="formData10"
+                          id="formData38"
+                          name="formData38"
                         />
                         <button
-                          onclick="storeFormData('form10', 'item2Form10', 'form10Image', 'numberForm10', 'itemPrice10')"
+                          onclick="storeFormData('form38', 'item2Form38', 'form38Image', 'numberForm38', 'itemPrice38')"
                           type="submit"
                           id="incrementButton10"
                           class="btn btn-dark"
@@ -6283,35 +6293,35 @@
                     <div class="modal-body modal-custom">
                       <div>
                         <img
-                          id="form10Image"
+                          id="form39Image"
                           src="/img/tents/20x30tent.jpg"
                           alt="some img here"
                           width="200px"
                         />
                       </div>
-                      <form id="form10" method="POST" action="/submit10">
+                      <form id="form39" method="POST" action="/submit39">
                         <div class="modal-sub-head">
-                          <h3 id="item1Form10">Tent</h3>
-                          <h3 id="item2Form10">20 x 30 tent</h3>
-                          <p id="priceForm10">
+                          <h3 id="item1Form39">Tent</h3>
+                          <h3 id="item2Form39">20 x 30 tent</h3>
+                          <p id="priceForm39">
                             <i class="bi bi-currency-dollar"></i>500/day
                           </p>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-39">
                               <a href="#">-</a>
                             </button>
-                            <div id="numberForm10" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <div id="numberForm39" class="cart-count">1</div>
+                            <button class="btn btn-primary btn-add-39">
                               <a href="#">+</a>
                             </button>
                           </span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Rate</span>
-                          <span id="itemPrice10">Daily - $500</span>
+                          <span id="itemPrice39">Daily - $500</span>
                         </div>
                         <div class="modal-detail-inner">
                           <span>Select Dates</span>
@@ -6319,8 +6329,8 @@
                             ><input
                               type="date"
                               value="2024-05-05"
-                              name="dateForm10"
-                              id="dateForm10"
+                              name="dateForm39"
+                              id="dateForm39"
                           /></span>
                         </div>
                         <div class="modal-detail-inner">
@@ -6328,18 +6338,18 @@
                           <span
                             ><input
                               type="time"
-                              name="timeForm10"
-                              id="timeForm10"
+                              name="timeForm39"
+                              id="timeForm39"
                               value="12:00"
                           /></span>
                         </div>
                         <input
                           type="hidden"
-                          id="formData10"
-                          name="formData10"
+                          id="formData39"
+                          name="formData39"
                         />
                         <button
-                          onclick="storeFormData('form10', 'item2Form10', 'form10Image', 'numberForm10', 'itemPrice10')"
+                          onclick="storeFormData('form39', 'item2Form39', 'form39Image', 'numberForm39', 'itemPrice39')"
                           type="submit"
                           id="incrementButton10"
                           class="btn btn-dark"
@@ -6491,11 +6501,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-11">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm11" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-11">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -6680,11 +6690,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-12">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm12" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-12">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -6869,11 +6879,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-13">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm13" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-13">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -7060,11 +7070,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-14">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm14" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-14">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -7249,11 +7259,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-15">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm15" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-15">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -7438,11 +7448,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-16">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm16" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-16">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -7627,11 +7637,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-17">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm17" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-17">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -7816,11 +7826,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-18">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm18" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-18">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -8007,11 +8017,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-19">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm19" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-19">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -8198,11 +8208,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-20">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm20" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-20">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -8387,11 +8397,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-21">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm21" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-21">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -8576,11 +8586,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-22">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm22" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-22">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -8765,11 +8775,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-23">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm23" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-23">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -8954,11 +8964,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-24">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm24" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-24">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -9143,11 +9153,11 @@
                         <div class="modal-detail-iner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-25">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm25" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-25">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -9332,11 +9342,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-26">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm26" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-26">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -9519,11 +9529,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-27">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm27" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-27">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -9704,11 +9714,11 @@
                         <div class="modal-detail-inner">
                           <span>Quantity</span>
                           <span>
-                            <button class="btn btn-primary btn-minus">
+                            <button class="btn btn-primary btn-minus-28">
                               <a href="#">-</a>
                             </button>
                             <div id="numberForm28" class="cart-count">1</div>
-                            <button class="btn btn-primary btn-add">
+                            <button class="btn btn-primary btn-add-28">
                               <a href="#">+</a>
                             </button>
                           </span>
@@ -10035,6 +10045,7 @@
       const storageKey = "formDataList";
 
       function storeFormData(formId, descId, imgId, qtyId, priceId) {
+        
         const data = {
           formId: formId,
           description: document.getElementById(descId).textContent,

@@ -262,177 +262,1229 @@ document.addEventListener("DOMContentLoaded", () => {
 //   }
 // }
 
-// document
-//   .getElementById("form1")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form1", "/submit1")
-//   );
-// document
-//   .getElementById("form2")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form2", "/submit2")
-//   );
-// document
-//   .getElementById("form3")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form3", "/submit3")
-//   );
-// document
-//   .getElementById("form4")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form4", "/submit4")
-//   );
-// document
-//   .getElementById("form5")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form5", "/submit5")
-//   );
-// document
-//   .getElementById("form6")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form6", "/submit6")
-//   );
-// document
-//   .getElementById("form7")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form7", "/submit7")
-//   );
-// document
-//   .getElementById("form8")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form8", "/submit8")
-//   );
-// document
-//   .getElementById("form9")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form9", "/submit9")
-//   );
-// document
-//   .getElementById("form10")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form10", "/submit10")
-//   );
-// document
-//   .getElementById("form11")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form11", "/submit11")
-//   );
-// document
-//   .getElementById("form12")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form12", "/submit12")
-//   );
-// document
-//   .getElementById("form13")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form13", "/submit13")
-//   );
-// document
-//   .getElementById("form14")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form14", "/submit14")
-//   );
-// document
-//   .getElementById("form15")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form15", "/submit15")
-//   );
-// document
-//   .getElementById("form16")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form16", "/submit16")
-//   );
-// document
-//   .getElementById("form17")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form17", "/submit17")
-//   );
-// document
-//   .getElementById("form18")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form18", "/submit18")
-//   );
-// document
-//   .getElementById("form19")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form19", "/submit19")
-//   );
-// document
-//   .getElementById("form20")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form20", "/submit20")
-//   );
-// document
-//   .getElementById("form21")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form21", "/submit21")
-//   );
-// document
-//   .getElementById("form22")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form22", "/submit22")
-//   );
-// document
-//   .getElementById("form23")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form23", "/submit23")
-//   );
-// document
-//   .getElementById("form24")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form24", "/submit24")
-//   );
-// document
-//   .getElementById("form25")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form25", "/submit25")
-//   );
-// document
-//   .getElementById("form26")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form26", "/submit26")
-//   );
-// document
-//   .getElementById("form27")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form27", "/submit27")
-//   );
-// document
-//   .getElementById("form28")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form28", "/submit28")
-//   );
-// document
-//   .getElementById("form29")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form29", "/submit29")
-//   );
-// document
-//   .getElementById("form30")
-//   .addEventListener("submit", (event) =>
-//     handleFormSubmit(event, "form30", "/submit30")
-//   );
+document
+  .getElementById("form1")
+  .addEventListener("submit", (event) => {
+    
+  }
+    
+  );
+document
+  .getElementById("form2")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form3")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form4")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form5")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form6")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form7")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form8")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form9")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form10")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form11")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form12")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form13")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form14")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form15")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form16")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form17")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form18")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form19")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form20")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form21")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form22")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form23")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form24")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form25")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form26")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form27")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form28")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form29")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+document
+  .getElementById("form30")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
 
+  document
+  .getElementById("form31")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form32")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form33")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form34")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form35")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form36")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form37")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form38")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form39")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form40")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form41")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form42")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form43")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form44")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form45")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form46")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form47")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form48")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form49")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form50")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form51")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form52")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form53")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form54")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form55")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form56")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form57")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form58")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
+
+  document
+  .getElementById("form59")
+  .addEventListener("submit", (event) =>
+    {event.preventDefault();}
+  );
 // // Example code to handle quantity increment/decrement
-document.querySelectorAll(".btn-minus").forEach((btnn, index) => {
-  btnn.addEventListener("click", function (e) {
+// document.querySelectorAll(".btn-minus").forEach((btnn, index) => {
+//   btnn.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     let numberElem = document.getElementById(`numberForm${index + 1}`);
+//     let number = parseInt(numberElem.innerText);
+//     if (number > 1) {
+//       numberElem.innerText = number - 1;
+//     }
+//   });
+// });
+
+document.querySelector(".btn-minus-1").addEventListener("click", function (e) {
     e.preventDefault();
-    let numberElem = document.getElementById(`numberForm${index + 1}`);
+    let numberElem = document.getElementById(`numberForm1`);
     let number = parseInt(numberElem.innerText);
     if (number > 1) {
       numberElem.innerText = number - 1;
     }
   });
+
+document.querySelector(".btn-minus-2").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm2`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-3").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm3`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-4").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm4`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-5").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm5`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-6").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm6`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-7").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm7`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-8").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById('numberForm8');
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-9").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm9`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-10").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm10`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-11").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm11`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-12").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm12`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-13").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm13`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-14").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm14`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-15").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm15`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-16").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm16`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-17").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm17`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-18").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm18`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-19").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm19`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-20").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm20`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-21").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm21`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-22").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm22`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-23").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm23`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-24").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm24`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-25").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm25`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-26").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm26`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-27").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm27`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-28").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm28`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-29").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm29`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-30").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm30`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-31").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm31`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-32").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm32`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-33").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm33`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-34").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm34`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-35").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm35`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-36").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm36`);
+    let number = parseInt(numberElem.innerText);
+    if (number > 1) {
+      numberElem.innerText = number - 1;
+    }
+  });
+
+document.querySelector(".btn-minus-37").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm37`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
 });
 
-document.querySelectorAll(".btn-add").forEach((btnn, index) => {
-  btnn.addEventListener("click", function (e) {
+document.querySelector(".btn-minus-38").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm38`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-39").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm39`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-40").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm40`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-41").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm41`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-42").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm42`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-43").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm43`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-44").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm44`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-45").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm45`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-46").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm46`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-47").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm47`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-48").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm48`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-49").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm49`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-50").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm50`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-51").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm51`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-37").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm37`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-37").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm37`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-37").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm37`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-37").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm37`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+document.querySelector(".btn-minus-37").addEventListener("click", function (e) {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm37`);
+  let number = parseInt(numberElem.innerText);
+  if (number > 1) {
+    numberElem.innerText = number - 1;
+  }
+});
+
+// ==============================================================
+
+// const button1 = document.querySelector("#btn-add-1");
+// console.log(button1);
+// // Step 2: Add click event listener
+// button1.addEventListener("click", function () {
+//   // Step 3: Log "clicked" to the console
+//   console.log("clicked"); 
+// })
+
+document.querySelector(".btn-add-1").addEventListener('click',(e)=> {
+  e.preventDefault();
+  let numberElem = document.getElementById(`numberForm1`);
+  let number = parseInt(numberElem.innerText);
+  numberElem.innerText = number + 1;
+  
+})
+
+document.querySelector(".btn-add-2").addEventListener("click", function (e) {
     e.preventDefault();
-    let numberElem = document.getElementById(`numberForm${index + 1}`);
+    let numberElem = document.getElementById(`numberForm2`);
     let number = parseInt(numberElem.innerText);
     numberElem.innerText = number + 1;
   });
-});
+
+document.querySelector(".btn-add-3").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm3`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-4").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm4`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-5").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm5`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-6").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm6`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-7").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm7`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-8").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm8`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-9").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm9`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-10").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm10`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-11").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm11`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-12").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm12`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-13").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm13`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-14").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm14`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-15").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm15`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-16").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm16`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-17").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm17`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-18").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm18`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-19").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm19`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-20").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm20`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-21").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm21`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-22").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm22`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-23").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm23`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-24").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm24`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-25").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm25`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-26").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm26`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-27").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm27`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-28").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm28`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-29").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm29`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-30").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm30`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-31").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm31`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-32").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm32`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-33").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm33`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-34").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm34`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-35").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm35`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-36").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm36`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-37").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm37`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-38").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm38`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-39").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm39`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-40").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm40`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-41").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm41`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-42").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm42`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+document.querySelector(".btn-add-43").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm43`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+  document.querySelector(".btn-add-44").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm44`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+  document.querySelector(".btn-add-45").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm45`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+  document.querySelector(".btn-add-46").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm46`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+  document.querySelector(".btn-add-47").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm47`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+  document.querySelector(".btn-add-48").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm48`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+  document.querySelector(".btn-add-49").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm49`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+  document.querySelector(".btn-add-50").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm50`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+  document.querySelector(".btn-add-51").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm51`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+  document.querySelector(".btn-add-52").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm52`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
+
+  document.querySelector(".btn-add-53").addEventListener("click", function (e) {
+    e.preventDefault();
+    let numberElem = document.getElementById(`numberForm53`);
+    let number = parseInt(numberElem.innerText);
+    numberElem.innerText = number + 1;
+  });
 
 // const incrementButton1 = document.getElementById("incrementButton1");
 // const incrementButton2 = document.getElementById("incrementButton2");
@@ -1072,6 +2124,86 @@ const forms = [
     nameCookie: "form_name30",
     emailCookie: "form_email30",
   },
+  {
+    formId: "form31",
+    nameField: "nameForm31",
+    emailField: "emailForm31",
+    dateField: "dateForm31",
+    timeField: "timeForm31",
+    quantityField: "numberForm31",
+    nameCookie: "form_name31",
+    emailCookie: "form_email31",
+  },
+  {
+    formId: "form32",
+    nameField: "nameForm32",
+    emailField: "emailForm32",
+    dateField: "dateForm32",
+    timeField: "timeForm32",
+    quantityField: "numberForm32",
+    nameCookie: "form_name32",
+    emailCookie: "form_email32",
+  },
+  {
+    formId: "form33",
+    nameField: "nameForm33",
+    emailField: "emailForm33",
+    dateField: "dateForm33",
+    timeField: "timeForm33",
+    quantityField: "numberForm33",
+    nameCookie: "form_name33",
+    emailCookie: "form_email33",
+  },
+  {
+    formId: "form34",
+    nameField: "nameForm34",
+    emailField: "emailForm34",
+    dateField: "dateForm34",
+    timeField: "timeForm34",
+    quantityField: "numberForm34",
+    nameCookie: "form_name34",
+    emailCookie: "form_email34",
+  },
+  {
+    formId: "form35",
+    nameField: "nameForm35",
+    emailField: "emailForm35",
+    dateField: "dateForm35",
+    timeField: "timeForm35",
+    quantityField: "numberForm35",
+    nameCookie: "form_name35",
+    emailCookie: "form_email35",
+  },
+  {
+    formId: "form36",
+    nameField: "nameForm36",
+    emailField: "emailForm36",
+    dateField: "dateForm36",
+    timeField: "timeForm36",
+    quantityField: "numberForm36",
+    nameCookie: "form_name36",
+    emailCookie: "form_email36",
+  },
+  {
+    formId: "form37",
+    nameField: "nameForm37",
+    emailField: "emailForm37",
+    dateField: "dateForm37",
+    timeField: "timeForm37",
+    quantityField: "numberForm37",
+    nameCookie: "form_name37",
+    emailCookie: "form_email37",
+  },
+  {
+    formId: "form38",
+    nameField: "nameForm38",
+    emailField: "emailForm38",
+    dateField: "dateForm38",
+    timeField: "timeForm38",
+    quantityField: "numberForm38",
+    nameCookie: "form_name38",
+    emailCookie: "form_email38",
+  },
 ];
 
 const cookieCountDisplay = document.getElementById("cookieCountDisplay");
@@ -1182,7 +2314,7 @@ updateCookieCount();
 //     document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/`;
 //   }
 // }
-deleteAllCookies();
+// deleteAllCookies();
 
 // button animation
 var buttons = document.querySelectorAll(".btn-dark");
@@ -1208,3 +2340,7 @@ function createRipple(event) {
 }
 
 // ===========================================================
+const addRound = document.querySelector(".btn-add-round");
+addRound.addEventListener("click", () => {
+  console.log("water");
+});
