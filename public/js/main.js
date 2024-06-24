@@ -265,10 +265,8 @@ document.addEventListener("DOMContentLoaded", () => {
 document
   .getElementById("form1")
   .addEventListener("submit", (event) => {
-    
-  }
-    
-  );
+    {event.preventDefault();}
+  });
 document
   .getElementById("form2")
   .addEventListener("submit", (event) =>
@@ -547,47 +545,49 @@ document
     {event.preventDefault();}
   );
 
-  document
-  .getElementById("form53")
-  .addEventListener("submit", (event) =>
-    {event.preventDefault();}
-  );
+  // document
+  // .getElementById("form53")
+  // .addEventListener("submit", (event) =>
+  //   {event.preventDefault();}
+  // );
 
-  document
-  .getElementById("form54")
-  .addEventListener("submit", (event) =>
-    {event.preventDefault();}
-  );
+  // document
+  // .getElementById("form54")
+  // .addEventListener("submit", (event) =>
+  //   {event.preventDefault();}
+  // );
 
-  document
-  .getElementById("form55")
-  .addEventListener("submit", (event) =>
-    {event.preventDefault();}
-  );
+  // document
+  // .getElementById("form55")
+  // .addEventListener("submit", (event) =>
+  //   {event.preventDefault();}
+  // );
 
-  document
-  .getElementById("form56")
-  .addEventListener("submit", (event) =>
-    {event.preventDefault();}
-  );
+  // document
+  // .getElementById("form56")
+  // .addEventListener("submit", (event) =>
+  //   {event.preventDefault();}
+  // );
 
-  document
-  .getElementById("form57")
-  .addEventListener("submit", (event) =>
-    {event.preventDefault();}
-  );
+  // document
+  // .getElementById("form57")
+  // .addEventListener("submit", (event) =>
+  //   {event.preventDefault();}
+  // );
 
-  document
-  .getElementById("form58")
-  .addEventListener("submit", (event) =>
-    {event.preventDefault();}
-  );
+  // document
+  // .getElementById("form58")
+  // .addEventListener("submit", (event) =>
+  //   {event.preventDefault();}
+  // );
 
-  document
-  .getElementById("form59")
-  .addEventListener("submit", (event) =>
-    {event.preventDefault();}
-  );
+  // document
+  // .getElementById("form59")
+  // .addEventListener("submit", (event) =>
+  //   {event.preventDefault();}
+  // );
+
+
 // // Example code to handle quantity increment/decrement
 // document.querySelectorAll(".btn-minus").forEach((btnn, index) => {
 //   btnn.addEventListener("click", function (e) {
@@ -1059,9 +1059,9 @@ document.querySelector(".btn-minus-51").addEventListener("click", function (e) {
   }
 });
 
-document.querySelector(".btn-minus-37").addEventListener("click", function (e) {
+document.querySelector(".btn-minus-52").addEventListener("click", function (e) {
   e.preventDefault();
-  let numberElem = document.getElementById(`numberForm37`);
+  let numberElem = document.getElementById(`numberForm52`);
   let number = parseInt(numberElem.innerText);
   if (number > 1) {
     numberElem.innerText = number - 1;
@@ -1479,12 +1479,12 @@ document.querySelector(".btn-add-43").addEventListener("click", function (e) {
     numberElem.innerText = number + 1;
   });
 
-  document.querySelector(".btn-add-53").addEventListener("click", function (e) {
-    e.preventDefault();
-    let numberElem = document.getElementById(`numberForm53`);
-    let number = parseInt(numberElem.innerText);
-    numberElem.innerText = number + 1;
-  });
+  // document.querySelector(".btn-add-53").addEventListener("click", function (e) {
+  //   e.preventDefault();
+  //   let numberElem = document.getElementById(`numberForm53`);
+  //   let number = parseInt(numberElem.innerText);
+  //   numberElem.innerText = number + 1;
+  // });
 
 // const incrementButton1 = document.getElementById("incrementButton1");
 // const incrementButton2 = document.getElementById("incrementButton2");
