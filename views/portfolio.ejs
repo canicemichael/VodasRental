@@ -63,7 +63,7 @@
             <li><a href="/about">About</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/portfolio" class="active">Rentals</a></li>
-            <!-- <li><a href="/team">Team</a></li> -->
+            <li><a href="/team"></a></li>
             <!-- <li><a href="/blog">Blog</a></li> -->
             <li class="dropdown">
               <!-- <a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -10177,7 +10177,8 @@
 
         // http://localhost:3000/send-email
         // https://vodasrental.onrender.com/portfolio/send-email
-        fetch("https://vodasrental.onrender.com/send-email", {
+        // https://everythingvodas.com/send-email
+        fetch("https://everythingvodas.com/send-email", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -10196,7 +10197,7 @@
             return response.text();
           })
           .then((data) => {
-            window.location.href = "https://vodasrental.onrender.com/venue";
+            window.location.href = "https://everythingvodas.com/venue";
           })
           .catch((error) => {
             console.error("Error:", error);
