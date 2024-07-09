@@ -2167,8 +2167,8 @@ span.ripple {
 }
 
 .img-fluid {
-  width: 80%;
-  height: 80%;
+  /* width: 300px; */
+  
 }
 
 .portfolio .portfolio-item .portfolio-info {
